@@ -4,7 +4,7 @@ enableToc: true
 tags: Zig
 ---
 
-# Installation
+## Installation
 
 Zig is moving fast, so I do not recommend installing it from the package manager (e.g. Homebrew, nix, etc.) as they are usually lagged.
 Instead, follow what [zigleanr](https://ziglearn.org/#installation) suggests, download the latest master build from https://ziglang.org/download/ and put it in your `$PATH`.
@@ -14,11 +14,11 @@ Note that you want to put the entire directory in your `$PATH` instead of the bi
 error: unable to find zig installation directory '/usr/local/bin/zig': FileNotFound
 ```
 
-# Getting Started
+## Getting Started
 
 [ziglings](https://github.com/ziyunli/ziglings)
 
-# Built-in
+## Built-in
 
 The `@import()` function is built into Zig.
 It returns a value which represents the imported code.
@@ -27,9 +27,9 @@ It returns a value which represents the imported code.
 const std = @import("std");
 ```
 
-# Types
+## Types
 
-## Arrays
+### Arrays
 
 *Is it allocated on the heap?*
 
@@ -51,7 +51,7 @@ Repeat with `**`
 var foo = [_]u32{ 42, 108, 5423 } ** 2;
 ```
 
-## Strings
+### Strings
 
 Strings use double quotes. Zig stores strings as arrays of bytes.
 
@@ -67,26 +67,26 @@ const foo =
   \\world!
 ```
 
-## Enums
+### Enums
 
 ```zig
 const Fruit = enum{ apple, pear, orange };
 ```
 
-## Structs
+### Structs
 
-## Pointers
+### Pointers
 
 
 
-# Conditions
+## Conditions
 
-## If
+### If
 
 * If only takes boolean condition
 * If statements are valid expressions
 
-## While
+### While
 
 Continue expression is optional.
 
@@ -98,7 +98,7 @@ while (condition) : (continue expression) {
 
 `continue` and `break` are supported in while loops.
 
-## For
+### For
 
 `for` works like iterators on arrays and slices.
 
@@ -108,7 +108,7 @@ for (items) |item, index| {
 }
 ```
 
-## Switch
+### Switch
 
 `switch` works like `match` expression in other languages.
 Switch statements must be "exhaustive".
@@ -125,18 +125,18 @@ switch (players) {
 `unreachable` is a special value that can be used to indicate that a switch statement is exhaustive.
 
 
-# Functions
+## Functions
 
 Zig functions are private by default but the `main()` function should be public.
 A function is declared public with the `pub` statement.
 
-## Defer
+### Defer
 
 `defer` is a statement that executes a function when the current scope is exited.
 `errdefer` is a statement that executes a function when the current scope is exited with an error.
 
 
-# Errors
+## Errors
 
 Errors are created in "error sets", which works like an enum.
 
@@ -152,7 +152,7 @@ var text: MyErrorSet!Text = ...;
 
 `!void` will let Zig to infer the error type, which is useful for `main()`.
 
-## Error handling
+### Error handling
 
 `catch` catches an error and replace it with a default value.
 

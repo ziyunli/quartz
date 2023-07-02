@@ -4,7 +4,7 @@ enableToc: true
 tags: Go 
 ---
 
-# Getting Started
+## Getting Started
 
 I used Tim Hockin's [go-build-template](https://github.com/thockin/go-build-template) as the reference to start the project. There is another [Standard Go Project Layout](https://github.com/golang-standards/project-layout) that seems totally overkill for Advent of Code, but could be useful when building a real application. Below is how the project looks.
 
@@ -58,11 +58,11 @@ It's also possible to pipe the input to STDIN, which is what I do when running t
 cat input/2022/day02.txt | go run ./cmd/cli -year 2022 -day 2 -part 2
 ```
 
-# Go Basics
+## Go Basics
 
 [Go by Example](https://gobyexample.com/) is a very useful reference.
 
-## Operators
+### Operators
 
 In Go, `%` computes the "remainder" as opposed to the "modulus"[^5]. Therefore, unlike other languages like Python, `%` can return negative numbers in Go. Below is a branchless implementation of Python's `%` operator.
 
@@ -72,7 +72,7 @@ func mod(a, b int) int {
 }
 ```
 
-## Slices
+### Slices
 
 ### Sorting
 
@@ -90,7 +90,7 @@ This is much easier because `append` is a variadic function, therefore you can j
 append([]int{1,2}, []int{3,4}...)
 ```
 
-## Strings
+### Strings
 
 In AoC, the input comes from an input file, and it's common to manipulate each line for the tasks. The [`strings` package](https://pkg.go.dev/strings) has plenty of useful methods to handle strings.
 
@@ -100,7 +100,7 @@ Strings are constructed by *runes*, identified by single-quotes, e.g. `'a'`. To 
 s := string([]rune{ 'a', 'b', 'c' })
 ```
 
-### Regexp
+#### Regexp
 
 Package [`regexp`](https://pkg.go.dev/regexp) implements regular expression search. It's based on RE2 syntax[^7]. Example for matching with capturing groups:
 
@@ -110,7 +110,7 @@ matches := r.FindStringSubmatch(line)
 log.Printf("move %v from %v to %v", matches[1], matches[2], matches[3])
 ```
 
-## Enum
+### Enum
 
 There is real enums in Go, and looks like people work around it by using constants and type definition. Below is an example:
 ```go

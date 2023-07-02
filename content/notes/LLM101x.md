@@ -8,7 +8,7 @@ I signed up [Large Language Models: Application through Production](https://lear
 
 <!--more-->
 
-# 0. Introduction
+## 0. Introduction
 
 This module goes through some key concepts and terminology.
 
@@ -37,7 +37,7 @@ Word embeddings:
 1. By frequency -> sparsity issue
 2. word/token -> embedding function -> word embedding/vector
 
-# 1. Application
+## 1. Application
 
 This module is in fact an introduction of huggingface transformers. The code examples are very straightforward to understand if you already know Python.
 In fact the whole lab takes around 10 minutes to complete if it's not waiting to download all the data sets and models along the way.

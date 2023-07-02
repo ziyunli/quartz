@@ -7,13 +7,13 @@ Notes from watching Patrick Winston's [How To Speak by Patrick Winston](https://
 It is recommended in [Ask HN: Best Talks of 2020?](https://news.ycombinator.com/item?id=25537230).
 It's wonderful. While it is heavily oriented towards academia, I believe the principles are universal enough to be applied to elsewhere. Here are my main takeaways.
 
-# How to Start
+## How to Start
 
 First of all, if you want to acknowledge collaborators for you projects, you should do it in the first slide. Do not end your talk with this.
 Then, you can start with an empowerment promise and set up the expectation of the audience.
 It's also a good idea to explain how cool is the stuff, if your talk is to inform.
 
-# Heuristics for delivering the content
+## Heuristics for delivering the content
 
 There are several samples to make your talk more interesting/engaging.
 
@@ -25,7 +25,7 @@ I guess you can compare with similar projects or alternatives, and try to draw a
 
 Asking a question can be a useful technique, but make sure the question is either too easy or too hard.
 
-# Tools/Time/Place
+## Tools/Time/Place
 
 It's recommended to have your talk around 11AM in a well-lit room that ideally should be 50% occupied during your talk.
 However, it's usually not easy to have full control on these factors so I'd say try your best.
@@ -42,9 +42,9 @@ If you need to use slides, follow these guidelines:
 
 You can have a hapax legomenon once in a presentation.
 
-# Persuading
+## Persuading
 
-Again this is heavily oriented toward job talks in academia.
+Again, this is heavily oriented toward job talks in academia.
 I think the takeaway for me is that you show aim to present yourself within 5 minutes, with your vision and contributions.
 For vision, describe the problem you're trying to solve and your approach.
 
@@ -59,7 +59,7 @@ As for why you should spend some time to practice this...
 
 > You get used to being famous, but you never get used to being ignored.
 
-# How to stop
+## How to stop
 
 At the last slide, highlights your contributions.
 

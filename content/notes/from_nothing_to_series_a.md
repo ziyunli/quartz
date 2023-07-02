@@ -5,8 +5,9 @@ tags: Startup
 
 Notes from watching Daniel Gross's [How To Go From Idea To Series A](https://www.youtube.com/watch?v=kXFzRdzKMMI)
 
-# Step 1: Start
-## The Dark Age: The Idea
+## Step 1: Start
+
+### The Dark Age: The Idea
 - Instead of ideas, think about **problems**.
 	- Challenge: You tend to focus on what you experience
 		- Optimize your anecdotal environment to find *interesting* ideas
@@ -15,8 +16,9 @@ Notes from watching Daniel Gross's [How To Go From Idea To Series A](https://www
 	- Small ideas are best.
 	- Examine your market.
 	- Environment is everything.
-## The Feudal Age: Advancing
-- Product Market Fit (Growth)
+
+### The Feudal Age: Advancing
+- Product-Market Fit (Growth)
 	- Polish, polish, polish
 	- Talk to your users: **personality changes required**
 	- Metrics are your map to success
@@ -25,7 +27,8 @@ Notes from watching Daniel Gross's [How To Go From Idea To Series A](https://www
 		- Derivative
 	- Consistency
 	- A *system* that will propel you to your best self.
-## Castle Age: 800 Gold Required == Fundraising
+
+### Castle Age: 800 Gold Required == Fundraising
 - Stand-out
 	- Brand
 	- Metrics

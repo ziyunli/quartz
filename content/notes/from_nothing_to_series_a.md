@@ -1,6 +1,7 @@
 ---
 title: "How To Go From Idea To Series A"
-tags: Startup
+tags: 
+- Startup
 ---
 
 Notes from watching Daniel Gross's [How To Go From Idea To Series A](https://www.youtube.com/watch?v=kXFzRdzKMMI)

@@ -1,6 +1,7 @@
 ---
 title: "How to Speak"
-tags: SelfHelp
+tags: 
+- SelfHelp
 ---
 
 Notes from watching Patrick Winston's [How To Speak by Patrick Winston](https://www.youtube.com/watch?v=Unzc731iCUY).

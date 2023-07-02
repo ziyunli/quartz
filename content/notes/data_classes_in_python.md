@@ -1,6 +1,7 @@
 ---
 title: "Data Classes in Python"
-tags: Python
+tags: 
+- Python
 ---
 
 `dataclass` decorator is introduced since Python 3.7.

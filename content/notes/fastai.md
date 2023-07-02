@@ -1,6 +1,7 @@
 ---
 title: "Practical Deep Learning"
-tags: DeepLearning
+tags: 
+- DeepLearning
 ---
 
 # 2. Deployment

@@ -1,6 +1,7 @@
 ---
 title: "如何快速学习"
-tags: SelfHelp
+tags: 
+- SelfHelp
 ---
 
 加速理解的两种途径:

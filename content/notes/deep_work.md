@@ -1,6 +1,7 @@
 ---
 title: "Deep Work"
-tags: SelfHelp
+tags: 
+- SelfHelp
 ---
 
 ## Why

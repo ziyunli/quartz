@@ -1,7 +1,7 @@
 ---
 title: "Learning Zig"
 enableToc: true
-tags: ["zig"]
+tags: ["Zig"]
 ---
 
 # Installation

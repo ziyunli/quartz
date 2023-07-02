@@ -1,7 +1,7 @@
 ---
 title: Teach Myself LLM
 enableToc: false
-tags: ["large language model", "generative ai", "laundry list"]
+tags: ["LLM", "GenAI"]
 ---
 
 A tracking page for my progress in learning LLM.

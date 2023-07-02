@@ -5,7 +5,7 @@ tags:
 
 I signed up [Large Language Models: Application through Production](https://learning.edx.org/course/course-v1:Databricks+LLM101x+2T2023/home) from Databricks on edX to learn more about applications of large language models. This page contains my notes on the course.
 
-## 0. Introduction
+## Introduction
 
 This module goes through some key concepts and terminology.
 
@@ -34,7 +34,7 @@ Word embeddings:
 1. By frequency -> sparsity issue
 2. word/token -> embedding function -> word embedding/vector
 
-## 1. Application
+## Application
 
 This module is in fact an introduction of huggingface transformers. The code examples are very straightforward to understand if you already know Python.
 In fact the whole lab takes around 10 minutes to complete if it's not waiting to download all the data sets and models along the way.

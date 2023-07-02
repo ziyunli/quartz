@@ -1,5 +1,6 @@
 ---
 title: "Data Classes in Python"
+date: 2022-08-17
 tags: 
 - Python
 ---

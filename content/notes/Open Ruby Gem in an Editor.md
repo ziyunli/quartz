@@ -1,5 +1,6 @@
 ---
 title: "Open Ruby Gem in an Editor"
+date: 2022-08-02
 tags: 
 - Ruby
 ---

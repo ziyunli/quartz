@@ -4,4 +4,5 @@ enableToc: false
 ---
 
 - Ramping up on DL/AIGC
-	- [ ] [[notes/LLM101x|Large Language Models: Application through Production]]
+	- [ ] Taking [[notes/LLM101x|Large Language Models: Application through Production]]
+	- Playing with [[notes/Stable_Diffusion|Stable_Diffusion]]

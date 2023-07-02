@@ -1,5 +1,4 @@
 ---
-title: "Data Classes in Python"
 tags: 
 - Python
 ---

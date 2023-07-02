@@ -1,6 +1,4 @@
 ---
-title: "Learning Zig"
-enableToc: true
 tags: 
 - Zig
 ---

@@ -1,6 +1,4 @@
 ---
-title: Teach Myself LLM
-enableToc: false
 tags: 
 - LargeLanguageModel
 ---

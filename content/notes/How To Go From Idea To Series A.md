@@ -1,5 +1,4 @@
 ---
-title: "How To Go From Idea To Series A"
 tags: 
 - Startup
 ---

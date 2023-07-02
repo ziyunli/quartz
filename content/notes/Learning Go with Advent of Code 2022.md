@@ -1,6 +1,4 @@
 ---
-title: Learning Go with Advent of Code 2022
-enableToc: true
 tags: 
 - Go 
 ---

@@ -1,5 +1,4 @@
 ---
-title: "From Teaching Leadership to Being a Leader"
 tags: 
 - Leadership
 ---

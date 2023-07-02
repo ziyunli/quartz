@@ -12,12 +12,13 @@ I signed up [Large Language Models: Application through Production](https://lear
 
 This module goes through some key concepts and terminology.
 
-Language models: probabilistic models that assign probabilities to word sequences.
-Large: 10~50M to many billions of parameters. Made possible by transformer architecture since ~2017.
+- Language models: probabilistic models that assign probabilities to word sequences.
+- Large: from 10~50M to many billions of parameters. Made possible by transformer architecture since ~2017.
 
-Token: basic building block of language models. Word, subword, character, etc.
-Sentence: sequence of tokens.
-Vocabulary: complete list of tokens.
+Primitives:
+- Token: basic building block of language models. Words, sub-words, characters, etc.
+- Sentence: sequence of tokens.
+- Vocabulary: complete list of tokens.
 
 Tokenization:
 1. Words:

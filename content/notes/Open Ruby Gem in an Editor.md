@@ -1,4 +1,5 @@
 ---
+title: "Open Ruby Gem in an Editor"
 tags: 
 - Ruby
 ---

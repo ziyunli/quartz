@@ -1,4 +1,5 @@
 ---
+title: Learning Go with Advent of Code 2022
 tags: 
 - Go 
 ---

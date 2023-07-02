@@ -1,4 +1,5 @@
 ---
+title: "__slots__ in Python"
 tags: 
 - Python
 ---

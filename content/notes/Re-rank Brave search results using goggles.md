@@ -1,3 +1,6 @@
+---
+title: "Re-rank Brave search results using goggles"
+---
 
 Goggles allow you to alter the ranking of Brave search by using rules and filters[^1].
 

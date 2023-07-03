@@ -11,9 +11,7 @@ aliases:
 > [!info] I completely stopped reading fiction since I entered colleges, expect mystery fiction. But maybe I will pick others back up one day...
 > - 🕵️‍♂️ mystery
 
-
-
-
+- ...
 
 ### Non-fiction
 
@@ -26,7 +24,6 @@ aliases:
 - 📟 [Let's Go](https://www.goodreads.com/book/show/43429043-let-s-go "Let's Go")
 - 📟 [Let's Go Further!](https://www.goodreads.com/book/show/58044798-let-s-go-further "Let's Go Further!")
 - 💁‍♀️ [Educated](https://www.goodreads.com/book/show/35133922-educated "Educated")
-- 
 
 ## Current
 - 📟 [Rust in Action](https://www.goodreads.com/book/show/58462468-rust-in-action)
@@ -36,6 +33,8 @@ aliases:
 ## Past
 
 ### 2023
+
+- ...
 
 ### Pre-2023
 - 💁‍♀️ [夜](notes/夜.md)

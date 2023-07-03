@@ -27,10 +27,12 @@ aliases:
 - 📟 [Let's Go](https://www.goodreads.com/book/show/43429043-let-s-go "Let's Go")
 - 📟 [Let's Go Further!](https://www.goodreads.com/book/show/58044798-let-s-go-further "Let's Go Further!")
 - 💁‍♀️ [Educated](https://www.goodreads.com/book/show/35133922-educated "Educated")
+- 🌿 [Statistical Consequences of Fat Tails](https://www.goodreads.com/book/show/52686856-statistical-consequences-of-fat-tails)
 
 ## Current
 - 📟 [Rust in Action](https://www.goodreads.com/book/show/58462468-rust-in-action)
 - 📟 [Deep Learning for Coders with Fastai and Pytorch: AI Applications Without a PhD](https://www.goodreads.com/book/show/50204643-deep-learning-for-coders-with-fastai-and-pytorch)
+- 🕵️‍♂️ [消失！](https://www.goodreads.com/book/show/54121005)
 - 🕵️‍♂️ [人类灭绝](https://www.goodreads.com/book/show/150283051)
 
 ## Past

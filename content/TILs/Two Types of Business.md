@@ -2,6 +2,8 @@
 title: Two Types of Business
 ---
 
+> [!cite]
+> 
 > I don't normally talk about this, but here is what you are missing:
 > 
 > Businesses that make (real) money revolve around one of two ideas:

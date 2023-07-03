@@ -1,6 +1,28 @@
 ---
-title: "How to Read Fast"
+title: "How to Read"
 ---
+
+## General
+
+> [!attention] This page was used to be called "How to Read Fast", but I later realized that speed/volume is not what I should optimize. 
+
+Instead of volume, the goal of reading should be instead comprehension. Therefore, instead of optimizing for speed, a better approach should be actively engaged during the reading[^3]
+
+> What matters is how it changes your thinking and what you take away from it. Optimize for comprehension, not volume.
+> 
+> If your goal is to maximize comprehension, you need to ask questions while you read — questions that you yourself must try to answer in the course of reading.
+> 
+> ... 
+> 
+> This is the template I use:
+> 1. In 1-2 sentences, what is the book about as a whole?>     
+> 2. What are the 3-4 central questions it tries to answer?
+> 3. Summarize the answers in one paragraph each.
+> 4. What are the most important things you have learned personally?
+
+Following the above process does mean the reading speed would be slower, and therefore you would need to be more picky on your book selection. It is suggested to use topical reading and inspectional reading to gather a list of books and quickly skim through them before spending more time to read into details. This approach is discussed in [如何阅读一本书](notes/如何阅读一本书.md). 
+
+## Non-fiction
 
 It turns out that I need to find a more efficient way to read so that I can get through my [Reading list](📚%20books.md). Fortunately, I have found some tips for non-fiction[^1]:
 
@@ -18,6 +40,9 @@ Though it sounds like for fiction books, we should still read word-for-word.
 
 > [!cite] Fiction demands that we enter a world of the author’s making, inspiring a more immersive experience.[^1]
 
+
+### Three Kinds of Non-fiction
+
 The tips can be further developed to group non-fiction into three categorizes[^2]:
 - 💁‍♀️ narrative: books that tell a story, e.g. biographies, memoirs, and histories.
 - 🌳 tree: books that lay out a framework of ideas, e.g. Daniel Kahneman's _[Thinking: Fast and Slow](https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555)_, _[High Output Management](https://www.amazon.com/High-Output-Management-Andrew-Grove/dp/0679762884)_ by Andy Grove, and _[Principles](https://www.amazon.com/Principles-Life-Work-Ray-Dalio/dp/1501124021)_ by Ray Dalio.
@@ -29,3 +54,4 @@ For the other two types, though, seems like we're out of luck. The article actua
 
 [^1]: https://hbr.org/2016/02/how-to-read-a-book-a-week "How to Read a Book a Week" 
 [^2]: https://commoncog.com/the-3-kinds-of-non-fiction-book/ "The three kinds of non-fiction books"
+[^3]: https://www.andreasfragner.com/writing/writing-summaries "Writing summaries is more important than reading more books"

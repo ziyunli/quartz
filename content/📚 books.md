@@ -7,6 +7,8 @@ aliases:
 
 ## To Read
 
+> [!quote] Instead of a celebration of everything you know, an antilibrary is an ode to everything you want to explore.[^1]
+
 ### Fiction
 
 > [!info] I completely stopped reading fiction since I entered colleges, expect mystery fiction. But maybe I will pick others back up one day...
@@ -43,3 +45,4 @@ aliases:
 - 🌿 [Deep Work](notes/Deep%20Work.md)
 - 🌿 [The Millionaire Fastlane](notes/The%20Millionaire%20Fastlane.md)
 
+[^1]: https://nesslabs.com/antilibrary "Building an antilibrary: the power of unread books"

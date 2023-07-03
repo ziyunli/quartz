@@ -22,7 +22,7 @@ Examples:
 -  [Glide](https://glideapps.com/) super-charges those databases by enabling builders to turn them into mobile apps, a skill previously relegated to an elite few.
 - [Retool](https://tryretool.com/) offers related “assembly” functionality for the desktop.
 
-[Lo-No code toolbox for entrepreneur](pages/Lo-No%20code%20toolbox%20for%20entrepreneur.md) is on the similar tread - sell the shovel as in [Two Types of Business](pages/Two%20Types%20of%20Business.md)
+[Lo-No code toolbox for entrepreneurs](notes/Lo-No%20code%20toolbox%20for%20entrepreneurs.md) is on the similar tread - sell the shovel as in [Two Types of Business](TILs/Two%20Types%20of%20Business.md)
 
 ### Dev Tools
 Examples:

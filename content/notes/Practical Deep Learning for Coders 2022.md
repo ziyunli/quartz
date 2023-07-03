@@ -4,6 +4,12 @@ tags:
 - Course
 ---
 
+Progress:
+- [x] [1: Getting started](https://course.fast.ai/Lessons/lesson1.html)
+- [x] [2: Deployment](https://course.fast.ai/Lessons/lesson2.html)
+- [x] [3: Neural net foundations](https://course.fast.ai/Lessons/lesson3.html)
+- [ ] [4: Natural Language (NLP)](https://course.fast.ai/Lessons/lesson4.html)
+
 # 2. Deployment
 
 Before you clean the data, you train the model. Why?

@@ -19,7 +19,7 @@ clear != short
 4. Angle brackets
 5. XML tags
 
-Also, can avoid prompt injections (?)
+However, the course claims they can help avoid [prompt injection](notes/Prompt%20Injection.md), which is not very convincing. 
 
 ##### Ask for a structured output
 

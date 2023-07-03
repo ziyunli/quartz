@@ -1,5 +1,7 @@
 ---
 title: Large Language Model
+aliases:
+- Large Language Model
 ---
 ## Before LLM
 

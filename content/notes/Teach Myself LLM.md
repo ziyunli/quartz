@@ -2,7 +2,7 @@
 title: Teach Myself LLM
 ---
 
-A tracking page for my progress in learning [LLM](notes/Large%20Language%20Model.md).
+A tracking page for my progress in learning [Large Language Model](notes/LLM.md).
 
 ## Deep learning
 * [x] [3Blue1Brown: Neural networks](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
@@ -22,4 +22,4 @@ A tracking page for my progress in learning [LLM](notes/Large%20Language%20Model
 
 ## LLM
 - [ ] [LLM Introduction: Learn Language Models](https://gist.github.com/rain-1/eebd5e5eb2784feecf450324e3341c8d)
-- [ ] [Large Language Models: Application through Production](notes/LLM101x.md)
+- [ ] [Large Language Models Application through Production](notes/LLM101x.md)

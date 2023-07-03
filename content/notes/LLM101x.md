@@ -1,11 +1,13 @@
 ---
-title: "Large Language Models Application through Production"
+title: "Large Language Models: Application through Production"
 date: 2023-06-13
 tags:
 - Course
+aliases:
+- Large Language Models Application through Production
 ---
 
-I signed up [Large Language Models: Application through Production](https://learning.edx.org/course/course-v1:Databricks+LLM101x+2T2023/home) by Databricks on edX to learn more about applications of [LLM](notes/Large%20Language%20Model.md). This page contains my notes on the course.
+I signed up [Large Language Models: Application through Production](https://learning.edx.org/course/course-v1:Databricks+LLM101x+2T2023/home) by Databricks on edX to learn more about applications of [Large Language Model](notes/LLM.md). This page contains my notes on the course.
 
 ## Introduction
 

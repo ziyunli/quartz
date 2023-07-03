@@ -15,7 +15,7 @@ The idea is that most of the non-fiction books is to make a point and ask us to 
 
 Though it sounds like for fiction books, we should still read word-for-word. 
 
-> Fiction demands that we enter a world of the author’s making, inspiring a more immersive experience.[^1]
+> [!cite] Fiction demands that we enter a world of the author’s making, inspiring a more immersive experience.[^1]
 
 The tips can be further developed to group non-fiction into three categorizes[^2]:
 - 💁‍♀️ narrative: books that tell a story, e.g. biographies, memoirs, and histories.

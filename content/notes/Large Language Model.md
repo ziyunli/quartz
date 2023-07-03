@@ -44,7 +44,7 @@ title: Large Language Model
 > ...it makes it easy to call OpenAI’s GPT, say, a dozen times in a loop to answer a single question, and mix in queries to Wikipedia and other databases.
 > The clever bit is that, using LangChain, you _intercept_ GPT when it starts a line with _“Act:”_ and then you go and do that action for it, feeding the results back in as an _“Observation”_ line so that it can “think” what to do next.[^3]
 
-## [[notes/Prompt Injection|Prompt Injection]]
+## [Prompt Injection](notes/Prompt%20Injection.md)
 
 ## Fine-Tuning
 

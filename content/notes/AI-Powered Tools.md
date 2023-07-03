@@ -2,7 +2,7 @@
 title: AI-Powered Tools
 ---
 
-![[images/ai-tools.png]]
+![ai-tools](images/ai-tools.png)
 
 # Semantic Search
 - https://www.phind.com/

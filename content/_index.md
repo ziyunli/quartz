@@ -10,4 +10,4 @@ I am Ziyun Li(李子雲), and I also go by Stephen. I am an electrical engineer 
 
 This site is an attempt to [build a knowledge garden](notes/build%20a%20knowledge%20garden.md) using [quartz](https://github.com/jackyzha0/quartz), where I hope to be structured enough to serve as useful notes while unstructured enough to allow overheads. 
 
-Inspired by [Derek Sivers](https://sive.rs/now), there is [now](now.md) page that tracks what I've been focused on at the moment.
+Inspired by [Derek Sivers](https://sive.rs/now), there is [🚧 now](🚧%20now.md) page that tracks what I've been focused on at the moment.

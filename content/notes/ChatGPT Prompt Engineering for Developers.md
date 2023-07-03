@@ -1,7 +1,7 @@
 ---
 title: ChatGPT Prompt Engineering for Developers
 tags:
-- Course
+- 👨‍💻Course
 ---
 
 ## Principles

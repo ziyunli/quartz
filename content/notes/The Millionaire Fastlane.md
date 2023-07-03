@@ -1,7 +1,7 @@
 ---
 title: The Millionaire Fastlane
 tags: 
-- Book
+- 📓Book
 ---
 
 **If you want to keep getting what you're getting, keep doing what you're doing.**

@@ -4,7 +4,8 @@ title: "How to Read Fast"
 
 It turns out that I need to find a more efficient way to read so that I can get through my [Reading list](📚%20books.md). Fortunately, I have found some tips for non-fiction[^1]:
 
-> [!tips] 
+> [!cite]
+>  
 > 1. **Start with the author**. Who wrote the book? Read his or her bio. If you can find a brief interview or article online about the author, read that quickly. It will give you a sense of the person’s bias and perspective. 
 > 2. **Read the title, the subtitle, the front flap, and the table of contents.** What’s the big-picture argument of the book? How is that argument laid out? By now, you could probably describe the main idea of the book to someone who hasn’t read it. 
 > 3. **Read the introduction and the conclusion.** The author makes their case in the opening and closing argument of the book. Read these two sections word for word but quickly. You already have a general sense of where the author is going, and these sections will tell you how they plan to get there (introduction) and what they hope you got out of it (conclusion). 

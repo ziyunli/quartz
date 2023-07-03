@@ -3,6 +3,7 @@ title: On Scalability of Distributed Elixir
 ---
 
 > [!cite]
+> 
 > People tend to forget that scalability is not a binary property. You always scale up to some users, up to some architecture, up to some amount of nodes. There is no system that will scale to infinity without requiring developer intervention once business needs and application patterns start to settle in.
 > 
 > Distributed Erlang/Elixir _has known limitations_. For example, the network is fully meshed, which gives you about 60 to 200 nodes in a cluster. Or don't send large data over distribution, as that delays the other messages, etc. Some of those are easily solvable. For example, you can rely on your orchestration tools to break your clusters in groups. Or you can setup an out of band tcp/udp socket for large data. Others may be more complex.

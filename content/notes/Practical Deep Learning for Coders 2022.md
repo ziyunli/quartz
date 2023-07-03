@@ -1,7 +1,5 @@
 ---
 title: "Practical Deep Learning for Coders 2022"
-tags: 
-- DeepLearning
 ---
 
 # 2. Deployment

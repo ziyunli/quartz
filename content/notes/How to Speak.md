@@ -1,8 +1,6 @@
 ---
 title: "How to Speak"
 date: 2020-12-29
-tags: 
-- SelfHelp
 ---
 
 Notes from watching Patrick Winston's [How To Speak by Patrick Winston](https://www.youtube.com/watch?v=Unzc731iCUY).

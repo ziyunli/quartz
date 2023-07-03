@@ -1,8 +1,6 @@
 ---
 title: "How To Go From Idea To Series A"
 date: 2022-08-17
-tags: 
-- Startup
 ---
 
 Notes from watching Daniel Gross's [How To Go From Idea To Series A](https://www.youtube.com/watch?v=kXFzRdzKMMI)

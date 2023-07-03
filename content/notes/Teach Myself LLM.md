@@ -1,7 +1,5 @@
 ---
 title: Teach Myself LLM
-tags: 
-- LargeLanguageModel
 ---
 
 A tracking page for my progress in learning LLM.

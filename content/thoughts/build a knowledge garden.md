@@ -11,3 +11,8 @@ Therefore, dropping it seems to be the right move here. As some points, I might 
 - [notes](/notes) for longer-form notes and write-ups
 
 All the existing contents are imported from my blog. The TIL posts seem fine to be left as-is, but the notes will require some clean-up. 
+
+Other similar sites to keep an eye on:
+- https://notes.andymatuschak.org/
+- https://jzhao.xyz/
+- https://mwalton.me/

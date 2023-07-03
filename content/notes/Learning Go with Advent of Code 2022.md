@@ -131,7 +131,7 @@ It also uses the *constant generator* `iota`. In a `const` declaration, the valu
 It seems like you can also use the [`stringer`](https://pkg.go.dev/golang.org/x/tools/cmd/stringer)  package to generate `String()` methods for your enum type. But I haven't figured out how to use it yet.
 
 [^1]: https://stackoverflow.com/questions/20895552/how-can-i-read-from-standard-input-in-the-console "How can I read from standard input in the console?"
-[^2]: https://unix.stackexchange.com/questions/16333/how-to-signal-the-end-of-stdin-input "How to signal the end of stdin input("
+[^2]: https://unix.stackexchange.com/questions/16333/how-to-signal-the-end-of-stdin-input "How to signal the end of stdin input"
 [^3]: https://stackoverflow.com/questions/18343208/how-do-i-reverse-sort-a-slice-of-integer-go "How do I reverse sort a slice of integer Go?"
 [^4]: https://www.gopl.io/ "The Go Programming Language"
 [^5]: https://github.com/golang/go/issues/448#issuecomment-66049769 "Modulus returns negative numbers"

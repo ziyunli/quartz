@@ -7,7 +7,7 @@ aliases:
 
 ## To Read
 
-> [!quote] Instead of a celebration of everything you know, an antilibrary is an ode to everything you want to explore.[^1]
+> Instead of a celebration of everything you know, an antilibrary is an ode to everything you want to explore.[^1]
 
 ### Fiction
 

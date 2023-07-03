@@ -1,5 +1,5 @@
 ---
-title: startup
+title: Startup
 date: 2023-07-02
 ---
 

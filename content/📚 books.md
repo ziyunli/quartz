@@ -1,5 +1,6 @@
 ---
 title: "Booklist"
+date: 2023-07-02
 aliases:
 - Reading list
 ---

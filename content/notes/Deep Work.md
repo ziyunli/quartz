@@ -78,6 +78,3 @@ Pomodoro方法能够提供一个low-level的保持集中力方案，但是从hig
 回答书中提到的三个问题，能够更好的归纳自己的思路。
 
 > What is the project represented by this message, and what is the most efficient (in terms of messages generated) process for bringing this project to a successful conclusion?
-
----
-

@@ -25,5 +25,7 @@ The tips can be further developed to group non-fiction into three categorizes[^2
 
 The fore-mentioned tips are best applied to branch books, where you can skim quickly without losing much. The article in fact makes an even stronger claim that it's best to not read branch books at all and instead read a summary. 
 
+For the other two types, though, seems like we're out of luck. The article actually suggests going slow on tree books, chapter-by-chapter, to better consume and internalize. 
+
 [^1]: https://hbr.org/2016/02/how-to-read-a-book-a-week "How to Read a Book a Week" 
 [^2]: https://commoncog.com/the-3-kinds-of-non-fiction-book/ "The three kinds of non-fiction books"

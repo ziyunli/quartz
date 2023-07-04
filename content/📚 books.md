@@ -34,7 +34,6 @@ aliases:
 - ❓ [The Innovator's Dilemma](https://www.goodreads.com/book/show/26160019-the-innovator-s-dilemma)
 - ❓ [The Secret Life of Groceries](https://www.goodreads.com/book/show/53930282-the-secret-life-of-groceries)
 - ❓ [Quit](https://www.goodreads.com/book/show/60916347-quit)
-- 
 
 ## Current
 - 📟 [Rust in Action](https://www.goodreads.com/book/show/58462468-rust-in-action)

@@ -9,7 +9,7 @@ You need to create a plain text file and host it on either GitHub or GitLab. Bra
 
 I quickly created my [own](https://github.com/ziyunli/goggles/blob/main/snr.goggle) in  <5 mins, and it works like a charm 🥳
 
-![image.png](images/brave-goggles.png)
+![image.png](assets/brave-goggles.png)
 
 [^1]: https://github.com/brave/goggles-quickstart/blob/main/getting-started.md#getting-started "Googles Getting Started"
 [^2]: https://search.brave.com/goggles/discover "Discover Goggles"

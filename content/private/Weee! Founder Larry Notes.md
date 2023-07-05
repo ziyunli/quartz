@@ -1,0 +1,32 @@
+---
+title: "Weee! Founder Larry Notes"
+date: 2019-09-11
+---
+
+- Product-Market Fit: Asian community is terribly underserved
+	- Existing offline grocery chains are dated and boring to shop from
+	- Sizable market: Ranch 99 and HMart each is about $1B in sales
+- Merchandising is important
+	- Currently 2000 SKUs
+	- Their own warehouse in Union City
+	- Finding products that are interesting/exciting/delicious → the products themselves drive growth
+		- E.g. Peony Grapes - best-selling items (when they are in stock)
+- How to build merchandising capability
+	- Started building this capability very early on; one of the largest team
+	- Took them 2 years to get to 2000 SKUs
+	- US supply chain is fairly efficient
+	- They built the reputation of being able to put products online and start selling quickly
+- How to do deliveries
+	- Orders are taken the night before
+	- Drivers take packaged orders from warehouse and put them in minivans
+	- 40 addresses to deliver per trip
+	- On average, 10 addresses per hour, get paid $200 in an afternoon
+- Growth
+	- Best experiment
+		- Social sharing on WeChat + everyone sees it can help the sharer get discount on the order + time-limited coupon for the same product for people see the sharing
+			- Repeat sharing
+			- Authentic recommendation
+			- 3X weekly orders?/activations?
+	- Running many experiments at the same time
+		- Tries to have a philosophy behind every new feature
+			- E.g. limit quantity flash sales start at 11pm → introduce price discrimination to capture more users/orders

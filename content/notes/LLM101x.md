@@ -30,31 +30,29 @@ Tokenization:
    2. No OOV
    3. Long sequences
    4. No word-level semantics
-3. Subwords:
+3. Sub-words:
   1. popular: byte pair encoding (BPE)
 
 Word embeddings:
-1. By frequency -> sparsity issue
-2. word/token -> embedding function -> word embedding/vector
+1. By frequency → sparsity issue
+2. word/token → embedding function → word embedding/vector
 
 ## Application
 
-This module is in fact an introduction of huggingface transformers. The code examples are very straightforward to understand if you already know Python.
-In fact the whole lab takes around 10 minutes to complete if it's not waiting to download all the data sets and models along the way.
+This module is mostly an introduction to the transformer library from Hugging Face. The code examples are very straightforward to understand if you already know Python.
+In fact, the whole lab takes around 10 minutes to complete if it's not waiting to download all the data sets and models along the way.
 
 On the high level, a HF pipeline could have these steps:
-input -> prompt constructions -> tokenizer (encoding) -> model -> tokenizer (decoding) -> output
+`input --> id[prompt constructions] --> id[tokenizer (encoding)] --> model --> id[tokenizer (decoding)] --> output`
 
 Some parameters to tweak:
-
-tokenizer:
-- `max_length`: max length of input sequence
-
-model:
-- `do_sample`: whether to use sampling
-  - `top_k`: top k tokens to sample from
-  - `top_p`: cumulative probability of top tokens to sample from
-  - `termperture`: temperature of sampling
-- `num_beams`: number of beams for beam search
-- `max_length`: max length of output sequence
-- `min_length`: min length of output sequence
+- tokenizer:
+	- `max_length`: max length of input sequence
+- model:
+	- `do_sample`: whether to use sampling
+	  - `top_k`: top k tokens to sample from
+	  - `top_p`: cumulative probability of top tokens to sample from
+	  - `termperture`: temperature of sampling
+	- `num_beams`: number of beams for beam search
+	- `max_length`: max length of output sequence
+	- `min_length`: min length of output sequence

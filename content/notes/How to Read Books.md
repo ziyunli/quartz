@@ -1,10 +1,11 @@
 ---
-title: "How to Read"
+title: "How to Read Books"
 ---
 
-## General
+It turns out that I need to find a more efficient way to read so that I can get through my [Reading list](📚%20books.md), and therefore I created this page to collect tips for optimization. It was used to be called "How to Read Fast", but then I realized that speed/volume is not what I should optimize for.  
 
-> [!attention] This page was used to be called "How to Read Fast", but I later realized that speed/volume is not what I should optimize. 
+There is another page on 
+## General
 
 Instead of volume, the goal of reading should be instead comprehension. Therefore, instead of optimizing for speed, a better approach should be actively engaged during the reading[^3]
 

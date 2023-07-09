@@ -56,3 +56,6 @@ Some parameters to tweak:
 	- `num_beams`: number of beams for beam search
 	- `max_length`: max length of output sequence
 	- `min_length`: min length of output sequence
+
+## Embedding and Vector Store
+

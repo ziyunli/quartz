@@ -70,8 +70,16 @@ Using vector store with fine-tuning https://news.ycombinator.com/item?id=3607988
 > 
 > Then I need to use a vector database to store the technical papers for the model to access; now I can ask questions, get a decent answer, and will have access to the sources.
 
+## AI Safety
+
+### Human in the Loop
+
+The danger of using MTurk as a "human in the loop" to fact-check LLM responses[^4]:
+
+> It is tempting to rely on crowdsourcing to validate LLM outputs or to create human gold-standard data for comparison. But what if crowd workers themselves are using LLMs, e.g., in order to increase their productivity, and thus their income, on crowdsourcing platforms?
 
 
 [^1]: https://github.com/ggerganov/llama.cpp/issues/33#issuecomment-1465108022
 [^2]: https://www.atmosera.com/ai/understanding-chatgpt/ "Understanding ChatGPT"
 [^3]: https://interconnected.org/home/2023/03/16/singularity "The surprising ease and effectiveness of AI in a loop"
+[^4]: https://techcrunch.com/2023/06/14/mechanical-turk-workers-are-using-ai-to-automate-being-human/ "Mechanical Turk workers are using AI to automate being human"

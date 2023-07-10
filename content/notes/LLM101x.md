@@ -59,3 +59,32 @@ Some parameters to tweak:
 
 ## Embedding and Vector Store
 
+How do LMs learn knowledge
+- fine-tuning
+	- via model weights
+	- _usually_ better suited to teach a model the specialized tasks
+		- Studying for an exam 2 weeks away
+- in-context learning
+	- through model inputs
+	- passing context as model inputs improves factual recall
+		- "Take an exam with open notes"
+	- downsides
+		- Context length limitation
+		- Longer context = higher API costs = longer processing times
+
+We can turn words/images/audio with vectors
+- similarity search
+	- de-dup
+	- semantic search
+- recommendation
+- finding security threats
+
+![search and retrieval-augmented generation](assets/rag-workflow.png)
+
+Vector search
+- K-nearest neighbors (KNN)
+- ==Approximate nearest neighbors (ANN)==
+
+How to measure similarity
+- L2 (Euclidean)
+- Cosine

@@ -59,7 +59,7 @@ Some parameters to tweak:
 
 ## Embedding and Vector Store
 
-How do LMs learn knowledge
+### How do LMs learn knowledge
 - fine-tuning
 	- via model weights
 	- _usually_ better suited to teach a model the specialized tasks
@@ -81,10 +81,59 @@ We can turn words/images/audio with vectors
 
 ![search and retrieval-augmented generation](assets/rag-workflow.png)
 
-Vector search
-- K-nearest neighbors (KNN)
-- ==Approximate nearest neighbors (ANN)==
+### How does Vector Search work
 
-How to measure similarity
-- L2 (Euclidean)
-- Cosine
+Vector search
+- K-nearest neighbors (KNN): exact search; brute-force method
+- ==Approximate nearest neighbors (ANN)==: 
+	- trade accuracy for speed. 
+	- Common indexing algorithms that output a ==vector index==
+		- Proximity graphs: HNSW
+			- Build proximity graphs based on L2 distance
+		- Clustering: FAISS
+			- forms clusters of dense vectors and conducts product quantization
+			- Not good with sparse vectors
+
+#### How to measure similarity
+- Distance metrics: L2 (Euclidean)
+- Similarity metrics: Cosine
+
+Note: used on normalized embeddings, they produce functionally equivalent ranking distances. 
+
+Product quantization: to compress vectors with fewer bytes
+1. Split the big vector into segments of sub-vectors
+2. Each sub-vector is quantized independently, and mapped to the nearest centroid
+
+### Filtering
+
+1. Post-query
+2. In-query
+3. Pre-query
+
+### Vector Stores
+
+When do you need it? When you need ==context augmentation==.
+
+Vector databases
+- CRUD
+- Optimized for unstructured data (vectors)
+- Built-in AAN algorithms
+
+Vector libraries: 
+- create vector indices
+- sufficient for small, static data
+- stored in-memory
+
+Tips:
+1. Choose your embedding model wisely
+	1. It should represent **BOTH** queries and documents.
+2. Ensure the ==embedding space== is the same for both queries and documents. 
+	1. Use the same model for indexing and querying
+	2. If use different models, make sure they are trained on similar data 🤔
+3. Chunking strategy
+	1. Considerations
+		1. How relevant
+		2. Token limit
+		3. User behavior
+			1. How long are the queries?
+			2. Try to match with the context 

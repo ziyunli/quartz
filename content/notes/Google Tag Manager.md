@@ -41,7 +41,7 @@ dataLayer.push({
 ```
 
 GTM will watch for the events and fire the corresponding tags based on the defined triggers. 
-## Server-side Tagging
+## Server-side Tagging (SST)
 
 ![[assets/gtm-server-side.png]][^5]
 
@@ -52,6 +52,15 @@ GTM will watch for the events and fire the corresponding tags based on the defin
 
 > [!cite]
 > _on the server side, the "Clients" are there to translate the HTTP requests received into "events", the "Tags" react to these events to send "hits" to third-party marketing companies._
+
+![[assets/how-sst-works.png]]
+
+The server is a JavaScript application that runs in a server environment on Node.js. It's packaged and distributed as a Docker image. It's still recommended to use the client-side GTM to collect data, and then dispatch to the server-side tagging server environment. The server container does have endpoints that you can directly send requests to from our clients. 
+
+The goal of SST is more *control*, for:
+1. privacy
+2. performance
+3. data quality
 ## Native Mobile
 
 In native mobile client scenarios, GTM for Mobile uses event forwarding via Firebase Analytics to send events to the “tags”. ==Containers for Mobile cannot be shared with containers for Web==.

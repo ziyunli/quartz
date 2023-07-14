@@ -23,7 +23,7 @@ Three main concepts in GTM:
 
 In web client scenarios, a tag could be advertising tracking pixels or full analytics SDK’s, which are JavaScript code that are injected to web pages at load time. 
 
-![gtm-client-side](assets/gtm-client-side.png)[^5]
+![[assets/gtm-client-side.png]][^5]
 
 > [!cite]
 > Google Tag Manager will allow the triggering of various third-party tracers (on the diagram: Google Analytics, Google Ads, and an analytics tool), directly on your browser[^3].
@@ -43,17 +43,18 @@ dataLayer.push({
 GTM will watch for the events and fire the corresponding tags based on the defined triggers. 
 ## Server-side Tagging (SST)
 
-![gtm-server-side](assets/gtm-server-side.png)
+![[assets/gtm-server-side.png]][^5]
+
 > [!cite]
 > The javascript library (called "Tag Manager web container" in the diagram) is always run on your browser in order to collect your interactions and your personal data, but the execution of the various third-party tracers takes place on the server side[^3].
 
-![gtm-sst-diagram](assets/gtm-sst-diagram.png)[^4]
+![[assets/gtm-sst-diagram.png]][^4]
 
 > [!cite]
 > _on the server side, the "Clients" are there to translate the HTTP requests received into "events", the "Tags" react to these events to send "hits" to third-party marketing companies._
 
-![[assets/how-sst-works.png]]
 
+![how-sst-works](assets/how-sst-works.png)
 The server is a JavaScript application that runs in a server environment on Node.js. It's packaged and distributed as a Docker image. It's still recommended to use the client-side GTM to collect data, and then dispatch to the server-side tagging server environment. The server container does have endpoints that you can directly send requests to from our clients. 
 
 The goal of SST is more *control*, for:

@@ -11,6 +11,9 @@ A list of project-based learning resources. Similar lists:
 
 - [ ] https://app.codecrafters.io/
 
+## Distributed Systems
+
+- [ ] [Gossip Glomers by fly.io](https://fly.io/dist-sys/)
 ## Security
 
 - [ ] https://microcorruption.com/ 

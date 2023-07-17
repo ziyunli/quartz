@@ -41,6 +41,8 @@ aliases:
 
 ## Applications
 
+> If you do understand this, then you have to ask, well, where are LLMs useful? Where is it useful to have automated undergraduates, or automated interns, who can repeat a pattern, that you might have to check?[^5]
+
 ### LangChain
 
 > ...it makes it easy to call OpenAI’s GPT, say, a dozen times in a loop to answer a single question, and mix in queries to Wikipedia and other databases.
@@ -83,3 +85,4 @@ The danger of using MTurk as a "human in the loop" to fact-check LLM responses[^
 [^2]: https://www.atmosera.com/ai/understanding-chatgpt/ "Understanding ChatGPT"
 [^3]: https://interconnected.org/home/2023/03/16/singularity "The surprising ease and effectiveness of AI in a loop"
 [^4]: https://techcrunch.com/2023/06/14/mechanical-turk-workers-are-using-ai-to-automate-being-human/ "Mechanical Turk workers are using AI to automate being human"
+[^5]: https://www.ben-evans.com/benedictevans/2023/7/2/working-with-ai "AI and the automation of work"

@@ -45,26 +45,26 @@ aliases:
 
 ### 2023
 
-- 🕵️‍♂️ [羔羊的盛宴](https://book.douban.com/subject/34431939/ "羔羊的盛宴"): 关于近现代大~~碧池~~小姐读书会的黑暗短故事。读的让人提不起劲，花了我两年才断断续续用碎片时间读完。我读的人文版有几个结局翻译都有偏差，更加可惜了。
+- 🕵️‍♂️ [羔羊的盛宴](https://book.douban.com/subject/34431939/): 关于近现代大~~碧池~~小姐读书会的黑暗短故事。读的让人提不起劲，花了我两年才断断续续用碎片时间读完。我读的人文版有几个结局翻译都有偏差，更加可惜了。
 - 🕵️‍♂️ [消失！](https://www.goodreads.com/book/show/54121005): 机核上看到的[推荐](https://www.gcores.com/articles/118579)，终于找机会读完了。遗憾的读的是民翻，虽然大概能懂但是不时还是有一两句意义不明的话，对于悬疑类来说体验不佳。这一本的主题就是颠覆“人的消失”以及“无差别连环杀人”这两个本格概念。“人的消失”这个提示很多，“无差别杀人”这个有点出乎意料。虽然推荐已经打了预防针，这是本崩坏流，但是读到最后还是会有种被耍的感觉，为了崩坏而故意留的背景和动机一细想就觉得特别不合理，还是欣赏不来啊。
-- 🌿 [人类简史：从动物到上帝](https://www.goodreads.com/book/show/25233317 "人类简史：从动物到上帝")
-- 💁‍♀️ [Excellent Advice for Living: Wisdom I Wish I'd Known Earlier](https://www.goodreads.com/book/show/62313346-excellent-advice-for-living "Excellent Advice for Living: Wisdom I Wish I'd Known Earlier")
-- 🕵️‍♂️ [GOTH断掌事件](https://book.douban.com/subject/36035673/ "GOTH断掌事件")
-- 💁‍♀️ [狩猎愉快](https://book.douban.com/subject/35929083/ "狩猎愉快")
-- 🕵️‍♂️ [第三时效](https://www.goodreads.com/book/show/57902200 "第三时效")
-- 🕵️‍♂️ [遗忘，刑警](https://www.goodreads.com/book/show/54323867 "遗忘，刑警")
-- 🖋️ [纪伯伦全集：先知](https://www.goodreads.com/book/show/54383473 "纪伯伦全集：先知")
-- 💁‍♀️ [Build: An Unorthodox Guide to Making Things Worth Making](https://www.goodreads.com/book/show/59696349-build "Build: An Unorthodox Guide to Making Things Worth Making")
+- 🌿 [人类简史：从动物到上帝](https://www.goodreads.com/book/show/25233317)
+- 💁‍♀️ [Excellent Advice for Living: Wisdom I Wish I'd Known Earlier](https://www.goodreads.com/book/show/62313346-excellent-advice-for-living)
+- 🕵️‍♂️ [GOTH断掌事件](https://book.douban.com/subject/36035673/)
+- 💁‍♀️ [狩猎愉快](https://book.douban.com/subject/35929083/)
+- 🕵️‍♂️ [第三时效](https://www.goodreads.com/book/show/57902200)
+- 🕵️‍♂️ [遗忘，刑警](https://www.goodreads.com/book/show/54323867)
+- 🖋️ [纪伯伦全集：先知](https://www.goodreads.com/book/show/54383473)
+- 💁‍♀️ [Build: An Unorthodox Guide to Making Things Worth Making](https://www.goodreads.com/book/show/59696349-build)
 
 ### 2022
 
-- 📟 [A Philosophy of Software Design](https://www.goodreads.com/book/show/39996759-a-philosophy-of-software-design "A Philosophy of Software Design")
+- 📟 [A Philosophy of Software Design](https://www.goodreads.com/book/show/39996759-a-philosophy-of-software-design)
 - 🕵️‍♂️ [孤島的來訪者](https://www.goodreads.com/book/show/61749617 "孤島的來訪者")
 - 🕵️‍♂️ [时空旅行者的沙漏](https://www.goodreads.com/book/show/61863606 "时空旅行者的沙漏")
 - 🕵️‍♂️ [兇人邸の殺人](https://www.goodreads.com/book/show/58978307 "兇人邸の殺人")
-- 📟 [An Engineer's Guide to Silicon Valley Startups, 3rd Edition](https://www.goodreads.com/book/show/19433424-an-engineer-s-guide-to-silicon-valley-startups-3rd-edition "An Engineer's Guide to Silicon Valley Startups, 3rd Edition")
-- 🌿 [子どもの宇宙](https://www.goodreads.com/book/show/53666771 "子どもの宇宙 (岩波新書)")
-- 🌿 [The Little Book That Still Beats the Market](https://www.goodreads.com/book/show/8247775-the-little-book-that-still-beats-the-market "The Little Book That Still Beats the Market")
+- 📟 [An Engineer's Guide to Silicon Valley Startups, 3rd Edition](https://www.goodreads.com/book/show/19433424-an-engineer-s-guide-to-silicon-valley-startups-3rd-edition)
+- 🌿 [孩子的宇宙](https://www.goodreads.com/book/show/96759887)
+- 🌿 [The Little Book That Still Beats the Market](https://www.goodreads.com/book/show/8247775-the-little-book-that-still-beats-the-market)
 
 ### 2021
 

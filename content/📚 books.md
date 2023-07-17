@@ -14,6 +14,7 @@ aliases:
 > [!info] I completely stopped reading fiction since I entered colleges, expect mystery fiction. But maybe I will pick others back up one day...
 > - 🕵️‍♂️ mystery
 > - 🧙‍♂️ fantasy
+> - 👻 terror
 > - 🖋️ poetry
 
 - 🕵️‍♂️ [The Collected Raymond Chandler](https://www.goodreads.com/book/show/57213568-the-collected-raymond-chandler)
@@ -70,7 +71,7 @@ aliases:
 
 - 🕵️‍♂️ [星降山庄杀人事件](https://www.goodreads.com/book/show/58712324)： 画外音叙诡，情节确实水，这个页数换个作家来全杀了
 - 🕵️‍♂️ [煞风景的早间首班车](https://www.goodreads.com/book/show/59085058): 节奏明快的日常推理
-- 🕵️‍♂️ [書與鑰匙的季節](https://www.goodreads.com/book/show/52389952)
+- 🕵️‍♂️ [書與鑰匙的季節](https://www.goodreads.com/book/show/52389952): 日常校园推理还是太平淡了
 - 🕵️‍♂️ [心灵侦探城塚翡翠](https://www.goodreads.com/book/show/58163346)
 - 🕵️‍♂️ [绝对不在场证明](https://www.goodreads.com/book/show/53312481)： 还是大山老师很经典的风格，故事毫无情节可言……基本上就是时间不在场证明的习题册了
 - 🕵️‍♂️ [字母表谜案](https://www.goodreads.com/book/show/58041869)： 前三短篇还是大山老师经典的没营养动力加可行性手法然后平淡如水……然后最后的中篇太强了，剧情是创业公司程序员老爹刚起飞就坠机代入感极强
@@ -87,7 +88,7 @@ aliases:
 
 ### 2020
 
-- 🕵️‍♂️ [毕业](https://www.goodreads.com/book/show/53452229)
+- 🕵️‍♂️ [毕业](https://www.goodreads.com/book/show/53452229):茶道诡计，看不懂
 - 🕵️‍♂️ [魔球](https://www.goodreads.com/book/show/16088019)
 - 🕵️‍♂️ [假面饭店](https://www.goodreads.com/book/show/35818651)
 - 🕵️‍♂️ [禁断的魔术](https://www.goodreads.com/book/show/52986981)
@@ -95,7 +96,8 @@ aliases:
 - 🕵️‍♂️ [圣女的救济](https://www.goodreads.com/book/show/50812860)
 - 💁‍♀️ [夜](notes/夜.md)
 - 💁‍♀️ [当我谈跑步时，我谈些什么](https://www.goodreads.com/book/show/20758207): Pain is inevitable. Suffering is optional.
-- 🕵️‍♂️ [解体诸因](https://www.goodreads.com/book/show/50887705)
+- 🕵️‍♂️ [解体诸因](https://www.goodreads.com/book/show/50887705):为肢解这种猎奇手法疯狂寻找符合逻辑的解释，读起来还挺好笑的，尤其是最后几章
+- 🕵️‍♂️ [推理时钟](https://book.douban.com/subject/33414749/)：好复杂的机械圈套
 - 🌳 [The 22 Immutable Laws of Marketing](https://www.goodreads.com/book/show/34215315-the-22-immutable-laws-of-marketing)
 - 🕵️‍♂️ [愚者的片尾](https://www.goodreads.com/book/show/45992554)
 - 🕵️‍♂️ [冰菓](https://www.goodreads.com/book/show/18691210)
@@ -103,9 +105,10 @@ aliases:
 - 📟 [Introducing Elixir](https://www.goodreads.com/book/show/31332945-introducing-elixir)
 - 🕵️‍♂️ [盛夏方程式](https://www.goodreads.com/book/show/52688393)
 - 📟 [Programming TypeScript](https://www.goodreads.com/book/show/45362865-programming-typescript)
-- 🕵️‍♂️ [时生](https://www.goodreads.com/book/show/34503235): 意外地喜欢这部，父子间的关系往往都是vertical relationship，而这个故事填补了horizontal relationship这个如果。而本身父子间非常含蓄的情感表达，也借助穿越时光这样的设定说了出口。一本美好的梦。
+- 🕵️‍♂️ [时生](https://www.goodreads.com/book/show/34503235): 意外地喜欢这部，父子间的关系往往都是上下关系，而这个故事试着描写了一个平等关系下的假想。而本身父子间非常含蓄的情感表达，也借助穿越时光这样的设定说了出口。一本美好的梦。
 - 🌳 [The Courage to Be Disliked](https://www.goodreads.com/book/show/41540123-the-courage-to-be-disliked)
 - ☕️ [你不懂咖啡](https://www.goodreads.com/book/show/29855848)
+- 🕵️‍♂️ [恋与禁忌的述语论理](https://book.douban.com/subject/30359066/)：数理逻辑导论科普型轻小说，果然是能拿梅菲斯特的作品。拐弯抹角下来背后的诡计核心其实很简单，最后连动机也省掉了，也是过于投机取巧了
 - 🌿 [Talking to Strangers](https://www.goodreads.com/book/show/53098669-talking-to-strangers)
 - 🌳 [Never Split the Difference](https://www.goodreads.com/book/show/27246485-never-split-the-difference)
 - 🕵️‍♂️ [夜行](https://www.goodreads.com/book/show/37837331)
@@ -115,15 +118,26 @@ aliases:
 - 📟 [Docker for Rails Developers](https://www.goodreads.com/book/show/44902385-docker-for-rails-developers)
 
 ### 2019
-
+- 👻 [夏天、烟火和我的尸体](https://book.douban.com/subject/34778574/)：气氛渲染还是到位的，浓郁的日本乡村风情，但是意外性不多。剧情与其说是黑暗，不如说是中二。附带的短篇《优子》的反转反而更有意思。
 - 🕵️‍♂️ [折断的龙骨](https://www.goodreads.com/book/show/42751069)： 中世纪奇幻推理+经典孤岛杀人模式，通过魔术神秘实现的手法还是挺有意思的。中篇的剑与魔法大战从推理小说来看感觉有点跑偏，但是读完后真香
 - 🕵️‍♂️ [沉默的遊行](https://www.goodreads.com/book/show/49759629): 故事还是大于推理，但有人情味
+- 🕵️‍♂️ [没有凶手的暗夜](https://book.douban.com/subject/27181606/)：只有同名短篇是有点意思的，别的几个动机和手法都太牵强了
+- 🕵️‍♂️ [一首小夜曲](https://book.douban.com/subject/26687879/)
+- 🕵️‍♂️ [喜鹊谋杀案](https://book.douban.com/subject/33445034/)：好久不见的家访型侦探，AB线这个设定挺有意思的。不过里面好多英文字谜，翻译后都难以传达
+- 🕵️‍♂️ [无人生还](https://book.douban.com/subject/24859822/)
+- 🕵️‍♂️ [零的焦点](https://book.douban.com/subject/26795258/)：现在看来，推理和动机都有点粗糙，只能权当作近代社会小说读了
+- 🕵️‍♂️ [今日诸事大吉](https://book.douban.com/subject/26136927/)：情感悬疑
+- 🕵️‍♂️ [密室收藏家](https://book.douban.com/subject/26348596/)
+- 🕵️‍♂️ [尸人庄谜案](https://book.douban.com/subject/30396712/)：生化危机山庄模式，不过还是有点太拘泥于设定了，和谜题结合得不够完美
+- 🕵️‍♂️ [黎明之街](https://book.douban.com/subject/27178063/)：都市不伦言情故事
 - 🌿 [Atomic Habits](https://www.goodreads.com/book/show/42603095-atomic-habits)
 - 📟 [tmux 2: Productive Mouse-Free Development](https://www.goodreads.com/book/show/32302568-tmux-2)
+- 🕵️‍♂️ [只差一个谎言](https://book.douban.com/subject/21347638/)：比较有意思的是《冰凉的灼热》，接下来《失控的计算》也还行。东野老师写人妻不伦故事真是一把好手
+- 🕵️‍♂️ [推理竞技场](https://book.douban.com/subject/30428949/)：推理宅的狂欢，一本书满满的都是对推理小说手法的解构和嘲弄，读起来真是又好气又好笑
 - 🌿 [Every Patient Tells A Story](https://www.goodreads.com/book/show/9865830-every-patient-tells-a-story)
 - 🌿 [Drive: The Surprising Truth About What Motivates Us](https://www.goodreads.com/book/show/8046663-drive)
 - 🌿 [The Little Book of Common Sense Investing](https://www.goodreads.com/book/show/34003072-the-little-book-of-common-sense-investing)
-- 🌿 [Freakonomics](https://www.goodreads.com/book/show/18149066-freakonomics)
+- 🌿 [Freakonomics](https://www.goodreads.com/book/show/18149066-freakonomics)： "People respond to incentives, although not necessarily in ways that are predictable or manifest."
 - 🌳 [Zero to One](https://www.goodreads.com/book/show/23519984-zero-to-one)
 - 🌿 [Tribes: We Need You to Lead Us](https://www.goodreads.com/book/show/3828382-tribes)
 - 🌿 [David and Goliath](https://www.goodreads.com/book/show/17333713-david-and-goliath)
@@ -137,6 +151,34 @@ aliases:
 ### Pre-2019
 - 🌳 [如何阅读一本书](notes/如何阅读一本书.md)
 - 🌿 [Deep Work](notes/Deep%20Work.md)
+- 🕵️‍♂️ [物语终焉](https://book.douban.com/subject/26692195/)：同样一个未完结的故事，每个人心中都有一个不同的结局。比起“努力就能成功”这种论调，这本书的观点其实现实多了。每个人对于“梦想”都有自己先入为主的观点，也有面对现实需要的权衡。选择本就没有对错之分。只要做出忠于自己内心的决定，无论如何他日也能释然无悔吧。
+- 🕵️‍♂️ [告白](https://book.douban.com/subject/26681984/ "告白")
+- 🕵️‍♂️ [有翼之暗](https://book.douban.com/subject/25892396/)
+- 🕵️‍♂️ [异邦骑士](https://book.douban.com/subject/3615048/)
+- 🕵️‍♂️ [占星术杀人魔法](https://book.douban.com/subject/3187737/)
+- 🕵️‍♂️ [死神的精确度](https://book.douban.com/subject/3785741/)
+- 🕵️‍♂️ [重力小丑](https://book.douban.com/subject/4067626/)
+- 🕵️‍♂️ [金色梦乡](https://book.douban.com/subject/26864984/)：良心前度。第三章时已经基本把最后结局说出来了, 加送一堆伏线，剩下看点就在小市民挑战一大波警察的求生之路了(整个事件总是让我想起428的亚智篇), 最后把所有伏线走完, 也没有英雄没有革命没有真相, 不过对于小市民来说, 重要的其实只有"习惯与信赖"吧
+- 💁‍♀️ [蛤蟆的油](https://book.douban.com/subject/1914636/)
+- 🕵️‍♂️ [奇想·天动](https://book.douban.com/subject/4898712/)
+- 🕵️‍♂️ [玻璃之鎚](https://book.douban.com/subject/1389216/)
+- 🕵️‍♂️ [青之炎](https://book.douban.com/subject/1387819/)： “年轻的时候我们都觉得有些事非做不可以致钻进牛角尖，但时过境迁后回想其实也没有什么。”
+- 🕵️‍♂️ [名侦探的诅咒](https://book.douban.com/subject/4903440/) 
+- 🕵️‍♂️ [赎罪](https://book.douban.com/subject/5919999/)
+- 🕵️‍♂️ [Another](https://book.douban.com/subject/7565330/)
+- 🕵️‍♂️ [單戀](https://book.douban.com/subject/1928477/)
+- 🕵️‍♂️ [布魯特斯的心臟](https://book.douban.com/subject/4243729/)
+- 🕵️‍♂️ [濒死之眼](https://book.douban.com/subject/4286244/)
+- 🕵️‍♂️ [嫌疑犯X的獻身](https://book.douban.com/subject/1874961/)
+- 😨 [一九八四](https://book.douban.com/subject/1858576/ "一九八四")
+- 🕵️‍♂️ [幻夜](https://book.douban.com/subject/4009552/)
+- 🕵️‍♂️ [白夜行](https://book.douban.com/subject/3259440/)
+- 🕵️‍♂️ [流星之绊](https://book.douban.com/subject/4580972/)
+- 🕵️‍♂️ [湖边凶杀案](https://book.douban.com/subject/2242467/)
+- 🕵️‍♂️ [赤い指](https://book.douban.com/subject/1948813/)
+- 🕵️‍♂️ [放学后](https://book.douban.com/subject/4074636/)
+- 🕵️‍♂️ [恶意](https://book.douban.com/subject/3646172/)
+- 🕵️‍♂️ [畢業前殺人遊戲](https://book.douban.com/subject/1927377/)
 
 
 [^1]: https://nesslabs.com/antilibrary "Building an antilibrary: the power of unread books"

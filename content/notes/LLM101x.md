@@ -137,3 +137,10 @@ Tips:
 		3. User behavior
 			1. How long are the queries?
 			2. Try to match with the context 
+   
+## Multi-stage Reasoning
+
+
+## Miscellaneous
+
+Databricks' notebooks turn out to be Python files with some special comments (e.g. `COMMAND`, `MAGIC`); therefore the output is not included.  

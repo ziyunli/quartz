@@ -51,7 +51,7 @@ aliases:
 - 💁‍♀️ [Excellent Advice for Living: Wisdom I Wish I'd Known Earlier](https://www.goodreads.com/book/show/62313346-excellent-advice-for-living)
 - 🕵️‍♂️ [GOTH断掌事件](https://book.douban.com/subject/36035673/)
 - 💁‍♀️ [狩猎愉快](https://book.douban.com/subject/35929083/)
-- 🕵️‍♂️ [第三时效](https://www.goodreads.com/book/show/57902200)
+- 🕵️‍♂️ [第三时效](https://www.goodreads.com/book/show/57902200): 写的真好，尤其是人物的塑造和心理刻画，读起来像看电影似的，栩栩如生。
 - 🕵️‍♂️ [遗忘，刑警](https://www.goodreads.com/book/show/54323867)
 - 🖋️ [纪伯伦全集：先知](https://www.goodreads.com/book/show/54383473)
 - 💁‍♀️ [Build: An Unorthodox Guide to Making Things Worth Making](https://www.goodreads.com/book/show/59696349-build)
@@ -59,80 +59,80 @@ aliases:
 ### 2022
 
 - 📟 [A Philosophy of Software Design](https://www.goodreads.com/book/show/39996759-a-philosophy-of-software-design)
-- 🕵️‍♂️ [孤島的來訪者](https://www.goodreads.com/book/show/61749617 "孤島的來訪者")
-- 🕵️‍♂️ [时空旅行者的沙漏](https://www.goodreads.com/book/show/61863606 "时空旅行者的沙漏")
-- 🕵️‍♂️ [兇人邸の殺人](https://www.goodreads.com/book/show/58978307 "兇人邸の殺人")
-- 📟 [An Engineer's Guide to Silicon Valley Startups, 3rd Edition](https://www.goodreads.com/book/show/19433424-an-engineer-s-guide-to-silicon-valley-startups-3rd-edition)
+- 🕵️‍♂️ [孤島的來訪者](https://www.goodreads.com/book/show/61749617)
+- 🕵️‍♂️ [时空旅行者的沙漏](https://www.goodreads.com/book/show/61863606): 方丈老师还是很实诚的，没有用任何的诡叙，把所有的解密条件和线索都很规范的给出来了，是个堂堂正正的挑战。里面的手法有点点老套了，科幻要素算是唯一的新酒吧。阅读体验还是好的
+- 🕵️‍♂️ [兇人邸の殺人](https://www.goodreads.com/book/show/58978307)
+- 💁‍♀️ [An Engineer's Guide to Silicon Valley Startups, 3rd Edition](https://www.goodreads.com/book/show/19433424-an-engineer-s-guide-to-silicon-valley-startups-3rd-edition): Still plenty of gems for a 10-year-old book about a fast-moving industry. Be carefully using the raw numbers, but the principles seem still valid. As someone who never spends time in SV, I really enjoy the anecdotes.
 - 🌿 [孩子的宇宙](https://www.goodreads.com/book/show/96759887)
 - 🌿 [The Little Book That Still Beats the Market](https://www.goodreads.com/book/show/8247775-the-little-book-that-still-beats-the-market)
 
 ### 2021
 
-- 🕵️‍♂️ [星降山庄杀人事件](https://www.goodreads.com/book/show/58712324 "星降山庄杀人事件")
-- 🕵️‍♂️ [煞风景的早间首班车](https://www.goodreads.com/book/show/59085058 "煞风景的早间首班车")
-- 🕵️‍♂️ [書與鑰匙的季節](https://www.goodreads.com/book/show/52389952 "書與鑰匙的季節")
-- 🕵️‍♂️ [心灵侦探城塚翡翠](https://www.goodreads.com/book/show/58163346 "心灵侦探城塚翡翠")
-- 🕵️‍♂️ [绝对不在场证明](https://www.goodreads.com/book/show/53312481 "绝对不在场证明")
-- 🕵️‍♂️ [字母表谜案](https://www.goodreads.com/book/show/58041869 "字母表谜案")
-- 🕵️‍♂️ [そして誰も死ななかった](https://www.goodreads.com/book/show/48730700 "そして誰も死ななかった")
-- 📟 [The Little Go Book](https://www.goodreads.com/book/show/23417262-the-little-go-book "The Little Go Book")
-- 🕵️‍♂️ [诡计博物馆](https://www.goodreads.com/book/show/54225052 "诡计博物馆")
+- 🕵️‍♂️ [星降山庄杀人事件](https://www.goodreads.com/book/show/58712324)： 画外音叙诡，情节确实水，这个页数换个作家来全杀了
+- 🕵️‍♂️ [煞风景的早间首班车](https://www.goodreads.com/book/show/59085058): 节奏明快的日常推理
+- 🕵️‍♂️ [書與鑰匙的季節](https://www.goodreads.com/book/show/52389952)
+- 🕵️‍♂️ [心灵侦探城塚翡翠](https://www.goodreads.com/book/show/58163346)
+- 🕵️‍♂️ [绝对不在场证明](https://www.goodreads.com/book/show/53312481)： 还是大山老师很经典的风格，故事毫无情节可言……基本上就是时间不在场证明的习题册了
+- 🕵️‍♂️ [字母表谜案](https://www.goodreads.com/book/show/58041869)： 前三短篇还是大山老师经典的没营养动力加可行性手法然后平淡如水……然后最后的中篇太强了，剧情是创业公司程序员老爹刚起飞就坠机代入感极强
+- 🕵️‍♂️ [そして誰も死ななかった](https://www.goodreads.com/book/show/48730700)
+- 📟 [The Little Go Book](https://www.goodreads.com/book/show/23417262-the-little-go-book)
+- 🕵️‍♂️ [诡计博物馆](https://www.goodreads.com/book/show/54225052)
 - 🌿 [The Millionaire Fastlane](notes/The%20Millionaire%20Fastlane.md)
-- 🌿 [Rich Dad Poor Dad](https://www.goodreads.com/book/show/27917357-rich-dad-poor-dad "Rich Dad Poor Dad: What The Rich Teach Their Kids About Money - That The Poor And Middle Class Do Not!")
-- 🕵️‍♂️ [消失的13级台阶](https://www.goodreads.com/book/show/53430152-13 "消失的13级台阶")
-- 🕵️‍♂️ [魔眼之匣謎案](https://www.goodreads.com/book/show/57918200 "魔眼之匣謎案: 日本懸疑推理小說 (Traditional Chinese Edition)")
-- 🕵️‍♂️ [犯人IA](https://www.goodreads.com/book/show/56799238-ia "犯人IA")
-- 🕵️‍♂️ [侦探AI](https://www.goodreads.com/book/show/55697225-ai "侦探AI")
-- 🌿 [The Psychology of Money](https://www.goodreads.com/book/show/41881472-the-psychology-of-money "The Psychology of Money")
+- 🌿 [Rich Dad Poor Dad](https://www.goodreads.com/book/show/27917357-rich-dad-poor-dad)
+- 🕵️‍♂️ [消失的13级台阶](https://www.goodreads.com/book/show/53430152-13)
+- 🕵️‍♂️ [魔眼之匣謎案](https://www.goodreads.com/book/show/57918200)： 暴风雪山庄模式的神秘学杀人事件，设定没有尸人庄那么跳了，逻辑和动机基本自洽，絮事节奏很好很顺畅的读完，里面整了两个推理宅捧哏。不过最重要的还是把比留子的魅力完全写出来了，看来是打算写成一个系列了
+- 🕵️‍♂️ [犯人IA](https://www.goodreads.com/book/show/56799238-ia)
+- 🕵️‍♂️ [侦探AI](https://www.goodreads.com/book/show/55697225-ai): 基本只能当轻小说卖个设定，当作推理小说来看实在是有点儿戏……只能说吧，这很早坂
+- 🌿 [The Psychology of Money](https://www.goodreads.com/book/show/41881472-the-psychology-of-money)： Good money decisions aren't always rational.
 
 ### 2020
 
-- 🕵️‍♂️ [毕业](https://www.goodreads.com/book/show/53452229 "毕业")
-- 🕵️‍♂️ [魔球](https://www.goodreads.com/book/show/16088019 "魔球")
-- 🕵️‍♂️ [假面饭店](https://www.goodreads.com/book/show/35818651 "假面饭店")
-- 🕵️‍♂️ [禁断的魔术](https://www.goodreads.com/book/show/52986981 "禁断的魔术")
-- 🕵️‍♂️ [白金数据](https://www.goodreads.com/book/show/39783645 "白金数据")
-- 🕵️‍♂️ [圣女的救济](https://www.goodreads.com/book/show/50812860 "圣女的救济")
+- 🕵️‍♂️ [毕业](https://www.goodreads.com/book/show/53452229)
+- 🕵️‍♂️ [魔球](https://www.goodreads.com/book/show/16088019)
+- 🕵️‍♂️ [假面饭店](https://www.goodreads.com/book/show/35818651)
+- 🕵️‍♂️ [禁断的魔术](https://www.goodreads.com/book/show/52986981)
+- 🕵️‍♂️ [白金数据](https://www.goodreads.com/book/show/39783645)
+- 🕵️‍♂️ [圣女的救济](https://www.goodreads.com/book/show/50812860)
 - 💁‍♀️ [夜](notes/夜.md)
-- 💁‍♀️ [当我谈跑步时，我谈些什么](https://www.goodreads.com/book/show/20758207 "当我谈跑步时，我谈些什么")
-- 🕵️‍♂️ [解体诸因](https://www.goodreads.com/book/show/50887705 "解体诸因 (匠千晓系列)")
-- 🌳 [The 22 Immutable Laws of Marketing](https://www.goodreads.com/book/show/34215315-the-22-immutable-laws-of-marketing "The 22 Immutable Laws of Marketing: Violate Them at Your Own Risk")
-- 🕵️‍♂️ [愚者的片尾](https://www.goodreads.com/book/show/45992554 "愚者的片尾")
-- 🕵️‍♂️ [冰菓](https://www.goodreads.com/book/show/18691210 "冰菓")
-- 🧙‍♂️ [猎魔人 卷一：白狼崛起](https://www.goodreads.com/book/show/30785909 "猎魔人 卷一：白狼崛起 (The Witcher, #1)")
-- 📟 [Introducing Elixir](https://www.goodreads.com/book/show/31332945-introducing-elixir "Introducing Elixir: Getting Started in Functional Programming")
-- 🕵️‍♂️ [盛夏方程式](https://www.goodreads.com/book/show/52688393 "盛夏方程式")
-- 📟 [Programming TypeScript](https://www.goodreads.com/book/show/45362865-programming-typescript "Programming TypeScript: Making Your JavaScript Applications Scale")
-- 🕵️‍♂️ [时生](https://www.goodreads.com/book/show/34503235 "时生")
-- 🌳 [The Courage to Be Disliked](https://www.goodreads.com/book/show/41540123-the-courage-to-be-disliked "The Courage to Be Disliked: How to Free Yourself, Change Your Life, and Achieve Real Happiness")
-- ❓ [你不懂咖啡](https://www.goodreads.com/book/show/29855848 "你不懂咖啡")
-- 🌿 [Talking to Strangers](https://www.goodreads.com/book/show/53098669-talking-to-strangers "Talking to Strangers: What We Should Know About the People We Don’t Know")
-- 🌳 [Never Split the Difference](https://www.goodreads.com/book/show/27246485-never-split-the-difference "Never Split the Difference: Negotiating As If Your Life Depended On It")
-- 🕵️‍♂️ [夜行](https://www.goodreads.com/book/show/37837331 "夜行")
-- 🕵️‍♂️ [我杀了他](https://www.goodreads.com/book/show/34426731 "我杀了他 (加贺探案集, #5)")
-- 🌿 [I Will Teach You to Be Rich](https://www.goodreads.com/book/show/45699866-i-will-teach-you-to-be-rich "I Will Teach You to Be Rich: No Guilt, No Excuses, No B.S.")
-- 🕵️‍♂️ [库特利亚芙卡的排序](https://www.goodreads.com/book/show/23400379 "库特利亚芙卡的排序")
-- 📟 [Docker for Rails Developers](https://www.goodreads.com/book/show/44902385-docker-for-rails-developers "Docker for Rails Developers: Build, Ship, and Run Your Applications Everywhere")
+- 💁‍♀️ [当我谈跑步时，我谈些什么](https://www.goodreads.com/book/show/20758207): Pain is inevitable. Suffering is optional.
+- 🕵️‍♂️ [解体诸因](https://www.goodreads.com/book/show/50887705)
+- 🌳 [The 22 Immutable Laws of Marketing](https://www.goodreads.com/book/show/34215315-the-22-immutable-laws-of-marketing)
+- 🕵️‍♂️ [愚者的片尾](https://www.goodreads.com/book/show/45992554)
+- 🕵️‍♂️ [冰菓](https://www.goodreads.com/book/show/18691210)
+- 🧙‍♂️ [猎魔人 卷一：白狼崛起](https://www.goodreads.com/book/show/30785909)
+- 📟 [Introducing Elixir](https://www.goodreads.com/book/show/31332945-introducing-elixir)
+- 🕵️‍♂️ [盛夏方程式](https://www.goodreads.com/book/show/52688393)
+- 📟 [Programming TypeScript](https://www.goodreads.com/book/show/45362865-programming-typescript)
+- 🕵️‍♂️ [时生](https://www.goodreads.com/book/show/34503235): 意外地喜欢这部，父子间的关系往往都是vertical relationship，而这个故事填补了horizontal relationship这个如果。而本身父子间非常含蓄的情感表达，也借助穿越时光这样的设定说了出口。一本美好的梦。
+- 🌳 [The Courage to Be Disliked](https://www.goodreads.com/book/show/41540123-the-courage-to-be-disliked)
+- ☕️ [你不懂咖啡](https://www.goodreads.com/book/show/29855848)
+- 🌿 [Talking to Strangers](https://www.goodreads.com/book/show/53098669-talking-to-strangers)
+- 🌳 [Never Split the Difference](https://www.goodreads.com/book/show/27246485-never-split-the-difference)
+- 🕵️‍♂️ [夜行](https://www.goodreads.com/book/show/37837331)
+- 🕵️‍♂️ [我杀了他](https://www.goodreads.com/book/show/34426731)
+- 🌿 [I Will Teach You to Be Rich](https://www.goodreads.com/book/show/45699866-i-will-teach-you-to-be-rich)
+- 🕵️‍♂️ [库特利亚芙卡的排序](https://www.goodreads.com/book/show/23400379)
+- 📟 [Docker for Rails Developers](https://www.goodreads.com/book/show/44902385-docker-for-rails-developers)
 
 ### 2019
 
-- 🕵️‍♂️ [折断的龙骨](https://www.goodreads.com/book/show/42751069 "折断的龙骨")
-- 🕵️‍♂️ [沉默的遊行](https://www.goodreads.com/book/show/49759629 "沉默的遊行 (伽利略, #9)")
-- 🌿 [Atomic Habits](https://www.goodreads.com/book/show/42603095-atomic-habits "Atomic Habits: An Easy and Proven Way to Build Good Habits and Break Bad Ones")
-- 📟 [tmux 2: Productive Mouse-Free Development](https://www.goodreads.com/book/show/32302568-tmux-2 "tmux 2: Productive Mouse-Free Development")
-- 🌿 [Every Patient Tells A Story](https://www.goodreads.com/book/show/9865830-every-patient-tells-a-story "Every Patient Tells A Story: Medical Mysteries and the Art of Diagnosis")
-- 🌿 [Drive: The Surprising Truth About What Motivates Us](https://www.goodreads.com/book/show/8046663-drive "Drive: The Surprising Truth About What Motivates Us")
-- 🌿 [The Little Book of Common Sense Investing](https://www.goodreads.com/book/show/34003072-the-little-book-of-common-sense-investing "The Little Book of Common Sense Investing: The Only Way to Guarantee Your Fair Share of Stock Market Returns (Little Books, Big Profits)")
-- 🌿 [Freakonomics](https://www.goodreads.com/book/show/18149066-freakonomics "Freakonomics (Turtleback School & Library Binding Edition)")
-- 🌳 [Zero to One](https://www.goodreads.com/book/show/23519984-zero-to-one "Zero to One: Notes on Startups, or How to Build the Future")
-- 🌿 [Tribes: We Need You to Lead Us](https://www.goodreads.com/book/show/3828382-tribes "Tribes: We Need You to Lead Us")
-- 🌿 [David and Goliath](https://www.goodreads.com/book/show/17333713-david-and-goliath "David and Goliath: The Triumph of the Underdog")
-- 🌿 [The Tipping Point](https://www.goodreads.com/book/show/2118819.The_Tipping_Point "The Tipping Point: How Little Things Can Make a Big Difference")
-- 📟 [Effective Ruby](https://www.goodreads.com/book/show/22251128-effective-ruby "Effective Ruby: 48 Specific Ways to Write Better Ruby (Effective Software Development)")
-- 💁‍♀️ [Bad Blood](https://www.goodreads.com/book/show/37976541-bad-blood "Bad Blood: Secrets and Lies in a Silicon Valley Startup")
-- 🌿 [The Curmudgeon's Guide to Getting Ahead](https://www.goodreads.com/book/show/18811353-the-curmudgeon-s-guide-to-getting-ahead "The Curmudgeon's Guide to Getting Ahead: Dos and Don'ts of Right Behavior, Tough Thinking, Clear Writing, and Living a Good Life")
-- 🕵️‍♂️ [火车](https://www.goodreads.com/book/show/12375364 "火车")
-- 🌿 [It Doesn't Have to Be Crazy at Work](https://www.goodreads.com/book/show/38900866-it-doesn-t-have-to-be-crazy-at-work "It Doesn't Have to Be Crazy at Work")
+- 🕵️‍♂️ [折断的龙骨](https://www.goodreads.com/book/show/42751069)： 中世纪奇幻推理+经典孤岛杀人模式，通过魔术神秘实现的手法还是挺有意思的。中篇的剑与魔法大战从推理小说来看感觉有点跑偏，但是读完后真香
+- 🕵️‍♂️ [沉默的遊行](https://www.goodreads.com/book/show/49759629): 故事还是大于推理，但有人情味
+- 🌿 [Atomic Habits](https://www.goodreads.com/book/show/42603095-atomic-habits)
+- 📟 [tmux 2: Productive Mouse-Free Development](https://www.goodreads.com/book/show/32302568-tmux-2)
+- 🌿 [Every Patient Tells A Story](https://www.goodreads.com/book/show/9865830-every-patient-tells-a-story)
+- 🌿 [Drive: The Surprising Truth About What Motivates Us](https://www.goodreads.com/book/show/8046663-drive)
+- 🌿 [The Little Book of Common Sense Investing](https://www.goodreads.com/book/show/34003072-the-little-book-of-common-sense-investing)
+- 🌿 [Freakonomics](https://www.goodreads.com/book/show/18149066-freakonomics)
+- 🌳 [Zero to One](https://www.goodreads.com/book/show/23519984-zero-to-one)
+- 🌿 [Tribes: We Need You to Lead Us](https://www.goodreads.com/book/show/3828382-tribes)
+- 🌿 [David and Goliath](https://www.goodreads.com/book/show/17333713-david-and-goliath)
+- 🌿 [The Tipping Point](https://www.goodreads.com/book/show/2118819.The_Tipping_Point)
+- 📟 [Effective Ruby](https://www.goodreads.com/book/show/22251128-effective-ruby)
+- 💁‍♀️ [Bad Blood](https://www.goodreads.com/book/show/37976541-bad-blood): 非常非常精彩。前19章通过不同时期雇员的角度从内部还原了病态的公司文化，很多章节都看得心情沉重。面对手握10B独角兽大权还有一群商政法老男人当提线木偶的Holmes，雇员们只能忍声吞气节节败退，Ian Gibbons那章读得心情尤为沉重。直到19章后才是作者展开调查后对Theranos的反击。每一章都像是人性的拷问。面对无法匹敌的财富和力量面前，每个人都深感无力，却又不得不作出自己的艰难选择。即使像是Tyler贵为Shultz家公子，也难以招架Holmes的压力。而像Erika那样，坚持做正确的事情直到最后，这需要多少勇气？至于Theranos这个公司，怕是硅谷fake-it-until-you-make-it文化近十年来的最反面教材了。作为一名从业人员，这本书也是一个警醒。
+- 🌿 [The Curmudgeon's Guide to Getting Ahead](https://www.goodreads.com/book/show/18811353-the-curmudgeon-s-guide-to-getting-ahead)
+- 🕵️‍♂️ [火车](https://www.goodreads.com/book/show/12375364)
+- 🌿 [It Doesn't Have to Be Crazy at Work](https://www.goodreads.com/book/show/38900866-it-doesn-t-have-to-be-crazy-at-work)
 
 ### Pre-2019
 - 🌳 [如何阅读一本书](notes/如何阅读一本书.md)

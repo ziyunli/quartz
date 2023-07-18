@@ -30,14 +30,7 @@ aliases:
 
 > The entire body of knowledge present on the Internet in September 2021 (and then some) was baked into those 175 billion parameters during training. It’s akin to you answering a question off the top of your head rather than reaching for your phone and Googling for an answer. When Microsoft incorporated GPT-4 into Bing, they added a separate layer providing Internet access.
 
-## [llama.cpp](https://github.com/ggerganov/llama.cpp)
-
-> The [LLaMA model](https://arxiv.org/pdf/2302.13971.pdf) has a very similar architecture to GPT-J. It uses the same positional encoding ([RoPE](https://arxiv.org/pdf/2104.09864.pdf)), similar activation function (SiLU instead of GELU). The main differences are:
-> - no bias tensors
-> - some new normalization layers
-> - extra tensor in the feed-forward part
-> - a slightly different order of the operations
-> - seems context size is not fixed? (if I understand correctly the code)[^1]
+## [llama.cpp](notes/llama.cpp.md)
 
 ## Applications
 
@@ -47,6 +40,8 @@ aliases:
 
 > ...it makes it easy to call OpenAI’s GPT, say, a dozen times in a loop to answer a single question, and mix in queries to Wikipedia and other databases.
 > The clever bit is that, using LangChain, you _intercept_ GPT when it starts a line with _“Act:”_ and then you go and do that action for it, feeding the results back in as an _“Observation”_ line so that it can “think” what to do next.[^3]
+
+## [Prompt Engineering](notes/Prompt%20Engineering.md)
 
 ## [Prompt Injection](notes/Prompt%20Injection.md)
 
@@ -81,7 +76,7 @@ The danger of using MTurk as a "human in the loop" to fact-check LLM responses[^
 > It is tempting to rely on crowdsourcing to validate LLM outputs or to create human gold-standard data for comparison. But what if crowd workers themselves are using LLMs, e.g., in order to increase their productivity, and thus their income, on crowdsourcing platforms?
 
 
-[^1]: https://github.com/ggerganov/llama.cpp/issues/33#issuecomment-1465108022
+
 [^2]: https://www.atmosera.com/ai/understanding-chatgpt/ "Understanding ChatGPT"
 [^3]: https://interconnected.org/home/2023/03/16/singularity "The surprising ease and effectiveness of AI in a loop"
 [^4]: https://techcrunch.com/2023/06/14/mechanical-turk-workers-are-using-ai-to-automate-being-human/ "Mechanical Turk workers are using AI to automate being human"

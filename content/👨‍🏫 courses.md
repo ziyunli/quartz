@@ -32,7 +32,7 @@ aliases:
 
 ## Functional Programming
 - [ ] [Haskell MOOC](https://haskell.mooc.fi/)
-- [ ] [Functional programming with Clojure](https://moocfi.github.io/courses/2014/clojure/)
+- [ ] [Functional programming in Clojure](notes/Functional%20programming%20in%20Clojure.md)
 - [ ] [OCaml Programming: Correct + Efficient + Beautiful](https://www.youtube.com/playlist?list=PLre5AT9JnKShBOPeuiD9b-I4XROIJhkIU)
 	- [ ] https://cs3110.github.io/textbook/cover.html
 

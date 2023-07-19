@@ -2,11 +2,53 @@
 title: "How to Read a Paper"
 date: 2023-07-08
 ---
+## [Keshav, 2007](zotero://select/library/items/TZPCHP8A)
 
-[Keshav, 2007](zotero://select/library/items/TZPCHP8A)
+### Notes
 
-## Annotations  
-(2022-06-18, 6:57:26 p.m.)
+#### First Pass
+
+Goal: gives you a general idea about the paper
+
+Time: 5-10 minutes
+
+Steps:
+
+* Title, abstract, and introduction
+* Section and subsection headings
+* **Glance at** the mathematical context to determine the underlying theoretical foundations
+* Conclusions
+* **Glance over** the references, mentally ticking off the ones you've already read
+
+Answers the following questions:
+
+* Category
+* Context
+* Correctness
+* Contributions
+* Clarity
+
+#### Second pass
+
+Goal: grasp the paper's content, but not its details
+
+Note down terms you didn't understand, or questions you may want to ask the author.
+* Look carefully at the figures, diagrams, and other illustrations in the paper
+* Mark relevant unread references for future reading
+
+Time: 1 hour
+
+#### Third pass
+
+Goal: to **virtually re-implement** the paper - making the same assumptions and attempting to re-create the work
+* Identify and challenge every assumption in every statement. 
+* Think about how you would present a particular idea.
+
+Time: 3–5 hours
+
+### Annotations  
+
+Imported at (2022-06-18, 6:57:26 p.m.)
 
 > [!cite] 
 > The key idea is that you should read the paper in up to three passes, instead of starting at the beginning and plowing your way to the end. [Go to annotation](zotero://open-pdf/library/items/IL9HG2HS?page=1&annotation=JGQSG7RT) 

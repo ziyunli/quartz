@@ -52,7 +52,8 @@ Imported at (2022-06-18, 6:57:26 p.m.)
 
 > [!cite] 
 > The key idea is that you should read the paper in up to three passes, instead of starting at the beginning and plowing your way to the end. [Go to annotation](zotero://open-pdf/library/items/IL9HG2HS?page=1&annotation=JGQSG7RT) 
-> The first pass gives you a general idea about the paper. The second pass lets you grasp the paper’s content, but not its details. The third pass helps you understand the paper in depth. [Go to annotation](zotero://open-pdf/library/items/IL9HG2HS?page=1&annotation=U9WQI4XD) 
+> 
+> The first pass gives you a general idea about the paper. The second pass lets you grasp the paper’s content, but not its details. The third pass helps you understand the paper in depth. [Go to annotation](zotero://open-pdf/library/items/IL9HG2HS?page=1&annotation=U9WQI4XD)
 
 The first pass (5-10 minutes):  
 * get a high-level view of the paper  

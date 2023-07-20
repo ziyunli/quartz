@@ -1,4 +1,14 @@
-# Quartz
+# Ziyun's Notes
+
+This used to be a fork of [quartz](https://github.com/jackyzha0/quartz).
+However, LFS doesn't work with public fork on Github, therefore I had to create a new repo.
+
+Because this repo uses LFS for `asserts/`, you need to do some extra housekeeping.
+When clone the repo for the first time, install LFS and run `git lfs pull`.
+
+---
+
+## Quartz
 
 Host your second brain and [digital garden](https://jzhao.xyz/posts/networked-thought) for free. Quartz features
 

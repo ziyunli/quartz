@@ -8,7 +8,7 @@ A tracking page for my progress in learning [Large Language Model](notes/LLM.md)
 * [x] [3Blue1Brown: Neural networks](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
 - [ ] [Practical Deep Learning for Coders 2022](notes/Practical%20Deep%20Learning%20for%20Coders%202022.md)
 ## Prompt engineering
-- [x] [DLAI: ChatGPT Prompt Engineering for Developers](https://learn.deeplearning.ai/chatgpt-prompt-eng)
+- [x] [ChatGPT Prompt Engineering for Developers](notes/ChatGPT%20Prompt%20Engineering%20for%20Developers.md)
 - [x] [Brex's Prompt Engineering Guide](https://github.com/brexhq/prompt-engineering/blob/main/README.md)
 - [ ] [Prompt Engineering Guide](https://www.promptingguide.ai/)
 - [ ] [Learn Prompting](https://learnprompting.org/)

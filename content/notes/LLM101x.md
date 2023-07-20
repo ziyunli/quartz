@@ -9,6 +9,8 @@ aliases:
 
 I signed up [Large Language Models: Application through Production](https://learning.edx.org/course/course-v1:Databricks+LLM101x+2T2023/home) by Databricks on edX to learn more about applications of [Large Language Model](notes/LLM.md). This page contains my notes on the course.
 
+![Slides](assets/Databricks%20LLM101x.pdf)
+
 ## Introduction
 
 This module goes through some key concepts and terminology.

@@ -63,7 +63,7 @@ Using vector store with fine-tuning https://news.ycombinator.com/item?id=3607988
 
 > I want the user to be able to ask technical questions about a set of documents, then the user should retrieve a summary-answer from those documents along with a source.
 > 
-> I first need to finetune GPT4 so it better understands the niche-specific technical questions, the words used, etc. I could ask the finetuned model questions, but it won't really know from where it got the information. Without finetuning the summarised answer will suffer, or it will pull out the wrong papers.
+> I first need to fine-tune GPT4 so it better understands the niche-specific technical questions, the words used, etc. I could ask the fine-tuned model questions, but it won't really know from where it got the information. Without fine-tuning the summarized answer will suffer, or it will pull out the wrong papers.
 > 
 > Then I need to use a vector database to store the technical papers for the model to access; now I can ask questions, get a decent answer, and will have access to the sources.
 

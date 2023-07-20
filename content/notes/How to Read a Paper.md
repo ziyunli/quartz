@@ -51,6 +51,7 @@ Time: 3–5 hours
 Imported at (2022-06-18, 6:57:26 p.m.)
 
 > [!cite] The key idea is that you should read the paper in up to three passes, instead of starting at the beginning and plowing your way to the end.
+> 
 > The first pass gives you a general idea about the paper. The second pass lets you grasp the paper’s content, but not its details. The third pass helps you understand the paper in depth.
 
 The first pass (5-10 minutes):
@@ -77,4 +78,5 @@ Questions to answer at the end of 1st pass:
 > The second pass should take up to an hour. After this pass, you should be able to grasp the content of the paper. You should be able to summarize the main thrust of the paper, with supporting evidence, to someone else. This level of detail is appropriate for a paper in which you are interested, but does not lie in your research specialty.
 
 > [!cite] The key to the third pass is to attempt to virtually re-implement the paper: that is, making the same assumptions as the authors, re-create the work. By comparing this re-creation with the actual paper, you can easily identify not only a paper’s innovations, but also its hidden failings and assumptions.
+> 
 > This pass can take about four or five hours for beginners, and about an hour for an experienced reader. At the end of this pass, you should be able to reconstruct the entire structure of the paper from memory, as well as be able to identify its strong and weak points. In particular, you should be able to pinpoint implicit assumptions, missing citations to relevant work, and potential issues with experimental or analytical techniques.

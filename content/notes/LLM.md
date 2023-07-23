@@ -30,7 +30,7 @@ aliases:
 
 > The entire body of knowledge present on the Internet in September 2021 (and then some) was baked into those 175 billion parameters during training. It’s akin to you answering a question off the top of your head rather than reaching for your phone and Googling for an answer. When Microsoft incorporated GPT-4 into Bing, they added a separate layer providing Internet access.
 
-## [llama.cpp](notes/llama.cpp.md)
+## [Local LLM](notes/Local%20LLM.md)
 
 ## Applications
 
@@ -74,6 +74,9 @@ Using vector store with fine-tuning https://news.ycombinator.com/item?id=3607988
 The danger of using MTurk as a "human in the loop" to fact-check LLM responses[^4]:
 
 > It is tempting to rely on crowdsourcing to validate LLM outputs or to create human gold-standard data for comparison. But what if crowd workers themselves are using LLMs, e.g., in order to increase their productivity, and thus their income, on crowdsourcing platforms?
+
+### [TypeChat](TypeChat)
+
 
 
 

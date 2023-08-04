@@ -10,7 +10,7 @@
     <article>
       {{if .Title}}<h1>{{ .Title }}</h1>{{end}}
       <p class="meta">
-        {{ i18n "last_updated" }} {{ partial "date-fmt.html" .}} 
+        {{ i18n "last_updated" }} {{ partial "date-fmt.html" .}}
           {{ partial "github.html" . }}
       </p>
       <ul class="tags">
@@ -28,6 +28,13 @@
       {{partial "toc.html" .}}
       {{partial "textprocessing.html" . }}
     </article>
+    <script src="https://utteranc.es/client.js"
+        repo="ziyunli/quartz"
+        issue-term="pathname"
+        theme="boxy-light"
+        crossorigin="anonymous"
+        async>
+    </script>
     {{partial "footer.html" .}}
 </div>
 </body>

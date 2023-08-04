@@ -16,8 +16,8 @@ From https://github.com/ggerganov/llama.cpp/issues/33#issuecomment-1465108022
 
 ## LLaMA 2
 
-With [llama.cpp](notes/llama.cpp.md):
-![llama.cpp](notes/llama.cpp.md#Running%20Locally)
+With [llama.cpp](notes/LLaMA%20Cpp.md):
+![LLaMA Cpp](notes/LLaMA%20Cpp.md#Running%20Locally)
 
 ---
 

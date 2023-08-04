@@ -43,8 +43,8 @@ llm -m llama70b "Invent an absurd ice cream sundae"
 From https://news.ycombinator.com/item?id=36783709 it seems pricey:
 > [!quote] 
 > As for pricing, that model's pages says: "Predictions run on Nvidia A100 (80GB) GPU hardware. Predictions typically complete within 17 seconds."
-> And the pricing page (https://replicate.com/pricing) says Nvidia A100 (80GB) GPU hardware costs $0.0032 per second.
-> So Llama 2 70B would "typically" cost under 17 x 0.0032 = $0.0544 per run.
+> And the pricing page (https://replicate.com/pricing) says Nvidia A100 (80GB) GPU hardware costs \$0.0032 per second.
+> So Llama 2 70B would "typically" cost under 17 x 0.0032 = \$0.0544 per run.
 
 
 

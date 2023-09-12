@@ -40,12 +40,12 @@ aliases:
 - 📟 [Rust in Action](https://www.goodreads.com/book/show/58462468-rust-in-action)
 - 📟 [Deep Learning for Coders with Fastai and Pytorch: AI Applications Without a PhD](https://www.goodreads.com/book/show/50204643-deep-learning-for-coders-with-fastai-and-pytorch)
 - 🕵️‍♂️ [人类灭绝](https://www.goodreads.com/book/show/150283051)
-- 🕵️‍♂️ [十一张牌](https://book.douban.com/subject/11533530/ "十一张牌")
 
 ## Past
 
 ### 2023
 
+- 🕵️‍♂️ [十一张牌](https://book.douban.com/subject/11533530/ "十一张牌"): 作中作里铺伏线，下了一手大棋，只是我自己缺乏魔术理解，读时的感觉就是半懂非懂。而且个人感觉炫技成分太浓，文字里反而就缺乏吸引力了，故事构成和人文描写都有点薄弱。
 - 🕵️‍♂️ [羔羊的盛宴](https://book.douban.com/subject/34431939/): 关于近现代大~~碧池~~小姐读书会的黑暗短故事。读的让人提不起劲，花了我两年才断断续续用碎片时间读完。我读的人文版有几个结局翻译都有偏差，更加可惜了。
 - 🕵️‍♂️ [消失！](https://www.goodreads.com/book/show/54121005): 机核上看到的[推荐](https://www.gcores.com/articles/118579)，终于找机会读完了。遗憾的读的是民翻，虽然大概能懂但是不时还是有一两句意义不明的话，对于悬疑类来说体验不佳。这一本的主题就是颠覆“人的消失”以及“无差别连环杀人”这两个本格概念。“人的消失”这个提示很多，“无差别杀人”这个有点出乎意料。虽然推荐已经打了预防针，这是本崩坏流，但是读到最后还是会有种被耍的感觉，为了崩坏而故意留的背景和动机一细想就觉得特别不合理，还是欣赏不来啊。
 - 🌿 [人类简史：从动物到上帝](https://www.goodreads.com/book/show/25233317)

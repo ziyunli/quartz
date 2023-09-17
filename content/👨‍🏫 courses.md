@@ -22,6 +22,7 @@ aliases:
 - [ ] [Stanford Human Behavioral Biology](https://www.youtube.com/playlist?list=PL848F2368C90DDC3D)
 - [ ] [Harvard Negotiating Salary](https://pll.harvard.edu/course/negotiating-salary?delta=0)
 - [ ] [How to Speak](https://www.youtube.com/@mitocw)
+- [ ] [Stanford CS007 Personal Finance for Engineers](https://cs007.blog/)
 
 ## Math
 - [ ] [Gilbert Strang lectures on Linear Algebra (MIT)](https://www.youtube.com/playlist?list=PL49CF3715CB9EF31D)

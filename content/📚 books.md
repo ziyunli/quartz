@@ -54,7 +54,7 @@ aliases:
 - 🕵️‍♂️ [消失！](https://www.goodreads.com/book/show/54121005): 机核上看到的[推荐](https://www.gcores.com/articles/118579)，终于找机会读完了。遗憾的读的是民翻，虽然大概能懂但是不时还是有一两句意义不明的话，对于悬疑类来说体验不佳。这一本的主题就是颠覆“人的消失”以及“无差别连环杀人”这两个本格概念。“人的消失”这个提示很多，“无差别杀人”这个有点出乎意料。虽然推荐已经打了预防针，这是本崩坏流，但是读到最后还是会有种被耍的感觉，为了崩坏而故意留的背景和动机一细想就觉得特别不合理，还是欣赏不来啊。
 - 📙 [地獄樂](https://book.douban.com/series/52285): 出乎意料的佳作，画风故事剧情都很成熟。到增援組时感觉到了疲态，但是最后还是把故事好好收了尾。
 * 📙 [東京卍復仇者](https://book.douban.com/series/58496): 有点失望，无论是时空穿越还是感情戏都无法自洽，内容也太太太太肤浅了。个别几个人物塑造还可以（龙坚三谷），剩下的人都是深井冰，尤其是Mikey，这种老大的人望都得指望手下也都是深井冰吧。要是關東事變后结束还勉强算个3.5星良作爽漫，而之后的10卷彻底写烂了……
-- 🌿 [人类简史：从动物到上帝](https://www.goodreads.com/book/show/25233317)
+* 🌿 [人类简史：从动物到上帝](https://www.goodreads.com/book/show/25233317)
 - 💁‍♀️ [Excellent Advice for Living: Wisdom I Wish I'd Known Earlier](https://www.goodreads.com/book/show/62313346-excellent-advice-for-living)
 - 🕵️‍♂️ [GOTH断掌事件](https://book.douban.com/subject/36035673/)
 - 💁‍♀️ [狩猎愉快](https://book.douban.com/subject/35929083/)

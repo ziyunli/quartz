@@ -1,4 +1,5 @@
 ---
+title: "Traditional IRA"
 tags: []
 ---
 - From https://www.investopedia.com/terms/t/traditionalira.asp

@@ -2,7 +2,6 @@
 title: "TN Visa"
 date: 2023-07-18
 ---
-
 From https://www.tievskylaw.com/services/employment-based-non-immigrant/nafta-professionals-tn/
 
 ## Change or Addition of Employers

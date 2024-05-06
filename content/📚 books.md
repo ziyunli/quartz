@@ -16,7 +16,6 @@ aliases:
 > - 🧙‍♂️ fantasy
 > - 👻 terror
 > - 🖋️ poetry
-> - 📙 manga
 
 - 🕵️‍♂️ [The Collected Raymond Chandler](https://www.goodreads.com/book/show/57213568-the-collected-raymond-chandler)
 
@@ -42,19 +41,15 @@ aliases:
 - 📟 [Deep Learning for Coders with Fastai and Pytorch: AI Applications Without a PhD](https://www.goodreads.com/book/show/50204643-deep-learning-for-coders-with-fastai-and-pytorch)
 - 🕵️‍♂️ [人类灭绝](https://www.goodreads.com/book/show/150283051)
 
+
 ## Past
 
 ### 2023
 
-* 📙 [银之匙](https://book.douban.com/series/32839): 前段农业高中生活还是很新奇有趣的，但是到了创业阶段就开始乏力，只流于念口号，感觉内容已经超越了牛姨对于生意和科技的理解能够聊的范围了，可能也和身体欠佳的原因有关吧。最后这个结尾虽然完满但是不是很让人满足。
-* 📙 [排球少年](https://book.douban.com/series/14939): 太强了，这已经不是热血体育漫了，而是满篇洋溢着的体育精神。终章日向在巴西每天修行的描写，已经走出了“对于我就是现在了”少年青春漫画的格局。行远必自迩，极限的突破背后，都是无数的朝朝夕夕点点滴滴。
-* 📙 [夏日時光](https://book.douban.com/series/45755): 读完东京复仇者之后再读夏日时光的对比太强烈了，时空穿越不还是可以说出一个自洽而且逻辑完整的故事的嘛！阿慎的人物塑造很成功，好久不见的人格正面的智商型男一号了（？ 半科幻半悬疑的展开也很不错，不过画到中段还是能感觉到开始乏力了，到最终变成王道战斗漫还是有点可惜。但是总体来说还是让人能从头到尾愉悦读下来的好作品。
 - 🕵️‍♂️ [十一张牌](https://book.douban.com/subject/11533530/ "十一张牌"): 作中作里铺伏线，下了一手大棋，只是我自己缺乏魔术理解，读时的感觉就是半懂非懂。而且个人感觉炫技成分太浓，文字里反而就缺乏吸引力了，故事构成和人文描写都有点薄弱。
 - 🕵️‍♂️ [羔羊的盛宴](https://book.douban.com/subject/34431939/): 关于近现代大~~碧池~~小姐读书会的黑暗短故事。读的让人提不起劲，花了我两年才断断续续用碎片时间读完。我读的人文版有几个结局翻译都有偏差，更加可惜了。
 - 🕵️‍♂️ [消失！](https://www.goodreads.com/book/show/54121005): 机核上看到的[推荐](https://www.gcores.com/articles/118579)，终于找机会读完了。遗憾的读的是民翻，虽然大概能懂但是不时还是有一两句意义不明的话，对于悬疑类来说体验不佳。这一本的主题就是颠覆“人的消失”以及“无差别连环杀人”这两个本格概念。“人的消失”这个提示很多，“无差别杀人”这个有点出乎意料。虽然推荐已经打了预防针，这是本崩坏流，但是读到最后还是会有种被耍的感觉，为了崩坏而故意留的背景和动机一细想就觉得特别不合理，还是欣赏不来啊。
-- 📙 [地獄樂](https://book.douban.com/series/52285): 出乎意料的佳作，画风故事剧情都很成熟。到增援組时感觉到了疲态，但是最后还是把故事好好收了尾。
-* 📙 [東京卍復仇者](https://book.douban.com/series/58496): 有点失望，无论是时空穿越还是感情戏都无法自洽，内容也太太太太肤浅了。个别几个人物塑造还可以（龙坚三谷），剩下的人都是深井冰，尤其是Mikey，这种老大的人望都得指望手下也都是深井冰吧。要是關東事變后结束还勉强算个3.5星良作爽漫，而之后的10卷彻底写烂了……
-* 🌿 [人类简史：从动物到上帝](https://www.goodreads.com/book/show/25233317)
+- 🌿 [人类简史：从动物到上帝](https://www.goodreads.com/book/show/25233317)
 - 💁‍♀️ [Excellent Advice for Living: Wisdom I Wish I'd Known Earlier](https://www.goodreads.com/book/show/62313346-excellent-advice-for-living)
 - 🕵️‍♂️ [GOTH断掌事件](https://book.douban.com/subject/36035673/)
 - 💁‍♀️ [狩猎愉快](https://book.douban.com/subject/35929083/)

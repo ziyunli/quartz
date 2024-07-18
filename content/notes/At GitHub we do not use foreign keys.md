@@ -2,7 +2,6 @@
 title: "At GitHub we do not use foreign keys"
 date: 2023-07-05
 ---
-
 From https://github.com/github/gh-ost/issues/331#issuecomment-266027731
 
 Main reasons are:

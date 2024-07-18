@@ -2,7 +2,6 @@
 title: "Programming Fonts"
 date: 2023-07-20
 ---
-
 - [_Comic_ _Mono_](https://news.ycombinator.com/item?id=36312200)
 - [Commit Mono – Neutral programming typeface](https://news.ycombinator.com/item?id=36689756)
 - [FiraCode: Free monospaced font with programming ligatures](https://github.com/tonsky/FiraCode)

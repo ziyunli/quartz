@@ -2,7 +2,6 @@
 title: Startup
 date: 2023-07-02
 ---
-
 > [!tip] By startup, here I mean software startup. 
 
 Getting ideas:

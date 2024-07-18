@@ -2,7 +2,6 @@
 title: "Tax"
 date: 2023-07-03
 ---
-
 ## US
 
 ![](assets/us-identity.png)

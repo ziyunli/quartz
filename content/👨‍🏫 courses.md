@@ -4,7 +4,6 @@ date: 2023-07-05
 aliases:
 - Course list
 ---
-
 ## Business
 - [ ] [How to Start a Startup 2014](https://www.youtube.com/watch?v=CBYhVcO4WgI)
 

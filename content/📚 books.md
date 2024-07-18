@@ -4,7 +4,6 @@ date: 2023-07-02
 aliases:
 - Reading list
 ---
-
 ## To Read
 
 > [!cite] Instead of a celebration of everything you know, an antilibrary is an ode to everything you want to explore.[^1]

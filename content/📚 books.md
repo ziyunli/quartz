@@ -79,7 +79,7 @@ aliases:
 - 🕵️‍♂️ [そして誰も死ななかった](https://www.goodreads.com/book/show/48730700)
 - 📟 [The Little Go Book](https://www.goodreads.com/book/show/23417262-the-little-go-book)
 - 🕵️‍♂️ [诡计博物馆](https://www.goodreads.com/book/show/54225052)
-- 🌿 [The Millionaire Fastlane](notes/The%20Millionaire%20Fastlane.md)
+- 🌿 [The Millionaire Fastlane](private/archive/The%20Millionaire%20Fastlane.md)
 - 🌿 [Rich Dad Poor Dad](https://www.goodreads.com/book/show/27917357-rich-dad-poor-dad)
 - 🕵️‍♂️ [消失的13级台阶](https://www.goodreads.com/book/show/53430152-13)
 - 🕵️‍♂️ [魔眼之匣謎案](https://www.goodreads.com/book/show/57918200)： 暴风雪山庄模式的神秘学杀人事件，设定没有尸人庄那么跳了，逻辑和动机基本自洽，絮事节奏很好很顺畅的读完，里面整了两个推理宅捧哏。不过最重要的还是把比留子的魅力完全写出来了，看来是打算写成一个系列了
@@ -95,7 +95,7 @@ aliases:
 - 🕵️‍♂️ [禁断的魔术](https://www.goodreads.com/book/show/52986981)
 - 🕵️‍♂️ [白金数据](https://www.goodreads.com/book/show/39783645)
 - 🕵️‍♂️ [圣女的救济](https://www.goodreads.com/book/show/50812860)
-- 💁‍♀️ [夜](notes/夜.md)
+- 💁‍♀️ [夜](private/archive/夜.md)
 - 💁‍♀️ [当我谈跑步时，我谈些什么](https://www.goodreads.com/book/show/20758207): Pain is inevitable. Suffering is optional.
 - 🕵️‍♂️ [解体诸因](https://www.goodreads.com/book/show/50887705):为肢解这种猎奇手法疯狂寻找符合逻辑的解释，读起来还挺好笑的，尤其是最后几章
 - 🕵️‍♂️ [推理时钟](https://book.douban.com/subject/33414749/)：好复杂的机械圈套
@@ -150,8 +150,8 @@ aliases:
 - 🌿 [It Doesn't Have to Be Crazy at Work](https://www.goodreads.com/book/show/38900866-it-doesn-t-have-to-be-crazy-at-work)
 
 ### Pre-2019
-- 🌳 [如何阅读一本书](notes/如何阅读一本书.md)
-- 🌿 [Deep Work](notes/Deep%20Work.md)
+- 🌳 [如何阅读一本书](private/archive/如何阅读一本书.md)
+- 🌿 [Deep Work](private/archive/Deep%20Work.md)
 - 🕵️‍♂️ [物语终焉](https://book.douban.com/subject/26692195/)：同样一个未完结的故事，每个人心中都有一个不同的结局。比起“努力就能成功”这种论调，这本书的观点其实现实多了。每个人对于“梦想”都有自己先入为主的观点，也有面对现实需要的权衡。选择本就没有对错之分。只要做出忠于自己内心的决定，无论如何他日也能释然无悔吧。
 - 🕵️‍♂️ [告白](https://book.douban.com/subject/26681984/ "告白")
 - 🕵️‍♂️ [有翼之暗](https://book.douban.com/subject/25892396/)

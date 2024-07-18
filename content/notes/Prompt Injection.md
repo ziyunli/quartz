@@ -1,7 +1,6 @@
 ---
 title: Prompt Injection
 ---
-
 ## Examples
 ### BratGPT
 

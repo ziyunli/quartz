@@ -75,7 +75,7 @@ The danger of using MTurk as a "human in the loop" to fact-check LLM responses[^
 
 > It is tempting to rely on crowdsourcing to validate LLM outputs or to create human gold-standard data for comparison. But what if crowd workers themselves are using LLMs, e.g., in order to increase their productivity, and thus their income, on crowdsourcing platforms?
 
-### [TypeChat](TypeChat)
+### [TypeChat](private/archive/TypeChat.md)
 
 
 

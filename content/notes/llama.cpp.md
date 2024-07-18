@@ -2,8 +2,6 @@
 title: "llama.cpp"
 date: 2023-07-18
 ---
-
-
 ## Running Locally
 
 From https://replicate.fyi/install-llama-cpp

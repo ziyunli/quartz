@@ -2,7 +2,6 @@
 title: "LLaMA"
 date: 2023-07-25
 ---
-
 ## LLaMa
 
 From https://github.com/ggerganov/llama.cpp/issues/33#issuecomment-1465108022

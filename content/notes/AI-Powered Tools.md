@@ -1,7 +1,6 @@
 ---
 title: AI-Powered Tools
 ---
-
 ![ai-tools](assets/ai-tools.png)
 
 # Semantic Search

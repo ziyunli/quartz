@@ -1,7 +1,6 @@
 ---
 title: Raft
 ---
-
 Notes about implementing Raft (or how I struggled with MIT 6.824 Lab 2).
 
 ## Building the Mental Model

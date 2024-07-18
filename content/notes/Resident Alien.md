@@ -2,7 +2,6 @@
 title: "Resident Alien"
 date: 2023-07-03
 ---
-
 Conditions[^1]:
 - Green card test
 - Substantial Presence

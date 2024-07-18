@@ -2,7 +2,6 @@
 title: "Generative AI"
 date: 2023-07-16
 ---
-
 ## Business Impact
 
 [AI and the automation of work](https://www.ben-evans.com/benedictevans/2023/7/2/working-with-ai) by Benedict Evans is a great read about the potential future with Generative AI. Overall, the sentiment is optimistic: while a new wave of automation would eliminate whole classes of jobs, it also creates new classes of jobs. Two theories to back this up:

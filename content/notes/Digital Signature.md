@@ -1,7 +1,6 @@
 ---
 title: Digital Signature
 ---
-
 - To create a digital signature scheme, you essentially need three functions:
 
 Generate Keys `publicKey, privateKey = GenerateKeys()`  

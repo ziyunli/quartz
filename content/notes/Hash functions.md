@@ -1,7 +1,6 @@
 ---
 title: Hash functions
 ---
-
 - Primitives for making a cryptocurrency
 - `hash(data) -> output`
   * Data can be any size

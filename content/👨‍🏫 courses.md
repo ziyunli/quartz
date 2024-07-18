@@ -48,7 +48,7 @@ aliases:
 
 ## Functional Programming
 - [ ] [Haskell MOOC](https://haskell.mooc.fi/)
-- [ ] [Functional programming in Clojure](notes/Functional%20programming%20in%20Clojure.md)
+- [ ] [Functional programming in Clojure](private/archive/Functional%20programming%20in%20Clojure.md)
 - [ ] [OCaml Programming: Correct + Efficient + Beautiful](https://www.youtube.com/playlist?list=PLre5AT9JnKShBOPeuiD9b-I4XROIJhkIU)
 	- [ ] https://cs3110.github.io/textbook/cover.html
 
@@ -82,7 +82,7 @@ aliases:
 - [ ] [Practical Deep Learning for Coders 2022](notes/Practical%20Deep%20Learning%20for%20Coders%202022.md)
 
 ### Prompt engineering
-- [x] [ChatGPT Prompt Engineering for Developers](notes/ChatGPT%20Prompt%20Engineering%20for%20Developers.md)
+- [x] [ChatGPT Prompt Engineering for Developers](private/archive/ChatGPT%20Prompt%20Engineering%20for%20Developers.md)
 - [x] [Brex's Prompt Engineering Guide](https://github.com/brexhq/prompt-engineering/blob/main/README.md)
 - [ ] [Prompt Engineering Guide](https://www.promptingguide.ai/)
 - [ ] [Learn Prompting](https://learnprompting.org/)
@@ -116,7 +116,7 @@ aliases:
 
 ### LLM
 - [ ] [LLM Introduction: Learn Language Models](https://gist.github.com/rain-1/eebd5e5eb2784feecf450324e3341c8d)
-- [ ] [Large Language Models Application through Production](notes/LLM101x.md)
+- [ ] [Large Language Models Application through Production](private/archive/LLM101x.md)
 
 ## Lists
 - [Ask HN: What are some of the best university courses available online for free?](https://news.ycombinator.com/item?id=35536042)

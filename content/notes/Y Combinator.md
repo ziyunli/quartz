@@ -1,7 +1,6 @@
 ---
 title: Y Combinator
 ---
-
 ## Terminology
   
 * MFN: Most Favored Nation: giving the company money now but at the terms you will negotiate with other investors later (i.e. at the best valuation possible)

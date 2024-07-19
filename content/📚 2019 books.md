@@ -1,0 +1,29 @@
+- 👻 [夏天、烟火和我的尸体](https://book.douban.com/subject/34778574/)：气氛渲染还是到位的，浓郁的日本乡村风情，但是意外性不多。剧情与其说是黑暗，不如说是中二。附带的短篇《优子》的反转反而更有意思。
+- 🕵️‍♂️ [折断的龙骨](https://www.goodreads.com/book/show/42751069)： 中世纪奇幻推理+经典孤岛杀人模式，通过魔术神秘实现的手法还是挺有意思的。中篇的剑与魔法大战从推理小说来看感觉有点跑偏，但是读完后真香
+- 🕵️‍♂️ [沉默的遊行](https://www.goodreads.com/book/show/49759629): 故事还是大于推理，但有人情味
+- 🕵️‍♂️ [没有凶手的暗夜](https://book.douban.com/subject/27181606/)：只有同名短篇是有点意思的，别的几个动机和手法都太牵强了
+- 🕵️‍♂️ [一首小夜曲](https://book.douban.com/subject/26687879/)
+- 🕵️‍♂️ [喜鹊谋杀案](https://book.douban.com/subject/33445034/)：好久不见的家访型侦探，AB线这个设定挺有意思的。不过里面好多英文字谜，翻译后都难以传达
+- 🕵️‍♂️ [无人生还](https://book.douban.com/subject/24859822/)
+- 🕵️‍♂️ [零的焦点](https://book.douban.com/subject/26795258/)：现在看来，推理和动机都有点粗糙，只能权当作近代社会小说读了
+- 🕵️‍♂️ [今日诸事大吉](https://book.douban.com/subject/26136927/)：情感悬疑
+- 🕵️‍♂️ [密室收藏家](https://book.douban.com/subject/26348596/)
+- 🕵️‍♂️ [尸人庄谜案](https://book.douban.com/subject/30396712/)：生化危机山庄模式，不过还是有点太拘泥于设定了，和谜题结合得不够完美
+- 🕵️‍♂️ [黎明之街](https://book.douban.com/subject/27178063/)：都市不伦言情故事
+- 🌿 [Atomic Habits](https://www.goodreads.com/book/show/42603095-atomic-habits)
+- 📟 [tmux 2: Productive Mouse-Free Development](https://www.goodreads.com/book/show/32302568-tmux-2)
+- 🕵️‍♂️ [只差一个谎言](https://book.douban.com/subject/21347638/)：比较有意思的是《冰凉的灼热》，接下来《失控的计算》也还行。东野老师写人妻不伦故事真是一把好手
+- 🕵️‍♂️ [推理竞技场](https://book.douban.com/subject/30428949/)：推理宅的狂欢，一本书满满的都是对推理小说手法的解构和嘲弄，读起来真是又好气又好笑
+- 🌿 [Every Patient Tells A Story](https://www.goodreads.com/book/show/9865830-every-patient-tells-a-story)
+- 🌿 [Drive: The Surprising Truth About What Motivates Us](https://www.goodreads.com/book/show/8046663-drive)
+- 🌿 [The Little Book of Common Sense Investing](https://www.goodreads.com/book/show/34003072-the-little-book-of-common-sense-investing)
+- 🌿 [Freakonomics](https://www.goodreads.com/book/show/18149066-freakonomics)： "People respond to incentives, although not necessarily in ways that are predictable or manifest."
+- 🌳 [Zero to One](https://www.goodreads.com/book/show/23519984-zero-to-one)
+- 🌿 [Tribes: We Need You to Lead Us](https://www.goodreads.com/book/show/3828382-tribes)
+- 🌿 [David and Goliath](https://www.goodreads.com/book/show/17333713-david-and-goliath)
+- 🌿 [The Tipping Point](https://www.goodreads.com/book/show/2118819.The_Tipping_Point)
+- 📟 [Effective Ruby](https://www.goodreads.com/book/show/22251128-effective-ruby)
+- 💁‍♀️ [Bad Blood](https://www.goodreads.com/book/show/37976541-bad-blood): 非常非常精彩。前19章通过不同时期雇员的角度从内部还原了病态的公司文化，很多章节都看得心情沉重。面对手握10B独角兽大权还有一群商政法老男人当提线木偶的Holmes，雇员们只能忍声吞气节节败退，Ian Gibbons那章读得心情尤为沉重。直到19章后才是作者展开调查后对Theranos的反击。每一章都像是人性的拷问。面对无法匹敌的财富和力量面前，每个人都深感无力，却又不得不作出自己的艰难选择。即使像是Tyler贵为Shultz家公子，也难以招架Holmes的压力。而像Erika那样，坚持做正确的事情直到最后，这需要多少勇气？至于Theranos这个公司，怕是硅谷fake-it-until-you-make-it文化近十年来的最反面教材了。作为一名从业人员，这本书也是一个警醒。
+- 🌿 [The Curmudgeon's Guide to Getting Ahead](https://www.goodreads.com/book/show/18811353-the-curmudgeon-s-guide-to-getting-ahead)
+- 🕵️‍♂️ [火车](https://www.goodreads.com/book/show/12375364)
+- 🌿 [It Doesn't Have to Be Crazy at Work](https://www.goodreads.com/book/show/38900866-it-doesn-t-have-to-be-crazy-at-work)

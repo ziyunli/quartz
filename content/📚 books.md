@@ -30,12 +30,8 @@ aliases:
 - 📟 [Let's Go Further!](https://www.goodreads.com/book/show/58044798-let-s-go-further "Let's Go Further!")
 - 💁‍♀️ [Educated](https://www.goodreads.com/book/show/35133922-educated "Educated")
 
-## Current
-
-![📚 2024 books](📚%202024%20books.md)
-
-## Past
-
+## Read
+- [2024](📚%202024%20books.md)
 * [2023](📚%202023%20books.md)
 * [2022](📚%202022%20books.md)
 * [2021](📚%202021%20books.md)

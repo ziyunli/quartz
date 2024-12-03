@@ -12,7 +12,7 @@
 - 🕵️‍♂️ [奇想·天动](https://book.douban.com/subject/4898712/)
 - 🕵️‍♂️ [玻璃之鎚](https://book.douban.com/subject/1389216/)
 - 🕵️‍♂️ [青之炎](https://book.douban.com/subject/1387819/)： “年轻的时候我们都觉得有些事非做不可以致钻进牛角尖，但时过境迁后回想其实也没有什么。”
-- 🕵️‍♂️ [名侦探的诅咒](https://book.douban.com/subject/4903440/) 
+- 🕵️‍♂️ [名侦探的诅咒](https://book.douban.com/subject/4903440/)
 - 🕵️‍♂️ [赎罪](https://book.douban.com/subject/5919999/)
 - 🕵️‍♂️ [Another](https://book.douban.com/subject/7565330/)
 - 🕵️‍♂️ [單戀](https://book.douban.com/subject/1928477/)

@@ -2,15 +2,18 @@
 title: "Tax"
 date: 2023-07-03
 ---
+
 ## US
 
 几种身份的关系
+
 1. U.S. Citizen
 2. Resident Alien (RA)
-	1. Permanent Resident (Green Card)
+   1. Permanent Resident (Green Card)
 3. Non-Resident Alien (NRA)
 
 U.S. Person = 美国税务居民:
+
 - [Resident Alien](notes/Resident%20Alien.md)
 - U.S. Citizen
 

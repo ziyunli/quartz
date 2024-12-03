@@ -2,13 +2,15 @@
 title: "TN Visa"
 date: 2023-07-18
 ---
+
 From https://www.tievskylaw.com/services/employment-based-non-immigrant/nafta-professionals-tn/
 
 ## Change or Addition of Employers
 
 There are two ways for an individual in TN status to change employers or obtain authorization for a concurrent position:
-* through the employer filing a petition with the USCIS, or
-* by returning abroad and applying on re-entry.
+
+- through the employer filing a petition with the USCIS, or
+- by returning abroad and applying on re-entry.
 
 ## Termination of Employment
 

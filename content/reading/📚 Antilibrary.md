@@ -1,7 +1,7 @@
 ---
 date: 2023-07-02
-aliases:
-  - Reading list
+tags:
+  - Reading-List
 ---
 
 ## To Read

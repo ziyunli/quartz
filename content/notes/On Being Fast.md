@@ -2,6 +2,7 @@
 tags:
   - Self-Help
 ---
+
 [Nat Friedman](https://nat.org/):
 
 > - It's important to do things fast

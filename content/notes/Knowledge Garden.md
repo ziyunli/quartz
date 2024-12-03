@@ -15,3 +15,10 @@ Other similar sites to keep an eye on:
 - https://notes.andymatuschak.org/
 - https://jzhao.xyz/
 - https://mwalton.me/
+
+
+How to organize knowledge:
+1. Readwise to highlight wisdom that doesn't require a lot of context
+2. Obsidian to keep track of notes/summaries from books and articles
+	1. Most of the notes go into `private`
+	2. Ready to share notes eventually promoted to top-level `notes`

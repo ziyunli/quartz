@@ -4,7 +4,7 @@
 - 🕵️‍♂️ [禁断的魔术](https://www.goodreads.com/book/show/52986981)
 - 🕵️‍♂️ [白金数据](https://www.goodreads.com/book/show/39783645)
 - 🕵️‍♂️ [圣女的救济](https://www.goodreads.com/book/show/50812860)
-- 💁‍♀️ [夜](private/archive/夜.md)
+- 💁‍♀️ [夜](notes/夜.md)
 - 💁‍♀️ [当我谈跑步时，我谈些什么](https://www.goodreads.com/book/show/20758207): Pain is inevitable. Suffering is optional.
 - 🕵️‍♂️ [解体诸因](https://www.goodreads.com/book/show/50887705):为肢解这种猎奇手法疯狂寻找符合逻辑的解释，读起来还挺好笑的，尤其是最后几章
 - 🕵️‍♂️ [推理时钟](https://book.douban.com/subject/33414749/)：好复杂的机械圈套

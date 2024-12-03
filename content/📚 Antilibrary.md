@@ -33,13 +33,13 @@ aliases:
 
 ## Read
 
-- [2024](notes/📚%202024%20books.md)
+- [2024](📚%202024%20books.md)
 
-* [2023](notes/📚%202023%20books.md)
-* [2022](notes/📚%202022%20books.md)
-* [2021](notes/📚%202021%20books.md)
-* [2020](notes/📚%202020%20books.md)
-* [2019](notes/📚%202019%20books.md)
-* [Pre-2019](notes/📚%20Pre-2019%20books.md)
+* [2023](📚%202023%20books.md)
+* [2022](📚%202022%20books.md)
+* [2021](📚%202021%20books.md)
+* [2020](📚%202020%20books.md)
+* [2019](📚%202019%20books.md)
+* [Pre-2019](📚%20Pre-2019%20books.md)
 
 [^1]: https://nesslabs.com/antilibrary "Building an antilibrary: the power of unread books"

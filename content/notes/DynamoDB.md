@@ -21,5 +21,3 @@ Key properties:
    5. simple data model that doesn’t require complex querying
 
 > A Read Capacity Unit gives you a single strongly-consistent read per second or two eventually-consistent reads per second, up to 4KB in size. A Write Capacity Unit allows you to write a single item per second, up to 1KB in size.
-
-Concepts

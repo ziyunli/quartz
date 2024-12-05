@@ -7,7 +7,7 @@ tags:
 
 `dataclass` decorator is introduced since Python 3.7.
 
- A decorated class behaves like a regular Python class, but it automatically generates several dunder methods: `__init__`, `__eq__`, and `__repr__`. The auto-generated constructor method is particular helpful if you have many fields in a class (e.g. a wrapper class for JSON objects). It also introduces a new dunder method was defined for any additional processing: `__post_init__`.
+A decorated class behaves like a regular Python class, but it automatically generates several dunder methods: `__init__`, `__eq__`, and `__repr__`. The auto-generated constructor method is particular helpful if you have many fields in a class (e.g. a wrapper class for JSON objects). It also introduces a new dunder method was defined for any additional processing: `__post_init__`.
 
 Also note that each field has a type hint, which is great in terms of self-documenting.
 
@@ -37,3 +37,4 @@ class StarWarsMovie:
             self.created = dateutil.parser.parse(self.created)
         if type(self.edited) is str:
             self.edited = dateutil.parser.parse(self.edited)
+```

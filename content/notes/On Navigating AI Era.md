@@ -2,6 +2,7 @@
 tags:
   - Self-Help
 ---
+
 [Joy on AI in Higher Education – Economist Writing Every Day](https://economistwritingeveryday.com/2024/11/30/joy-on-ai-in-higher-education/)
 
 > Interdisciplinary knowledge, especially in tech and social sciences, will be valuable. ==Adaptability and lifelong learning are key in this evolving field==. Human skills like creativity, communication, and ethical reasoning will remain crucial.
@@ -10,7 +11,7 @@ tags:
 
 ### ChatGPT
 
-[Introducing ChatGPT Pro | OpenAI](https://openai.com/index/introducing-chatgpt-pro/): use more compute to think harder (longer?) for more reliable responses. Because answers will take longer to generate, it even shows a progress bar. 
+[Introducing ChatGPT Pro | OpenAI](https://openai.com/index/introducing-chatgpt-pro/): use more compute to think harder (longer?) for more reliable responses. Because answers will take longer to generate, it even shows a progress bar.
 
 ### NotebookLM
 

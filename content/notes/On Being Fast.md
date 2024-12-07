@@ -19,3 +19,5 @@ tags:
 [How to do things if you're not that smart and don't have any talent](https://adaobi.substack.com/p/how-to-do-things-if-youre-not-that)
 
 > **Bring a sense of urgency & move fast.** If you think about it, most deadlines are arbitrary, and smart & talented people know this. They will still work to the deadline but they may not feel a real sense of urgency to move faster. Try to counteract this energy. I’m not sure why but moving faster increases the likelihood that work will actually get done, and also opens you up (and therefore the team) up to a lot more opportunities along the way. Most likely because you are “prepared” when you meet luck, or something along those lines.
+
+[Speed matters: Why working quickly is more important than it seems « the jsomers.net blog](https://jsomers.net/blog/speed-matters)

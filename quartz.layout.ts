@@ -31,16 +31,15 @@ export const defaultContentPageLayout: PageLayout = {
     Component.DesktopOnly(
       Component.RecentNotes({
         title: "Recent Notes",
-        limit: 5,
+        limit: 2,
         filter: (f) => f.slug!.startsWith("notes/"),
         linkToMore: "notes/" as SimpleSlug,
       }),
     ),
-    Component.DesktopOnly(Component.TableOfContents()),
   ],
   right: [
-    Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
+    Component.Graph(),
     Component.Backlinks(),
   ],
 }

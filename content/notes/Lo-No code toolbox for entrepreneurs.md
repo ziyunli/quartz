@@ -1,0 +1,24 @@
+---
+title: Lo-No code toolbox for entrepreneurs
+---
+
+- Landing page
+  - https://carrd.co/
+  - https://tilda.cc/
+  - https://typedream.com/
+- Data entry
+  - https://www.typeform.com/
+  - https://www.google.com/forms/about/
+- Data processing
+  - https://zapier.com/
+- Contacting users
+  - https://mailchimp.com/
+  - https://www.twilio.com/
+- Contractor management
+  - https://trello.com/
+- Payment
+  - https://stripe.com/payments/checkout
+- Marking copy
+  - https://www.copy.ai/
+- Design
+  - https://www.canva.com/

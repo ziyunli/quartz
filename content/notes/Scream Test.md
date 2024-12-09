@@ -1,6 +1,8 @@
 ---
-title: "Scream Test"
+title: Scream Test
 date: 2023-07-10
+tags:
+  - Software-Engineering
 ---
 
 [What is a scream test?](https://www.v-wiki.net/scream-test-meaning/)

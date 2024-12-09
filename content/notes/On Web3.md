@@ -1,5 +1,7 @@
 ---
 date: 2023-07-05
+tags:
+  - Business
 ---
 
 The general thesis from [Why Web3 Matters - a16z crypto](https://future.com/why-web3-matters/):

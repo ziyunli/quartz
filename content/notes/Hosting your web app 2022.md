@@ -1,5 +1,7 @@
 ---
 title: Hosting your web app in 2022
+tags:
+  - Web-Development
 ---
 
 A huge list: [https://free-for.dev](https://free-for.dev/)

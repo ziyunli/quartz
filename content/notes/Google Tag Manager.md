@@ -1,6 +1,8 @@
 ---
-title: "Google Tag Manager"
+title: Google Tag Manager
 date: 2023-07-11
+tags:
+  - Web-Development
 ---
 
 Google Tag Manager is a tag management system that lets you configure and instantly deploy tags on your website or mobile app from a web-based interface[^2].

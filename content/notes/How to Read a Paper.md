@@ -1,6 +1,8 @@
 ---
-title: "How to Read a Paper"
+title: How to Read a Paper
 date: 2023-07-08
+tags:
+  - Self-Help
 ---
 
 ## [Keshav, 2007](zotero://select/library/items/TZPCHP8A)

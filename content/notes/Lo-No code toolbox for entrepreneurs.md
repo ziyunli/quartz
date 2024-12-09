@@ -1,5 +1,7 @@
 ---
 title: Lo-No code toolbox for entrepreneurs
+tags:
+  - Web-Development
 ---
 
 - Landing page

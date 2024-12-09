@@ -1,5 +1,7 @@
 ---
 title: Y Combinator
+tags:
+  - Startup
 ---
 
 ## Terminology

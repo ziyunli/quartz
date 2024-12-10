@@ -15,7 +15,7 @@ Getting ideas:
 
 Tools:
 
-- [Hosting your web app 2022](Hosting%20your%20web%20app%202022.md)
+- [Hosting your web app](Hosting%20your%20web%20app.md)
 - [Lo-No code toolbox for entrepreneurs](Lo-No%20code%20toolbox%20for%20entrepreneurs.md)
 - [Uptime Monitoring](Uptime%20Monitoring.md)
 - [Web Scraping Tools](Web%20Scraping%20Tools.md)

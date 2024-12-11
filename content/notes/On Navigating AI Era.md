@@ -16,12 +16,12 @@ tags:
 ### NotebookLM
 
 [How to use NotebookLM for personalized knowledge synthesis](https://www.ai-supremacy.com/p/how-to-use-notebooklm-for-personalized)
-Strengths: 
+Strengths:
+
 1. Stay focused on sources ("shouldn't hallucinate", but what's the proof?)
 2. Process and find connections between multiple documents.
 3. To podcast-like audio summary
 4. Citations
 5. Free
-
 
 [NotebookLM How-to Guide 2024](https://www.ai-supremacy.com/p/notebooklm-how-to-guide-2024)

@@ -7,6 +7,11 @@ tags:
 
 > Interdisciplinary knowledge, especially in tech and social sciences, will be valuable. ==Adaptability and lifelong learning are key in this evolving field==. Human skills like creativity, communication, and ethical reasoning will remain crucial.
 
+
+[15 Times to use AI, and 5 Not to - by Ethan Mollick](https://www.oneusefulthing.org/p/15-times-to-use-ai-and-5-not-to)
+
+> 
+
 ## AI Tools
 
 ### ChatGPT

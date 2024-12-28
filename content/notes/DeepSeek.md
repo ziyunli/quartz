@@ -6,7 +6,7 @@
 
 ## Misc
 
-[揭秘DeepSeek:一个更极致的中国技术理想主义故事](https://mp.weixin.qq.com/s/r9zZaEgqAa_lml_fOEZmjg)
+[揭秘DeepSeek:一个更极致的中国技术理想主义故事](https://mp.weixin.qq.com/s/r9zZaEgqAa_lml_fOEZmjg) #Business
 
 Posted on [[202407]], about DeepSeek-v2.
 

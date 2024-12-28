@@ -10,17 +10,17 @@ aliases:
 
 > In 2017, a landmark paper titled “[Attention Is All You Need](https://arxiv.org/abs/1706.03762)” changed the way data scientists approach NMT and other NLP tasks. That paper proposed a better way to process language based on *transformer models* that eschew LSTMs and use [neural attention](<https://en.wikipedia.org/wiki/Attention_(machine_learning)>) mechanisms to model the context in which words are used.
 
-![language-model](private/assets/language-model.png)
+![language-model](../assets/language-model.png)
 
-![language-model-2](private/assets/language-model-2.png)
+![language-model-2](../assets/language-model-2.png)
 
-![language-model-3](private/assets/language-model-3.png)
+![language-model-3](../assets/language-model-3.png)
 
 ## BERT (Bidirectional Encoder Representations from Transformers)
 
 > BERT isn’t generally useful by itself, but it can be fine-tuned to perform specific tasks such as sentiment analysis or question answering. Fine-tuning is accomplished by further training the pre-trained model with task-specific samples at a reduced learning rate, and it is *much* less expensive and time-consuming than training BERT from scratch.
 
-![bert](private/assets/bert.png)
+![bert](../assets/bert.png)
 
 > Aside from the fact that it was trained with a huge volume of text, the key to BERT’s ability to understand human language is an innovation known as [Masked Language Modeling](https://analyticsindiamag.com/a-complete-tutorial-on-masked-language-modelling-using-bert/). MLM turns a large corpus of text into a training ground for learning the structure of a language. When BERT models are pretrained, a specified percentage of the words in each batch of text – usually 15% – are randomly removed or “masked” so the model can learn to predict the missing words from the words around them. Unidirectional models look at the text to the left or the text to the right and attempt to predict what the missing word should be. MLM uses text on the left *and* right to inform its decisions.
 
@@ -32,8 +32,6 @@ aliases:
 
 > The entire body of knowledge present on the Internet in September 2021 (and then some) was baked into those 175 billion parameters during training. It’s akin to you answering a question off the top of your head rather than reaching for your phone and Googling for an answer. When Microsoft incorporated GPT-4 into Bing, they added a separate layer providing Internet access.
 
-## [Local LLM](private/archive/Local%20LLM.md)
-
 ## Applications
 
 > If you do understand this, then you have to ask, well, where are LLMs useful? Where is it useful to have automated undergraduates, or automated interns, who can repeat a pattern, that you might have to check?[^5]
@@ -42,10 +40,6 @@ aliases:
 
 > ...it makes it easy to call OpenAI’s GPT, say, a dozen times in a loop to answer a single question, and mix in queries to Wikipedia and other databases.
 > The clever bit is that, using LangChain, you *intercept* GPT when it starts a line with *“Act:”* and then you go and do that action for it, feeding the results back in as an *“Observation”* line so that it can “think” what to do next.[^3]
-
-## [Prompt Engineering](../../notes/Prompt%20Engineering.md)
-
-## [Prompt Injection](private/archive/Prompt%20Injection.md)
 
 ## Fine-Tuning
 
@@ -78,8 +72,6 @@ Using vector store with fine-tuning https://news.ycombinator.com/item?id=3607988
 The danger of using MTurk as a "human in the loop" to fact-check LLM responses[^4]:
 
 > It is tempting to rely on crowdsourcing to validate LLM outputs or to create human gold-standard data for comparison. But what if crowd workers themselves are using LLMs, e.g., in order to increase their productivity, and thus their income, on crowdsourcing platforms?
-
-### [TypeChat](private/archive/TypeChat.md)
 
 ### [DeepSeek](DeepSeek.md)
 

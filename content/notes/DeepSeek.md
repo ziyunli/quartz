@@ -4,7 +4,17 @@
 
 [DeepSeek_V3.pdf](https://simonwillison.net/2024/Dec/26/deepseek-v3/)
 
-> DeepSeek (Chinese AI co) making it look easy today with an open weights release of a frontier-grade LLM trained on a joke of a budget (2048 GPUs for 2 months, $6M). For reference, this level of capability is supposed to require clusters of closer to 16K GPUs, the ones being brought up today are more around 100K GPUs. E.g. Llama 3 405B used 30.8M GPU-hours, while DeepSeek-V3 looks to be a stronger model at only 2.8M GPU-hours (~11X less compute). [^2]
+> DeepSeek-V3 achieves remarkable efficiency in training, requiring only 2.788M H800 GPU hours for complete training on 14.8T tokens, with a cost of approximately $5.576M.[^3]
+
+> The whole training only cost $5.576 million or ~55 days on a 2048xH800 cluster. This is TINY compared to the Llama, GPT or Claude training runs.
+>
+> Total Cost: $5.576 million breakdown:
+>
+> - Pre-training: $5.328M (2664K GPU hours)
+> - Context extension: $0.238M (119K GPU hours)
+> - Post-training: $0.01M (5K GPU hours)[^4]
+
+> For reference, this level of capability is supposed to require clusters of closer to 16K GPUs, the ones being brought up today are more around 100K GPUs. E.g. Llama 3 405B used 30.8M GPU-hours, while DeepSeek-V3 looks to be a stronger model at only 2.8M GPU-hours (~11X less compute). [^2]
 
 ## Misc
 
@@ -70,3 +80,7 @@ Posted on [[202407]], about DeepSeek-v2.
 [^1]: Utilitarianism: 效益主义
 
 [^2]: [Andrej Karpathy](https://x.com/karpathy/status/1872362712958906460)
+
+[^3]: [🐋AI Agents Weekly: DeepSeek-V3, Building Effective Agents, AIOpsLab, Flash](https://nlp.elvissaravia.com/p/ai-agents-weekly-deepseek-v3-building)
+
+[^4]: [Chinese AGI lab achieves remarkable cost efficiency: $5.5M training for Claude-competitive model: DeepSeek-V3](https://rohanpaul.substack.com/i/153646234/the-details)

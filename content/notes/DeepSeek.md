@@ -1,8 +1,4 @@
-## V3
-
-[deepseek-ai/DeepSeek-V3-Base](https://simonwillison.net/2024/Dec/25/deepseek-v3/)
-
-[DeepSeek_V3.pdf](https://simonwillison.net/2024/Dec/26/deepseek-v3/)
+## V3[^5]
 
 > DeepSeek-V3 achieves remarkable efficiency in training, requiring only 2.788M H800 GPU hours for complete training on 14.8T tokens, with a cost of approximately $5.576M.[^3]
 
@@ -84,3 +80,5 @@ Posted on [[202407]], about DeepSeek-v2.
 [^3]: [🐋AI Agents Weekly: DeepSeek-V3, Building Effective Agents, AIOpsLab, Flash](https://nlp.elvissaravia.com/p/ai-agents-weekly-deepseek-v3-building)
 
 [^4]: [Chinese AGI lab achieves remarkable cost efficiency: $5.5M training for Claude-competitive model: DeepSeek-V3](https://rohanpaul.substack.com/i/153646234/the-details)
+
+[^5]: [GitHub - deepseek-ai/DeepSeek-V3](https://github.com/deepseek-ai/DeepSeek-V3)

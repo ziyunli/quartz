@@ -12,6 +12,16 @@
 
 > For reference, this level of capability is supposed to require clusters of closer to 16K GPUs, the ones being brought up today are more around 100K GPUs. E.g. Llama 3 405B used 30.8M GPU-hours, while DeepSeek-V3 looks to be a stronger model at only 2.8M GPU-hours (~11X less compute). [^2]
 
+API Pricing:
+
+> Input: $0.27/million tokens ($0.07/million tokens with cache hits)  
+> Output: $1.10/million tokens
+
+Compared to Claude 3.5 Sonnet (as of [20241228](../private/journals/20241228.md))
+
+- $3/million for input and
+- $15/million for output,
+
 ## Misc
 
 ### [疯狂的幻方：一家隐形AI巨头的大模型之路](https://mp.weixin.qq.com/s/Cajwfve7f-z2Blk9lnD0hA) #Business

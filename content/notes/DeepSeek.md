@@ -14,7 +14,7 @@
 
 API Pricing:
 
-> Input: $0.27/million tokens ($0.07/million tokens with cache hits)  
+> Input: \$0.27/million tokens (\$0.07/million tokens with cache hits)  
 > Output: $1.10/million tokens
 
 Compared to Claude 3.5 Sonnet (as of [20241228](../private/journals/20241228.md))

@@ -11,6 +11,7 @@ This is a digital garden (knowledge garden) built with Quartz, a static site gen
 ## Content Structure
 
 The `content/` directory contains:
+
 - **`notes/`** - Main collection of notes and articles (most work happens here)
 - **`reading/`** - Reading-related content (private by default)
 - **`writing/`** - Writing-related content (private by default)
@@ -22,6 +23,7 @@ The `content/` directory contains:
 ### Content Organization Principles
 
 From the site owner's knowledge garden philosophy:
+
 1. Notes are private by default, with polished notes promoted to public
 2. Minimal use of tags (tags in Quartz can be confusing with space-separated capitalization)
 3. Everything generally goes into `/notes`
@@ -31,6 +33,7 @@ From the site owner's knowledge garden philosophy:
 ## Working with Content
 
 ### Building and Serving
+
 ```bash
 # Build and serve with live reload (most common during content writing)
 npx quartz build --serve
@@ -59,6 +62,7 @@ Your content here...
 ```
 
 **Frontmatter fields:**
+
 - `title` - Page title (optional, defaults to filename)
 - `enableToc` - Show table of contents (default: true)
 - `draft` - If true, page won't be published
@@ -68,6 +72,7 @@ Your content here...
 ### Links
 
 Quartz supports multiple link formats:
+
 - **Wikilinks**: `[[Page Name]]` or `[[Page Name|Display Text]]`
 - **Markdown links**: `[Display Text](page-name.md)` or relative paths
 - Links are resolved using "shortest path" strategy (configured in `quartz.config.ts`)
@@ -75,6 +80,7 @@ Quartz supports multiple link formats:
 ### Obsidian Features
 
 The site is edited with Obsidian, so Obsidian-flavored Markdown is supported:
+
 - Wikilinks with `[[]]`
 - Embedded notes: `![[Other Note]]`
 - Block references
@@ -83,6 +89,7 @@ The site is edited with Obsidian, so Obsidian-flavored Markdown is supported:
 ### Ignored Patterns
 
 The following are excluded from builds (configured in `quartz.config.ts`):
+
 - `private/` directory
 - `templates/` directory
 - `.obsidian/` directory
@@ -92,6 +99,7 @@ The following are excluded from builds (configured in `quartz.config.ts`):
 ### Main Config (`quartz.config.ts`)
 
 Current site configuration:
+
 - **Title**: "🪴 Ziyun's Backyards"
 - **Base URL**: ziyunli.github.io/quartz
 - **Analytics**: Plausible
@@ -101,6 +109,7 @@ Current site configuration:
 ### Layout Config (`quartz.layout.ts`)
 
 Defines the visual layout with components like:
+
 - **Left sidebar**: PageTitle, Search, Darkmode, RecentNotes (recent notes from `/notes`)
 - **Right sidebar**: TableOfContents, Graph, Backlinks
 - **Footer**: Links to GitHub and blog
@@ -108,6 +117,7 @@ Defines the visual layout with components like:
 ### Style Customizations
 
 For minor style tweaks, the main files are:
+
 - **`quartz.config.ts`** - Theme colors under `theme.colors` (lightMode and darkMode)
 - **`quartz/styles/`** - Custom CSS/SCSS files
 - **Typography**: Header (Schibsted Grotesk), Body (Source Sans Pro), Code (IBM Plex Mono)
@@ -115,18 +125,22 @@ For minor style tweaks, the main files are:
 ## Common Tasks
 
 ### Creating New Content
+
 1. Create a new `.md` file in `content/notes/` (or appropriate directory)
 2. Add frontmatter with title and any metadata
 3. Write content using Markdown/Obsidian syntax
 4. Preview with `npx quartz build --serve`
 
 ### Publishing Updates
+
 1. Build the site: `npx quartz build`
 2. Commit and push changes to repository
 3. GitHub Pages will automatically deploy
 
 ### Finding Related Notes
+
 The site features:
+
 - **Graph view** - Visual network of linked notes
 - **Backlinks** - Shows which notes link to the current note
 - **Search** - Full-text search across all content
@@ -143,6 +157,7 @@ The site features:
 ## Notes on the Quartz Framework
 
 While the `quartz/` directory contains the framework code, avoid making changes unless absolutely necessary. If style tweaks are needed:
+
 1. Prefer configuration changes in `quartz.config.ts` over code changes
 2. Style changes should be in `quartz/styles/` or theme configuration
 3. Component changes should only be made if a visual/structural change is required

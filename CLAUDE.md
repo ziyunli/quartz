@@ -24,11 +24,46 @@ The `content/` directory contains:
 
 From the site owner's knowledge garden philosophy:
 
-1. Notes are private by default, with polished notes promoted to public
-2. Minimal use of tags (tags in Quartz can be confusing with space-separated capitalization)
-3. Everything generally goes into `/notes`
-4. Content is written "for me by default" - expect a casual, personal tone
-5. More organized, public-facing content goes to the external blog (https://blog.ziyun.rocks/)
+1. **Purpose**: This garden tracks notes and summaries from books and articles
+   - LLMs (Claude Code, OpenAI Codex, Google Gemini) are used to organize content and serve as personal assistant/information retrieval tools
+2. **Readwise Integration**: Highlights from [Readwise](https://readwise.io/@ziyun) should be:
+   - Minimal and selective
+   - Wisdom that withstands the test of time
+   - Understandable without extensive context
+   - Either quotes or individual files tagged with `do-not-edit`
+3. **Minimal Tag Usage**:
+   - Quartz renders tags in space-separated, first-word-capitalized format (can be confusing)
+   - Tags haven't proven helpful for information retrieval and require maintenance effort
+   - LLMs should generate tags when needed
+   - Tags are primarily for categorization and discoverability
+4. **Content Privacy**: Notes are private by default, with polished notes promoted to public
+5. **Default Location**: Everything generally goes into `/notes`
+6. **Tone**: Content is written "for me by default" - expect a casual, personal tone
+7. **External Blog**: More organized, public-facing content goes to https://blog.ziyun.rocks/
+
+## LLM Agent Guidelines
+
+When working with content in this knowledge garden, LLM agents should:
+
+1. **Content Creation**:
+   - Help organize notes and summaries from books/articles
+   - Serve as a personal assistant for information retrieval
+   - Generate tags sparingly when needed for categorization
+
+2. **Respecting `do-not-edit` Tags**:
+   - NEVER modify files tagged with `do-not-edit`
+   - These are typically Readwise highlights or quotes that should remain untouched
+
+3. **Tag Generation**:
+   - Generate tags only when explicitly requested or when they add clear value
+   - Keep tags minimal and focused on categorization/discoverability
+   - Avoid over-tagging as it creates maintenance burden
+
+4. **Content Quality**:
+   - When helping with highlights or quotes, ensure they:
+     - Can withstand the test of time
+     - Are understandable without extensive context
+   - Maintain a casual, personal tone unless editing for the external blog
 
 ## Working with Content
 
@@ -149,8 +184,6 @@ The site features:
 ## Workflow Tools
 
 - **Editor**: Obsidian (https://obsidian.md/)
-- **Highlights**: Readwise (https://readwise.io/@ziyun)
-- **Reading list**: Readwise Reader (https://read.readwise.io/)
 - **Hosting**: GitHub Pages
 - **Generator**: Quartz v4
 

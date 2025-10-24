@@ -1,3 +1,7 @@
+---
+title: Self-help
+---
+
 ![[On Time]]
 
 ![[On Being Fast]]
@@ -6,4 +10,4 @@
 
 ![[On Learning Something New]]
 
-![On Navigating AI Era](On%20Navigating%20AI%20Era.md)
+![[On Navigating AI Era]]

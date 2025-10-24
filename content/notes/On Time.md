@@ -1,6 +1,7 @@
 ---
 tags:
   - Self-Help
+  - do-not-edit
 ---
 
 [The Tail End — Wait But Why](https://waitbutwhy.com/2015/12/the-tail-end.html)

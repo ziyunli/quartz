@@ -1,6 +1,8 @@
 ---
 title: "Prompt Engineering"
 date: 2023-07-16
+tags:
+  - do-not-edit
 ---
 
 > I think the best way to understand this is that when you type something into a prompt, you’re not actually asking it to answer a question at all. Rather, you’re asking it “what sort of answers would people be likely to produce to questions that look like this?” You’re asking it to match a pattern.[^1]

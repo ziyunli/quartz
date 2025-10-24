@@ -3,7 +3,7 @@ title: Lump of labour fallacy
 date: 2023-07-16
 tags:
   - Economics
-  - Business
+  - do-not-edit
 ---
 
 > The Lump of Labour fallacy is the misconception that there is a fixed amount of work to be done, and that if some work is taken by a machine then there will be less work for people.[^1]

@@ -2,7 +2,10 @@
   "permissions": {
     "allow": [
       "Bash(cat:*)",
-      "Bash(npx quartz build:*)"
+      "Bash(npx quartz build:*)",
+      "Bash(chmod:*)",
+      "Bash(npx prettier --version)",
+      "Bash(npx prettier:*)"
     ],
     "deny": [],
     "ask": []

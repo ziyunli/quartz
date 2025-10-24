@@ -1,0 +1,16 @@
+#!/bin/sh
+# ABOUTME: Pre-commit hook to format content files with Prettier
+# ABOUTME: Only runs when there are changes in ./content directory
+
+# Check if there are any staged changes in the content/ directory
+if git diff --cached --name-only | grep -q "^content/"; then
+    echo "Formatting content files with Prettier..."
+    npx prettier ./content --write
+
+    # Add any formatted files back to the staging area
+    git add ./content
+
+    echo "Content files formatted and staged."
+fi
+
+exit 0

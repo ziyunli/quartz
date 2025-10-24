@@ -5,7 +5,9 @@
       "Bash(npx quartz build:*)",
       "Bash(chmod:*)",
       "Bash(npx prettier --version)",
-      "Bash(npx prettier:*)"
+      "Bash(npx prettier:*)",
+      "Bash(git add:*)",
+      "Bash(git restore:*)"
     ],
     "deny": [],
     "ask": []

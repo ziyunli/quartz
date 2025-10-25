@@ -7,7 +7,8 @@
       "Bash(npx prettier --version)",
       "Bash(npx prettier:*)",
       "Bash(git add:*)",
-      "Bash(git restore:*)"
+      "Bash(git restore:*)",
+      "Bash(rm:*)"
     ],
     "deny": [],
     "ask": []

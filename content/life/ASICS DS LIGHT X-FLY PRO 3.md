@@ -14,7 +14,7 @@ They're not cheap—I ended up paying $200+. But what a pair of fantastic boots!
 
 ![](../assets/soccer_cleats/asics-ds-light-x-fly-pro-3-2.jpg)
 
-![](../assets/soccer_cleats/asics-ds-light-x-fly-pro-3-3.jpg)
+![asics-ds-light-x-fly-pro-3-3](../assets/soccer_cleats/asics-ds-light-x-fly-pro-3-3.jpeg)
 
 ---
 

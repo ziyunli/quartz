@@ -68,6 +68,11 @@ When working with content in this knowledge garden, LLM agents should:
      - Are understandable without extensive context
    - Maintain a casual, personal tone unless editing for the external blog
 
+5. **LLM Edit Attribution**:
+   - When editing content for fluency, grammar, or clarity, add a footnote at the end of the file
+   - Format: `*Edited by Claude (model-id)*` (e.g., `*Edited by Claude (claude-sonnet-4-5-20250929)*`)
+   - Place the footnote after a horizontal rule (`---`) at the end of the content
+
 ## Working with Content
 
 ### Building and Serving

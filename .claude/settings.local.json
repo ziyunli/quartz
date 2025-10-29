@@ -8,7 +8,8 @@
       "Bash(npx prettier:*)",
       "Bash(git add:*)",
       "Bash(git restore:*)",
-      "Bash(rm:*)"
+      "Bash(rm:*)",
+      "Bash(mv:*)"
     ],
     "deny": [],
     "ask": []

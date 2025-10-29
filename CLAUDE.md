@@ -30,7 +30,7 @@ From the site owner's knowledge garden philosophy:
    - Minimal and selective
    - Wisdom that withstands the test of time
    - Understandable without extensive context
-   - Either quotes or individual files tagged with `do-not-edit`
+   - Either quotes or individual files tagged with `Quotes`
 3. **Minimal Tag Usage**:
    - Quartz renders tags in space-separated, first-word-capitalized format (can be confusing)
    - Tags haven't proven helpful for information retrieval and require maintenance effort
@@ -51,10 +51,10 @@ When working with content in this knowledge garden, LLM agents should:
    - Serve as a personal assistant for information retrieval
    - Generate tags sparingly when needed for categorization
 
-2. **Respecting `do-not-edit` Tags**:
+2. **Respecting `Quotes` Tags**:
 
-   - NEVER modify files tagged with `do-not-edit`
-   - These are typically Readwise highlights or quotes that should remain untouched
+   - NEVER modify files tagged with `Quotes`
+   - These are typically Readwise highlights or direct quotes that should remain untouched
 
 3. **Tag Generation**:
 

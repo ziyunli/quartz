@@ -46,15 +46,18 @@ From the site owner's knowledge garden philosophy:
 When working with content in this knowledge garden, LLM agents should:
 
 1. **Content Creation**:
+
    - Help organize notes and summaries from books/articles
    - Serve as a personal assistant for information retrieval
    - Generate tags sparingly when needed for categorization
 
 2. **Respecting `do-not-edit` Tags**:
+
    - NEVER modify files tagged with `do-not-edit`
    - These are typically Readwise highlights or quotes that should remain untouched
 
 3. **Tag Generation**:
+
    - Generate tags only when explicitly requested or when they add clear value
    - Keep tags minimal and focused on categorization/discoverability
    - Avoid over-tagging as it creates maintenance burden

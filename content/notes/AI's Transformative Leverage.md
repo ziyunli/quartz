@@ -4,11 +4,7 @@ tags:
   - Quotes
 ---
 
-Source: https://x.com/hwchung27/status/1945355238187393257
-
----
-
-Transcript:
+## Transcript:
 
 I'm Hyung Won, and it's good to be here today. I have been working on AI for a few years. At OpenAI, I've been mainly focusing on O1 preview, O1, and most recently Deep Research. Now I'm more on the agent side of things. I'm very excited about reasoning and agents.
 
@@ -112,4 +108,5 @@ That's all I have today. I've talked about many different concepts, but I think 
 
 ---
 
+Source: https://x.com/hwchung27/status/1945355238187393257
 _Edited by Claude (claude-sonnet-4-5-20250929)_

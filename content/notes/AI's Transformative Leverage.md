@@ -1,22 +1,15 @@
 ---
-source: https://x.com/hwchung27
+source: https://x.com/hwchung27/status/1945355238187393257
 tags:
   - Quotes
 ---
 
-```
-“How do I increase my output?” One natural answer is "I will just work a few more hours." Working longer can help, but eventually you hit a physical limit.
+Source: https://x.com/hwchung27/status/1945355238187393257
 
-A better question is, “How do I increase my output without increasing input as much?” That is leverage.
+---
 
-We hear “leverage” so often that its implication is easy to overlook. My personal favorite categorization of leverage is by Naval Ravikant: human labor, capital, and code / media. Each has powered major waves of wealth creation in history.
+Transcript:
 
-However, once a leverage source becomes popular (think YouTube channels today versus ten years ago) competition compresses the margin. So when a new leverage appears, it’s a rare chance for outsized gains. In this talk, I describe AI as that emerging leverage. An AI agent blends labor leverage (it does work for you and is permissionless) with code leverage (you can copy-and-paste it).
-
-It’s cliché to say AI will create massive wealth. But using this leverage lens lets us interpret the noisy AI news cycle in a consistent way and spot the real opportunities.
-```
-
-```
 I'm Hyung Won, and it's good to be here today. I have been working on AI for a few years. At OpenAI, I've been mainly focusing on O1 preview, O1, and most recently Deep Research. Now I'm more on the agent side of things. I'm very excited about reasoning and agents.
 
 All right, let me get started. I will talk about some AI stuff today, obviously. But before that, let's start by looking at this ChatGPT-generated image of a flower, a budding flower. If you stare at this for a minute or ten minutes, you don't really see any change. Does that mean there is no change underlying this process? There is, and if you wait long enough, then you'll see some big changes to a full-blown rose.
@@ -119,5 +112,4 @@ That's all I have today. I've talked about many different concepts, but I think 
 
 ---
 
-*Edited by Claude (claude-sonnet-4-5-20250929)*
-```
+_Edited by Claude (claude-sonnet-4-5-20250929)_

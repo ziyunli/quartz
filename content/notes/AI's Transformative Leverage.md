@@ -4,6 +4,8 @@ tags:
   - Transcripts
 ---
 
+Source: https://x.com/hwchung27/status/1945355238187393257
+
 > I'm Hyung Won, and it's good to be here today. I have been working on AI for a few years. At OpenAI, I've been mainly focusing on O1 preview, O1, and most recently Deep Research. Now I'm more on the agent side of things. I'm very excited about reasoning and agents.
 >
 > All right, let me get started. I will talk about some AI stuff today, obviously. But before that, let's start by looking at this ChatGPT-generated image of a flower, a budding flower. If you stare at this for a minute or ten minutes, you don't really see any change. Does that mean there is no change underlying this process? There is, and if you wait long enough, then you'll see some big changes to a full-blown rose.
@@ -105,7 +107,5 @@ tags:
 > That's all I have today. I've talked about many different concepts, but I think AI is an important thing—everyone knows that. But I would invite you to think about: how big of a change am I thinking about? Is there a possibility that I might be underestimating that magnitude, especially now that you think about it from a new form of leverage? I would invite you to think about this. Yeah, that's it. Thanks.
 
 ---
-
-Source: https://x.com/hwchung27/status/1945355238187393257
 
 _Edited by Claude (claude-sonnet-4-5-20250929)_

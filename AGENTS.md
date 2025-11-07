@@ -28,7 +28,7 @@ From the site owner's knowledge garden philosophy:
    - Minimal and selective
    - Wisdom that withstands the test of time
    - Understandable without extensive context
-   - Either quotes or individual files tagged with `Quotes`, or `do-not-edit`.
+   - Either quotes or individual files tagged with `Quotes` or `Transcripts`
 3. **Minimal Tag Usage**:
    - Quartz renders tags in space-separated, first-word-capitalized format (can be confusing)
    - Tags haven't proven helpful for information retrieval and require maintenance effort

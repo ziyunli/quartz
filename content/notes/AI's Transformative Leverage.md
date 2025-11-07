@@ -1,7 +1,7 @@
 ---
 source: https://x.com/hwchung27/status/1945355238187393257
 tags:
-  - do-not-edit
+  - Transcripts
 ---
 
 ## Transcript

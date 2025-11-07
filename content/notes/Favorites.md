@@ -1,6 +1,5 @@
 ---
 tags:
-  - Reading-List
 ---
 
 ## Blogs

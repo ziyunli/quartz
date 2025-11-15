@@ -1,10 +1,10 @@
 ---
 tags:
+  - Transcripts
   - Business
-source: https://a16z.com/podcast/a16z-podcast-from-teaching-leadership-to-being-a-leader/
 ---
 
-Source: [a16z Podcast: From Teaching Leadership to Being a Leader | Andreessen Horowitz](https://a16z.com/podcast/a16z-podcast-from-teaching-leadership-to-being-a-leader/)
+[a16z Podcast: From Teaching Leadership to Being a Leader | Andreessen Horowitz](https://a16z.com/podcast/a16z-podcast-from-teaching-leadership-to-being-a-leader/)
 
 > If the market doesn't want to buy your product, it doesn't matter how smart you are or what a great idea, logically, your idea is. All that matters is whether or not someone has a burning problem, a desperate problem that needs to be solved.
 

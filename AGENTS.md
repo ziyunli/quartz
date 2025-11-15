@@ -11,7 +11,7 @@ This is a digital garden (knowledge garden) built with Quartz, a static site gen
 The `content/` directory contains:
 
 - **`notes/`** - Collection of notes
-- **`blogmarks/`** - Collection of links to blog posts and articles
+- **`links/`** - Collection of links to blog posts and articles with comments and notes
 - **`assets/`** - Images and other media files
 - **`index.md`** - Homepage of the site
 - **`.obsidian/`** - Obsidian editor configuration (ignored in builds)

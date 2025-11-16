@@ -2,6 +2,7 @@
 source: https://x.com/hwchung27/status/1945355238187393257
 tags:
   - Transcripts
+  - Blogmarks
 ---
 
 Source: https://x.com/hwchung27/status/1945355238187393257

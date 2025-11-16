@@ -1,7 +1,6 @@
 ---
 tags:
-  - Transcripts
-  - Business
+  - Blogmarks
 ---
 
 [a16z Podcast: From Teaching Leadership to Being a Leader | Andreessen Horowitz](https://a16z.com/podcast/a16z-podcast-from-teaching-leadership-to-being-a-leader/)

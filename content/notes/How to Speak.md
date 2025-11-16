@@ -2,7 +2,6 @@
 title: How to Speak
 date: 2020-12-29
 tags:
-  - Career
   - Blogmarks
 ---
 

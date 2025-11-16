@@ -11,6 +11,9 @@ This is a digital garden (knowledge garden) built with Quartz, a static site gen
 The `content/` directory contains:
 
 - **`notes/`** - Collection of notes, and links to blog posts and articles with comments and notes
+  - `Blogmarks` are links with a title, URL, short snippet of commentary and a “via” link where appropriate that I learn from Simon Willison's [link blog](https://simonwillison.net/2024/Dec/22/link-blog/) idea.
+  - `Quotes` are short snippets  from books, articles, or other sources.
+  - `Transcripts` are verbatim recordings of conversations, lectures, or other spoken content that usually don't have a transcript elsewhere online.
 - **`assets/`** - Images and other media files
 - **`index.md`** - Homepage of the site
 - **`.obsidian/`** - Obsidian editor configuration (ignored in builds)
@@ -46,7 +49,7 @@ When working with content in this knowledge garden, LLM agents should:
 
 4. **LLM Edit Attribution**:
    - When editing content for fluency, grammar, or clarity, add a footnote at the end of the file
-   - Format: `*Edited by Claude (model-id)*` (e.g., `*Edited by Claude (claude-sonnet-4-5-20250929)*`)
+   - Format: `*Edited by {LLM CLI} (model-id)*` (e.g., `*Edited by Claude (claude-sonnet-4-5-20250929)*`)
    - Place the footnote after a horizontal rule (`---`) at the end of the content
 
 ## Working with Content

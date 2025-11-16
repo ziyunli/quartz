@@ -8,9 +8,9 @@ To create a digital signature scheme, you essentially need three functions:
 
 Generate Keys `publicKey, privateKey = GenerateKeys()`
 
-- It returns a pair of keys - public key: your identity  
-   - secret key (sometimes called private key): your secret  
-  It doesn't take any arguments but just randomness (It has to be _long enough_)
+- It returns a pair of keys - public key: your identity
+  - secret key (sometimes called private key): your secret  
+    It doesn't take any arguments but just randomness (It has to be _long enough_)
 
 Sign `signature = Sign(privateKey, message)`
 

@@ -1,5 +1,4 @@
 ---
-title: Generative AI
 date: 2023-07-16
 tags:
   - Economics

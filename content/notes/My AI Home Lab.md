@@ -1,6 +1,7 @@
 ---
 created: 2025-11-17
 ---
+
 Early this year I got an Apple M4 Pro (64 GB) as my home lab to tinker with AI. It's not the most powerful machine for sure, but it has enough to try out some reasonably large LLMs locally, easier to share configs with my other Apple laptops (work + personal), and small enough that I can just put it at a corner of my working desk and forget about it.
 
 This document is going to be a "live journal" on my setup, mainly as a note to the future me, and also hopefully provide some inspirations to others.
@@ -78,7 +79,6 @@ mlx_lm.server --model mlx-community/Qwen3-30B-A3B-8bit --trust-remote-code --por
 
 We can combine the tip from the [simonw's HN comment](https://news.ycombinator.com/item?id=43822763) and [a fix to force Python 3.12](https://news.ycombinator.com/item?id=43824980):
 
-
 ```shell
 uv run --isolated -p 3.12 --with mlx-lm mlx_lm.server --model mlx-community/Qwen3-30B-A3B-8bit --trust-remote-code --port 8082
 ```
@@ -93,4 +93,4 @@ uvx parakeet-mlx default_tc.mp3
 
 ---
 
-*Edited by Claude (claude-sonnet-4-5-20250929)*
+_Edited by Claude (claude-sonnet-4-5-20250929)_

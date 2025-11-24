@@ -12,6 +12,10 @@ Also see [GitHub - karpathy/reader3: Quick illustration of how one can easily re
 
 I find it pretty similar to the approach of [[The Best Way to Use AI for Learning]] (at least the first 3 steps) that emphasizes parsing the materials to be easier to consume by LLM, and then use LLM to engage with the content in a deeper and faster way.
 
+Why not NotebookLM? For one, EPUB isn't even supported...
+
+![[notebooklm-supported-file-types.png]]
+
 ---
 
 _Edited by Claude Code (claude-sonnet-4-5-20250929)_

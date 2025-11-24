@@ -26,32 +26,6 @@ From the site owner's knowledge garden philosophy:
    - LLMs (Claude Code, OpenAI Codex, Google Gemini) are used to organize content and serve as personal assistant/information retrieval tools
 2. **Tone**: Content is written "for me by default" - expect a casual, personal tone
 
-## LLM Agent Guidelines
-
-When working with content in this knowledge garden, LLM agents should:
-
-1. **Content Creation**:
-
-   - Help organize notes and summaries
-   - Serve as a personal assistant for information retrieval
-   - Generate tags sparingly when needed for categorization
-
-2. **Respecting Direct Quotes**:
-
-   - NEVER modify files tagged with `Quotes`, `do-not-edit`, or `Transcripts`
-   - Direct quotes within a file should remain untouched
-
-3. **Tag Generation**:
-
-   - Generate tags only when explicitly requested or when they add clear value
-   - Keep tags minimal and focused on categorization/discoverability
-   - Avoid over-tagging as it creates maintenance burden
-
-4. **LLM Edit Attribution**:
-   - When editing content for fluency, grammar, or clarity, add a footnote at the end of the file
-   - Format: `*Edited by {LLM CLI} (model-id)*` (e.g., `*Edited by Claude (claude-sonnet-4-5-20250929)*`)
-   - Place the footnote after a horizontal rule (`---`) at the end of the content
-
 ## Working with Content
 
 ### Content Format

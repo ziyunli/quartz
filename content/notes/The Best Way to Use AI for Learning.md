@@ -16,8 +16,12 @@ The approach he proposed is to:
 
 The steps are roughly:
 
-> Step 1: Parse the PDF
-> Step 2: Create the Learning Materials
-> Step 3: Read from the Whiteboard and Discuss with AI
-> Step 4: Take Notes in Your Own Words
-> Step 5: Visualize, Synthesize
+1. Parse the PDF
+2. Create the Learning Materials
+3. Read from the Whiteboard and Discuss with AI
+4. Take Notes in Your Own Words
+5. Visualize, Synthesize
+
+---
+
+*Edited by Claude Code (claude-sonnet-4-5-20250929)*

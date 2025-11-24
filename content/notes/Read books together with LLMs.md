@@ -14,4 +14,4 @@ I find it pretty similar to the approach of [[The Best Way to Use AI for Learnin
 
 ---
 
-*Edited by Claude Code (claude-sonnet-4-5-20250929)*  
+_Edited by Claude Code (claude-sonnet-4-5-20250929)_

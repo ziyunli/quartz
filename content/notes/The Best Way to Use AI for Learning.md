@@ -24,4 +24,4 @@ The steps are roughly:
 
 ---
 
-*Edited by Claude Code (claude-sonnet-4-5-20250929)*
+_Edited by Claude Code (claude-sonnet-4-5-20250929)_

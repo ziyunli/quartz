@@ -9,7 +9,11 @@
       "Bash(git add:*)",
       "Bash(git restore:*)",
       "Bash(rm:*)",
-      "Bash(mv:*)"
+      "Bash(mv:*)",
+      "Bash(mkdir:*)",
+      "Bash(cp:*)",
+      "Bash(./scripts/setup.sh:*)",
+      "Bash(git config:*)"
     ],
     "deny": [],
     "ask": []

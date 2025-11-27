@@ -1,5 +1,7 @@
 ---
 created: 2025-11-23
+tags:
+  - Blogmarks
 ---
 
 From [Karpathy](https://x.com/karpathy/status/1990577951671509438/?rw_tt_thread=True):

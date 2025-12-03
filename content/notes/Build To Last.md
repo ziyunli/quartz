@@ -7,6 +7,8 @@ Youtube: [Build to Last — Chris Lattner talks with Jeremy Howard - YouTube](ht
 
 From [Build to Last – fast.ai](https://www.fast.ai/posts/2025-10-30-build-to-last.html):
 
+On using AI as an organization:
+
 > A lot of evolving a product is not just about getting the results; it’s about the team understanding the architecture of the code.
 
 > Fundamentally, with most kinds of software projects, the software lives for more than six months or a year. The kinds of things I work on, and the kinds of systems you like to build, are things that you continue to evolve.
@@ -17,9 +19,15 @@ From [Build to Last – fast.ai](https://www.fast.ai/posts/2025-10-30-build-to-l
 
 > The question is: how productive are people at getting stuff done and making the product better?
 
+On person growth:
+
 > The question is, when things settle out, where do you as a programmer stand? Have you lost years of your own development because you’ve been spending it the wrong way?
 
+On iteration loops:
+
 > One principle Chris and I share is the critical importance of tight iteration loops. For Chris, working on systems programming, this means “edit the code, compile, run it, get a test that fails, and then debug it and iterate on that loop…
+
+On sharing context with AI:
 
 > the AI should be able to see exactly what the human sees, and the human should be able to see exactly what the AI sees at all times.
 

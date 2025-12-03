@@ -13,7 +13,9 @@
       "Bash(mkdir:*)",
       "Bash(cp:*)",
       "Bash(./scripts/setup.sh:*)",
-      "Bash(git config:*)"
+      "Bash(git config:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []

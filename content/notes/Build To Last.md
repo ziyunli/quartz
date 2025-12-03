@@ -19,7 +19,7 @@ On using AI as an organization:
 
 > The question is: how productive are people at getting stuff done and making the product better?
 
-On person growth:
+On personal growth:
 
 > The question is, when things settle out, where do you as a programmer stand? Have you lost years of your own development because you’ve been spending it the wrong way?
 

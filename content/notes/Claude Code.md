@@ -44,3 +44,5 @@ From [Prompting best practices - Claude Docs](https://platform.claude.com/docs/e
   }
 }
 ```
+
+[[Claude Agent Skills]]

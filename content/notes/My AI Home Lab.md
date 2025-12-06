@@ -42,17 +42,19 @@ echo "lts/*" > .nvmrc
 npm install -g @openai/codex @google/gemini-cli @anthropic-ai/claude-code
 ```
 
-### Simon Willison's llm CLI
+### Simon Willison's LLM CLI
+
+See [Setup - LLM](https://llm.datasette.io/en/stable/setup.html#setup-uvx)
 
 ```sh
 # Install llm via UV
 uv tool install llm
-# Install hackner news plugin
-llm install llm-hacker-news
 # set API key for uvx?
 uv tool run llm keys set openai # ~/Library/Application\ Support/io.datasette.llm/keys.json
 
-# Example
+# Example with hackner news plugin
+llm install llm-hacker-news
+
 uv tool run llm -f hn:43984860 'summary with illustrative direct quotes'
 ```
 
@@ -89,6 +91,23 @@ From [parakeet-mlx](https://simonwillison.net/2025/November/14/parakeet-mlx/#ato
 
 ```shell
 uvx parakeet-mlx default_tc.mp3
+```
+
+
+### Running Whisper.cpp Locally
+
+```sh
+ffmpeg -i <input_file> -ar 16000 -ac 1 -c:a pcm_s16le <output_filename>.wav
+
+
+git clone https://github.com/ggerganov/whisper.cpp.git
+
+cd whisper.cpp
+
+./models/download-ggml-model.sh large-v3-turbo
+cmake -B build
+cmake --build build --config Release
+./build/bin/whisper-cli -m models/ggml-large-v3-turbo.bin -f <input_file> -l zh -otxt <output_filename>
 ```
 
 ---

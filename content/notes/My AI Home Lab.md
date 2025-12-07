@@ -93,7 +93,6 @@ From [parakeet-mlx](https://simonwillison.net/2025/November/14/parakeet-mlx/#ato
 uvx parakeet-mlx default_tc.mp3
 ```
 
-
 ### Running Whisper.cpp Locally
 
 ```sh

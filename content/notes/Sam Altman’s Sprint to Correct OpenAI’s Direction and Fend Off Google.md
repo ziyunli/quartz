@@ -2,6 +2,7 @@
 tags:
   - Blogmarks
 ---
+
 From [Sam Altman’s Sprint to Correct OpenAI’s Direction and Fend Off Google - WSJ](https://www.wsj.com/tech/ai/openai-sam-altman-google-code-red-c3a312ad), several interesting bits about their models:
 
 Regarding 4o and more generally personalization:

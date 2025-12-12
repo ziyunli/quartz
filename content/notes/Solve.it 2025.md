@@ -1,5 +1,7 @@
 ---
 draft: "true"
+tags:
+  - Courses
 ---
 
 ## Lecture 1 - Intro & Examples

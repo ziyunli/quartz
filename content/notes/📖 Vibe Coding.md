@@ -23,7 +23,7 @@ And this question can be asked both on a personal level (more on this topic in [
 The book advocates for _vibe coding for grown-ups_. 
 
 > No one should be writing code by hand anymore _if they don't have to_. 
-> ...
+> 
 > Delegation of implementation doesn't mean delegation of *responsibility*. 
 
 Using a head chef as an example, the responsibility includes:

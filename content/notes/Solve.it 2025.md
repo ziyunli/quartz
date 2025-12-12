@@ -1,5 +1,5 @@
 ---
-draft: "true"
+draft: true
 ---
 
 ## Lecture 1 - Intro & Examples

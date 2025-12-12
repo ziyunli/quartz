@@ -19,7 +19,7 @@ The true goal of reading should be comprehension, not volume. Instead of priorit
 > 3. Summarize the answers in one paragraph each.
 > 4. What are the most important things you have learned personally?[^3]
 
-This process naturally slows down your reading speed, which means you need to be more selective about which books to invest your time in. Techniques like topical and inspectional reading can help you filter potential reads by quickly skimming them to decide if they’re worth a deeper dive. This method is discussed further in [如何阅读一本书](../reading/如何阅读一本书.md).
+This process naturally slows down your reading speed, which means you need to be more selective about which books to invest your time in. Techniques like topical and inspectional reading can help you filter potential reads by quickly skimming them to decide if they’re worth a deeper dive. This method is discussed further in [[如何阅读一本书]].
 
 ## Non-Fiction
 

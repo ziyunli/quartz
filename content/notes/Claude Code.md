@@ -1,6 +1,6 @@
 ---
 created: 2025-11-24
-draft: "true"
+draft: true
 ---
 
 ## General Settings

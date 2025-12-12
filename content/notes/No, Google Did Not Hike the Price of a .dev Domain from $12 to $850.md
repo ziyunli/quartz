@@ -15,4 +15,4 @@ The registration fee of a domain usually consists of
 2. Registrar markup, and
 3. ICANN fee.
 
-Usually, registers have an agreement with ICANN that has certain limitations on how much they can charge for the fee. However, country-code TLDs (2-letter TLD) do not have an enforceable registry agreements with ICANN. They are governed by their respective countries (or similar political entities), which have full control on the pricing.--
+Usually, registers have an agreement with ICANN that has certain limitations on how much they can charge for the fee. However, country-code TLDs (2-letter TLD) do not have an enforceable registry agreements with ICANN. They are governed by their respective countries (or similar political entities), which have full control on the pricing.

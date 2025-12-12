@@ -16,12 +16,11 @@ sudo systemsetup -setremotelogin on
 
 ### Install Tailscale
 
-Install [Tailscale](https://tailscale.com/) on Mac Mini and also other devices you want to connect to it. Then on your "client" devices:
+Install [Tailscale](https://tailscale.com/) on Mac Mini and also other devices you want to connect to it. Then on your client devices:
 
 ```sh
 ssh-copy-id user@my-mac-mini # so that you don't have to try typing password
-ssh user@my-mac-mini # from your laptop
-mosh user@my-mac-mini # from your phone
+ssh user@my-mac-mini
 ```
 
 ## LLM

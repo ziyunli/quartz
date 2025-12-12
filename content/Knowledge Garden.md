@@ -11,4 +11,4 @@ This Quartz + Obsidian garden is my catch-all scratchpad for book notes, article
 
 ---
 
-_Edited by Claude (gpt-5-codex)_
+_Edited by Claude Code_

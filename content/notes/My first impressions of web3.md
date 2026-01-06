@@ -7,8 +7,8 @@ date: 2022-12-31
 [My first impressions of web3](https://moxie.org/2022/01/07/web3-first-impressions.html) a great great read about the current state of web3 and its problems. So many takeaways:
 
 - why centralized platforms emerged:
-  - **People don’t want to run their own servers, and never will**
-  - A protocol moves much more slowly than a platform
+- **People don’t want to run their own servers, and never will**
+- A protocol moves much more slowly than a platform
 
 The lack of "distributedness" in the current web3:
 

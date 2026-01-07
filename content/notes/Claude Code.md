@@ -28,6 +28,7 @@ From [Prompting best practices - Claude Docs](https://platform.claude.com/docs/e
 
 ```json
 {
+  "alwaysThinkingEnabled": true,
   "permissions": {
     "allow": [
       "*",
@@ -52,10 +53,15 @@ From [Prompting best practices - Claude Docs](https://platform.claude.com/docs/e
       "mcp__chrome-devtools__*"
     ],
     "deny": [],
-    "ask": ["Bash(git commit:*)", "Bash(git push:*)", "Bash(rm:*)"],
+    "ask": [
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(rm:*)"
+    ],
     "defaultMode": "acceptEdits"
   }
 }
+
 ```
 
 ### [[Claude Agent Skills]]

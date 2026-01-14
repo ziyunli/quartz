@@ -2,11 +2,11 @@
 draft: true
 ---
 
+How it works:
 
-  How it works:
-  1. Temporal uses a `DataConverter` (by default JSON, but can be configured to use protobuf) to serialize signal payloads
-  2. Signals are persisted in Temporal's event history as `WorkflowExecutionSignaled` events
-  3. When the workflow replays or receives the signal, Temporal deserializes using the same DataConverter
+1. Temporal uses a `DataConverter` (by default JSON, but can be configured to use protobuf) to serialize signal payloads
+2. Signals are persisted in Temporal's event history as `WorkflowExecutionSignaled` events
+3. When the workflow replays or receives the signal, Temporal deserializes using the same DataConverter
 
 ### Default Serialization (JSON)
 
@@ -21,6 +21,7 @@ flowchart LR
 ```
 
 When you call `SignalWithStartWorkflow` or `SignalWorkflow`, the signal payload is:
+
 1. Serialized using the configured DataConverter (default: JSON)
 2. Stored in Temporal's event history as a `WorkflowExecutionSignaled` event
 3. Deserialized when the workflow receives and processes the signal
@@ -28,7 +29,6 @@ When you call `SignalWithStartWorkflow` or `SignalWorkflow`, the signal payload 
 ### Current Implementation
 
 Our codebase uses a FIFO signal processing pattern:
-
 
 Signals are defined as Go structs:
 
@@ -100,17 +100,18 @@ sequenceDiagram
 
 ### What Can Go Wrong
 
-| Change Type | Risk Level | What Happens |
-|-------------|------------|--------------|
-| Add optional field | Low | Old signals work, new field is zero-valued |
-| Add required field | High | Deserialization may fail or panic |
-| Remove field | Medium | Data loss, field ignored |
-| Rename field | High | JSON key changes, data loss |
-| Change field type | High | Deserialization error |
+| Change Type        | Risk Level | What Happens                               |
+| ------------------ | ---------- | ------------------------------------------ |
+| Add optional field | Low        | Old signals work, new field is zero-valued |
+| Add required field | High       | Deserialization may fail or panic          |
+| Remove field       | Medium     | Data loss, field ignored                   |
+| Rename field       | High       | JSON key changes, data loss                |
+| Change field type  | High       | Deserialization error                      |
 
 ### Safe Schema Changes
 
 **Safe:**
+
 ```go
 // V1
 type DeliveryChangesSignal struct {
@@ -127,6 +128,7 @@ type DeliveryChangesSignal struct {
 ```
 
 **Unsafe:**
+
 ```go
 // V1
 type DeliveryChangesSignal struct {
@@ -155,6 +157,7 @@ message DeliveryChangesSignal {
 ```
 
 Benefits:
+
 - Field numbers provide stable serialization (not field names)
 - Built-in support for optional fields
 - Clear deprecation semantics
@@ -206,6 +209,7 @@ flowchart TD
 ```
 
 Steps:
+
 1. Stop sending new signals with old schema
 2. Wait for existing workflows to complete (idle timeout)
 3. Deploy new worker with new schema
@@ -238,6 +242,7 @@ if publishPostExecutionEventsVersion > workflow.DefaultVersion {
 ```
 
 This ensures:
+
 - Running workflows continue with the logic version when they started
 - New workflows use the latest logic
 - Replay is deterministic
@@ -254,14 +259,17 @@ This ensures:
 ### Common Errors
 
 **"failed to deserialize signal"**
+
 - Signal schema mismatch between sender and receiver
 - Check if recent deployments changed signal struct
 
 **Signal received but not processed**
+
 - Signal name mismatch
 - Check `DeliveryChangesSignalName` constant
 
 **Nil pointer in signal handler**
+
 - Optional fields not set in old signals
 - Add nil checks before accessing nested fields
 
@@ -275,53 +283,55 @@ This ensures:
 
 Temporal Signal Serialization
 
+In this codebase (delivery_changes_signal.go), signals are defined as:
+type DeliveryChangesSignal struct {
+WorkflowParam \*workflowspb.ProcessWorkflowParams // Protobuf message
+ReceivedAt time.Time
+}
 
+The Temporal SDK handles serialization automatically when you call SignalWithStartWorkflow (processor.go:257-265).
 
-  In this codebase (delivery_changes_signal.go), signals are defined as:
-  type DeliveryChangesSignal struct {
-      WorkflowParam *workflowspb.ProcessWorkflowParams  // Protobuf message
-      ReceivedAt    time.Time
-  }
+What Happens with In-Flight Signals During Workflow Updates
 
-  The Temporal SDK handles serialization automatically when you call SignalWithStartWorkflow (processor.go:257-265).
+This is a critical concern. There are two scenarios:
 
-  What Happens with In-Flight Signals During Workflow Updates
+4. Signal Payload Schema Changes
 
-  This is a critical concern. There are two scenarios:
+If you change the signal struct (add/remove/rename fields):
 
-  4. Signal Payload Schema Changes
+- Signals already in the queue were serialized with the OLD schema
+- New worker tries to deserialize with the NEW schema
+- Result: Deserialization may fail or lose data depending on the change
 
-  If you change the signal struct (add/remove/rename fields):
-  - Signals already in the queue were serialized with the OLD schema
-  - New worker tries to deserialize with the NEW schema
-  - Result: Deserialization may fail or lose data depending on the change
+Safe changes:
 
-  Safe changes:
-  - Adding new optional fields (with defaults)
-  - Using protobuf with proper field numbering (never reuse deleted field numbers)
+- Adding new optional fields (with defaults)
+- Using protobuf with proper field numbering (never reuse deleted field numbers)
 
-  Unsafe changes:
-  - Renaming fields (JSON keys change)
-  - Removing required fields
-  - Changing field types
+Unsafe changes:
 
-  2. Workflow Logic Changes
+- Renaming fields (JSON keys change)
+- Removing required fields
+- Changing field types
 
-  This codebase uses workflow.GetVersion() for safe migrations (workflow.go:408):
-  publishPostExecutionEventsVersion := workflow.GetVersion(ctx, "publishPostExecutionEvents", workflow.DefaultVersion, 0)
-  if publishPostExecutionEventsVersion > workflow.DefaultVersion {
-      publishPostExecutionEvents(ctx, params, revisionResult)
-  }
+2. Workflow Logic Changes
 
-  For signals specifically:
-  - Running workflows continue with the logic version when they started
-  - New signals to existing workflows are processed with the workflow's current version
-  - GetVersion lets you branch behavior based on when the workflow started
+This codebase uses workflow.GetVersion() for safe migrations (workflow.go:408):
+publishPostExecutionEventsVersion := workflow.GetVersion(ctx, "publishPostExecutionEvents", workflow.DefaultVersion, 0)
+if publishPostExecutionEventsVersion > workflow.DefaultVersion {
+publishPostExecutionEvents(ctx, params, revisionResult)
+}
 
-  Best Practices for Signal Versioning
+For signals specifically:
 
-  1. Use protobuf - Better forward/backward compatibility than JSON
-  2. Never remove or rename fields - Add new fields, deprecate old ones
-  3. Use feature flags - This codebase uses oof_execute_from_request_async_enabled for safe rollout
-  4. Drain existing workflows - Let old workflows complete before removing old signal handling code
-  5. Version the signal name - If making breaking changes, use a new signal name entirely (e.g., DeliveryChangesV2)
+- Running workflows continue with the logic version when they started
+- New signals to existing workflows are processed with the workflow's current version
+- GetVersion lets you branch behavior based on when the workflow started
+
+Best Practices for Signal Versioning
+
+1. Use protobuf - Better forward/backward compatibility than JSON
+2. Never remove or rename fields - Add new fields, deprecate old ones
+3. Use feature flags - This codebase uses oof_execute_from_request_async_enabled for safe rollout
+4. Drain existing workflows - Let old workflows complete before removing old signal handling code
+5. Version the signal name - If making breaking changes, use a new signal name entirely (e.g., DeliveryChangesV2)

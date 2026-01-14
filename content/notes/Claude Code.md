@@ -2,6 +2,7 @@
 created: 2025-11-24
 draft: true
 ---
+
 ## General Settings
 
 Turn off data sharing for training:
@@ -55,7 +56,6 @@ From [Prompting best practices - Claude Docs](https://platform.claude.com/docs/e
   }
 }
 ```
-
 
 ## Links
 

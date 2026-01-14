@@ -2,7 +2,6 @@
 created: 2025-11-24
 draft: true
 ---
-
 ## General Settings
 
 Turn off data sharing for training:
@@ -11,8 +10,6 @@ Turn off data sharing for training:
 > /privacy-settings
   ⎿  "Help improve Claude" set to false.
 ```
-
-[Claude Code Best Practices](https://www.anthropic.com/engineering/claude-code-best-practices)
 
 ## Customizations
 
@@ -59,4 +56,8 @@ From [Prompting best practices - Claude Docs](https://platform.claude.com/docs/e
 }
 ```
 
-### [[Claude Agent Skills]]
+
+## Links
+
+- [[Claude Code Best Practices]]
+- [[Claude Agent Skills]]

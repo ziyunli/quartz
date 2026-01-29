@@ -3,7 +3,7 @@
 # ABOUTME: Only runs when there are changes in ./content directory
 
 # Check if there are any staged changes in the content/ directory
-if git diff --cached --name-only | grep -q "^content/"; then
+if git diff --cached --name-only | grep -q '^"*content/'; then
     echo "Formatting content files with Prettier..."
     npx prettier ./content --write
 

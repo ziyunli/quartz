@@ -1,0 +1,28 @@
+- 🕵️‍♂️ [毕业](https://www.goodreads.com/book/show/53452229):茶道诡计，看不懂
+- 🕵️‍♂️ [魔球](https://www.goodreads.com/book/show/16088019)
+- 🕵️‍♂️ [假面饭店](https://www.goodreads.com/book/show/35818651)
+- 🕵️‍♂️ [禁断的魔术](https://www.goodreads.com/book/show/52986981)
+- 🕵️‍♂️ [白金数据](https://www.goodreads.com/book/show/39783645)
+- 🕵️‍♂️ [圣女的救济](https://www.goodreads.com/book/show/50812860)
+- 💁‍♀️ [夜](../notes/夜.md)
+- 💁‍♀️ [当我谈跑步时，我谈些什么](https://www.goodreads.com/book/show/20758207): Pain is inevitable. Suffering is optional.
+- 🕵️‍♂️ [解体诸因](https://www.goodreads.com/book/show/50887705):为肢解这种猎奇手法疯狂寻找符合逻辑的解释，读起来还挺好笑的，尤其是最后几章
+- 🕵️‍♂️ [推理时钟](https://book.douban.com/subject/33414749/)：好复杂的机械圈套
+- 🌳 [The 22 Immutable Laws of Marketing](https://www.goodreads.com/book/show/34215315-the-22-immutable-laws-of-marketing)
+- 🕵️‍♂️ [愚者的片尾](https://www.goodreads.com/book/show/45992554)
+- 🕵️‍♂️ [冰菓](https://www.goodreads.com/book/show/18691210)
+- 🧙‍♂️ [猎魔人 卷一：白狼崛起](https://www.goodreads.com/book/show/30785909)
+- 📟 [Introducing Elixir](https://www.goodreads.com/book/show/31332945-introducing-elixir)
+- 🕵️‍♂️ [盛夏方程式](https://www.goodreads.com/book/show/52688393)
+- 📟 [Programming TypeScript](https://www.goodreads.com/book/show/45362865-programming-typescript)
+- 🕵️‍♂️ [时生](https://www.goodreads.com/book/show/34503235): 意外地喜欢这部，父子间的关系往往都是上下关系，而这个故事试着描写了一个平等关系下的假想。而本身父子间非常含蓄的情感表达，也借助穿越时光这样的设定说了出口。一本美好的梦。
+- 🌳 [The Courage to Be Disliked](https://www.goodreads.com/book/show/41540123-the-courage-to-be-disliked)
+- ☕️ [你不懂咖啡](https://www.goodreads.com/book/show/29855848)
+- 🕵️‍♂️ [恋与禁忌的述语论理](https://book.douban.com/subject/30359066/)：数理逻辑导论科普型轻小说，果然是能拿梅菲斯特的作品。拐弯抹角下来背后的诡计核心其实很简单，最后连动机也省掉了，也是过于投机取巧了
+- 🌿 [Talking to Strangers](https://www.goodreads.com/book/show/53098669-talking-to-strangers)
+- 🌳 [Never Split the Difference](https://www.goodreads.com/book/show/27246485-never-split-the-difference)
+- 🕵️‍♂️ [夜行](https://www.goodreads.com/book/show/37837331)
+- 🕵️‍♂️ [我杀了他](https://www.goodreads.com/book/show/34426731)
+- 🌿 [I Will Teach You to Be Rich](https://www.goodreads.com/book/show/45699866-i-will-teach-you-to-be-rich)
+- 🕵️‍♂️ [库特利亚芙卡的排序](https://www.goodreads.com/book/show/23400379)
+- 📟 [Docker for Rails Developers](https://www.goodreads.com/book/show/44902385-docker-for-rails-developers)

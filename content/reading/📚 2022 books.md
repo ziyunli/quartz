@@ -1,0 +1,7 @@
+- 📟 [A Philosophy of Software Design](https://www.goodreads.com/book/show/39996759-a-philosophy-of-software-design)
+- 🕵️‍♂️ [孤島的來訪者](https://www.goodreads.com/book/show/61749617)
+- 🕵️‍♂️ [时空旅行者的沙漏](https://www.goodreads.com/book/show/61863606): 方丈老师还是很实诚的，没有用任何的诡叙，把所有的解密条件和线索都很规范的给出来了，是个堂堂正正的挑战。里面的手法有点点老套了，科幻要素算是唯一的新酒吧。阅读体验还是好的
+- 🕵️‍♂️ [兇人邸の殺人](https://www.goodreads.com/book/show/58978307)
+- 💁‍♀️ [An Engineer's Guide to Silicon Valley Startups, 3rd Edition](https://www.goodreads.com/book/show/19433424-an-engineer-s-guide-to-silicon-valley-startups-3rd-edition): Still plenty of gems for a 10-year-old book about a fast-moving industry. Be carefully using the raw numbers, but the principles seem still valid. As someone who never spends time in SV, I really enjoy the anecdotes.
+- 🌿 [孩子的宇宙](https://www.goodreads.com/book/show/96759887)
+- 🌿 [The Little Book That Still Beats the Market](https://www.goodreads.com/book/show/8247775-the-little-book-that-still-beats-the-market)

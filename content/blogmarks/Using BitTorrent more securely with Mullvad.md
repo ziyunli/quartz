@@ -1,5 +1,11 @@
 ---
 source: https://web.archive.org/web/20210426203102/https://mullvad.net/en/help/bittorrent/
+tags:
+  - Clippings
+---
+
+From [web archive](https://web.archive.org/web/20210426203102/https://mullvad.net/en/help/bittorrent/)
+
 ---
 
 Use the BitTorrent protocol more securely by following these steps.

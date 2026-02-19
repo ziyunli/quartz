@@ -1,5 +1,0 @@
----
-tags:
-  - Books
-draft: "true"
----

@@ -7,9 +7,9 @@ source: https://modernaicourse.org
 
 Website: [10-202: Introduction to Modern AI](https://modernaicourse.org/)
 
-## Lectures
+# Lectures
 
-### Class logistics and a brief history of AI
+## Class logistics and a brief history of AI
 
 [Lecture 1a: Intro to the course - YouTube](https://youtu.be/37mSOtgYIjM)
 [Lecture 1b: A (brief, opinionated) history of AI - YouTube](https://youtu.be/dPvIArnLMU4)
@@ -59,3 +59,7 @@ Four eras of AI
    3. 2016 AlphaGo
    4. 2017 Transformer paper
    5. 2022 ChatGPT
+
+## Intro to supervised learning
+
+[Lecture 2: Intro to supervised machine learning - YouTube](https://youtu.be/xIQkf7ZGQhM)

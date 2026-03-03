@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 tags:
   - Courses
 source: https://modernaicourse.org

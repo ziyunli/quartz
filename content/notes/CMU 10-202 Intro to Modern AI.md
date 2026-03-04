@@ -11,8 +11,8 @@ Website: [10-202: Introduction to Modern AI](https://modernaicourse.org/)
 
 ## Class logistics and a brief history of AI
 
-[Lecture 1a: Intro to the course - YouTube](https://youtu.be/37mSOtgYIjM)
-[Lecture 1b: A (brief, opinionated) history of AI - YouTube](https://youtu.be/dPvIArnLMU4)
+- [Lecture 1a: Intro to the course - YouTube](https://youtu.be/37mSOtgYIjM)
+- [Lecture 1b: A (brief, opinionated) history of AI - YouTube](https://youtu.be/dPvIArnLMU4)
 
 Goal: Build an AI chatbot from scratch
 

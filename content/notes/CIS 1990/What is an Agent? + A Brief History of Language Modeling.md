@@ -1,8 +1,6 @@
-## Week 1: What is an Agent? + A Brief History of Language Modeling
+## The Evolution of Language Models
 
-### The Evolution of Language Models
-
-#### The Rule-Based Era (1950s–1990s)
+### The Rule-Based Era (1950s–1990s)
 
 - Early approach: treat language as logical puzzles — map every grammatical rule to "solve" language
 - **The Turing Test (1950)**: Alan Turing proposed that if a machine could mimic human conversation perfectly, it could be considered "thinking"
@@ -42,7 +40,7 @@
 >
 > No matter how many rules you add, natural language is ambiguous enough that you can always construct a counterexample. This is the fundamental argument for the statistical shift — you need _distributional context_, not brittle pattern matching.
 
-#### The Statistical Shift & Word Embeddings (1990s–2013)
+### The Statistical Shift & Word Embeddings (1990s–2013)
 
 - Insight: "The world is too messy for rules." Instead, use large corpora (Wall Street Journal, Wikipedia, etc.) to calculate **probability of word sequences**
 - **N-Grams**: Predict the nth word from the previous n−1 words. Fundamentally a **Markov Chain** — future state depends only on the current state, not the entire history
@@ -62,7 +60,7 @@
 > - **LSTMs**: ~100–200 tokens (cell state helps, but still degrades)
 > - **Transformers**: full context window, 2k–128k+ tokens (self-attention)
 
-#### The Vector Revolution (2013)
+### The Vector Revolution (2013)
 
 - **Word2Vec** and **GloVe**: Represent words as points in a 300-dimensional space instead of unique IDs
 - Key insight: _"You shall know a word by the company it keeps."_ Words with similar meanings (e.g., "King" and "Queen") are mathematically closer together
@@ -82,7 +80,7 @@
 >
 > The full RAG pipeline from the cognitive architecture section: embed documents → store in vector DB → at query time, embed the question, search the DB for similar vectors, retrieve matching documents → feed into the LLM's context window as "memory."
 
-#### Recurrent Neural Networks (RNNs)
+### Recurrent Neural Networks (RNNs)
 
 - Process tokens sequentially, maintaining a **hidden state**
 - Problem: **Vanishing Gradient** — as input grows, the influence of early words on later words decays to zero
@@ -99,7 +97,7 @@
 >
 > The problem: each hidden state is a **fixed-size vector** (e.g., 256 dimensions). At step 20, information from step 1 has been through 19 rounds of matrix multiplication and squashing through tanh. Each step **overwrites** the hidden state, compressing everything seen so far into the same fixed number of dimensions. Early information gets diluted — this is the vanishing gradient.
 
-#### LSTMs (Long Short-Term Memory)
+### LSTMs (Long Short-Term Memory)
 
 - Introduced **gates** (Input, Forget, Output) and a **cell state** acting as a persistent memory conveyor belt
 - Solved the vanishing gradient problem
@@ -119,7 +117,7 @@
 >
 > The **"conveyor belt"** is an analogy for the cell state's path through time. Items (information) ride the belt forward; at each station (time step), workers can remove items (forget gate), add items (input gate), or inspect items (output gate). ==The key property: the cell state flows via addition and element-wise multiplication — no repeated matrix multiplications crushing the signal==, so information placed at step 3 can survive to step 50. The limitation: a worker at station 50 can only see what's currently on the belt — they can't reach back to station 3 directly. That's the sequential bottleneck transformers eliminate.
 
-#### The Transformer & Scaling Laws (2017–Present)
+### The Transformer & Scaling Laws (2017–Present)
 
 - **"Attention is All You Need"** (2017): Removed the sequence requirement entirely
 - **Self-Attention**: Every word looks at every other word simultaneously, enabling the model to understand **global context** instantly
@@ -130,14 +128,14 @@
 >
 > Power laws appear everywhere: earthquake magnitudes (Gutenberg-Richter), word frequency (Zipf's law — "the" vastly more common than "aardvark"), city sizes. The common pattern: **diminishing returns that never fully plateau**. For LLM scaling, the debate is always whether the next 10x spend is _worth it_, not whether it'll help.
 
-### Defining the AI Agent
+## Defining the AI Agent
 
-#### From Completion to Agency
+### From Completion to Agency
 
 - **Passive LLM**: Prompt in → completion out. No memory of the world, no way to change it
 - **Active Agent**: Autonomous, Reactive, and Proactive. Can observe results, realize mistakes, and try different approaches
 
-#### The Cognitive Architecture of an Agent
+### The Cognitive Architecture of an Agent
 
 1. **Planning**
    - _Task Decomposition_: Break a "Goal" into "Steps"
@@ -170,7 +168,7 @@
    - Modern agents are often **multimodal** — they can "see" screenshots, "hear" voice commands, not just read text
    - Inputs from different modalities are processed together for richer task understanding
 
-#### The ReAct Pattern (Reasoning + Acting)
+### The ReAct Pattern (Reasoning + Acting)
 
 The most common agentic loop. Example — "How many women are there in Paris?":
 

@@ -13,6 +13,7 @@ Obsidian vault published via Quartz to https://ziyunli.github.io/quartz/
 - Private-to-private links: use Obsidian wikilinks `[[filename|display text]]`
 - **Public-to-private links: use original source URLs (external links), NOT wikilinks** — private content won't resolve on the published site
 - Public-to-public links: use wikilinks
+- When private clippings and public blogmarks share the same filename, use folder path in transclusions to disambiguate: `![[blogmarks/filename#^block-id]]`
 
 ## Note Conventions
 

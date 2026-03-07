@@ -1,0 +1,1850 @@
+Hi everyone.
+
+Welcome to the third lecture of Intro to Modern AI.
+
+This lecture is going to be really an introduction to some of the basics of linear algebra.
+
+Now, we won't cover anything close to a complete course on linear algebra.
+
+Instead, we're going to focus on some of the basic operations that you'll need to know
+
+to understand how linear algebra works in the context of machine learning models.
+
+And in particular, we're really going to focus on
+
+simple operations on vectors, on matrices, and then a lot of work on multiplying matrices and vectors and multiplying matrices and matrices.
+
+Because those really are the fundamental operations that you need for modern machine learning models.
+
+Linear algebra really is the foundation for a lot of modern AI models.
+
+And so it's good to have an intuitive understanding of how these operations work in order to really grasp the basics of how these models ultimately work.
+
+So in particular, we're going to start off with a brief recap from last time.
+
+And in particular, we're going to recap the three ingredients
+
+of a machine learning model and basically or of machine learning overall
+
+And basically how linear algebra fits into that, in particular how it fits into the first category of machine learning models.
+
+Then we'll talk about vectors.
+
+what a vector is, what are the basic operations on vectors, and we'll also show some code on how you manipulate vectors using PyTorch.
+
+We'll then talk about matrices, which are if vectors can be thought of as 1D numerical arrays, matrices are really 2D numerical arrays.
+
+We'll talk about these things as well.
+
+And then we'll talk about matrix vector multiplication.
+
+So what does it mean to multiply a matrix and a vector together?
+
+And then next, talk about matrix matrix multiplication.
+
+Which actually, matrix vector multiplication, it's just a special case of matrix matrix multiplication, but it's good to still understand these two different operations at an intuitive level.
+
+Finally, we will very briefly, and this is going to be more from just a programming standpoint.
+
+Talk about tensors.
+
+And I'm putting tensors in quotes here because even though tensors are the object that PyTorch in particular manipulates,
+
+These really aren't tensors in the mathematical sense, where tensor algebra is a whole field in and of itself.
+
+These are really just higher-dimensional arrays, multi-dimensional arrays.
+
+And so what you end up doing in PyTorch still is largely limited to the operations that we have here, really matrix vector multiplication, matrix matrix multiplication.
+
+And tensors are really more than anything a way to kind of store these things in a convenient format to manipulate.
+
+Okay, so first of all, let's jump in to a recap
+
+Of kind of what we discussed last time, the three ingredients of machine learning.
+
+We covered this in detail last time, so you can go back to the last lecture and also look at this if you need to.
+
+But recall that the first ingredient of a machine learning model
+
+was or machine learning algorithm was the model itself.
+
+And this basically was a function that mapped inputs
+
+To predicted outputs.
+
+Then we had actually what we'll cover next time next in the in the future lectures, we had a loss function.
+
+Which basically measured the quality, the quality of the predictions
+
+And finally, we had an optimization procedure.
+
+And this is basically a procedure for finding a model with low loss.
+
+i.
+
+e.
+
+good performance under this measure.
+
+In particular, what we're going to cover today is really most related to the model
+
+Because what I described last time about this model was in sort of very abstract terms.
+
+We talked about a model as kind of a map from inputs to predicted outputs, but these terms were all very amorphous.
+
+In order to make this formalism more concrete, we're gonna need the language of how we represent
+
+inputs and how we represent kind of manipulations we can do to transform inputs to our predicted outputs
+
+Now, next lecture, we're actually going to cover how we build a machine learning model using the techniques of linear algebra.
+
+But for today, we're really going to focus on the fundamentals of linear algebra, because linear algebra winds up being effectively the language we use to specify our machine learning models.
+
+Okay, so with that is a rough context, let's jump in to defining the first element of linear algebra, which is going to be vectors.
+
+Now, I'm going to take a fairly, I would say, sort of computer science perspective of vectors and matrices.
+
+It's possible to think of these things as m as as vector spaces and mappings between different vector spaces and things like that.
+
+But we're going to think of this much more from a practical standpoint.
+
+And we're gonna say that basically, as far as we are concerned, vectors are essentially
+
+Arrays, in this case actually 1D arrays, one dimensional
+
+Arrays of numbers
+
+And we're going to use the notation that I'm going to write here to denote a vector.
+
+We're going to say that x is a vector.
+
+Denoting it x is in R to the N.
+
+And what this different what these different elements mean here is it means that x here is a vector.
+
+Each element of this vector has real-valued entries, that's what this script R stands for.
+
+And there are n elements in that vector.
+
+Now, I do sort of need to mention one thing, which is that this notion of one-dimensional here is a bit confusing.
+
+Vectors are one-dimensional arrays, meaning they only have sort of one thing you index over, as compared to say matrices, which we'll cover in a second, which have two items you index over, the rows and columns.
+
+But it's also common to refer to the dimension of a vector as n.
+
+And so whether you think of a vector as being n-dimensional or a one-dimensional array, it really depends on on sort of
+
+the context of what you're talking about.
+
+So just be aware of that little bit of confusion there.
+
+Hopefully what you mean and whether you mean n-dimensional or or uh or one-dimensional, it should be fairly
+
+easy to understand from the context.
+
+So for example, maybe we have a vector
+
+X, which could say be a vector in R3.
+
+And maybe this has the elements
+
+4, 3, and 7.
+
+This would be a vector with three elements, but it's a one-dimensional array in the sense that there's only one dimension indexing over the different elements of this array.
+
+Now we refer in general to we use the the notation uh XI to refer
+
+To the eighth element of X
+
+Xi refers to the ith element of x.
+
+So in this example, for instance, here, x2 would equal three.
+
+Right, because the second element of our vector is equal to 3.
+
+Now I do want to mention something, sort of in general
+
+So we use typically when we write things in mathematical notation, we use what's called one indexing to
+
+describe the entries of a vector.
+
+Use one indexing for vectors, and I should say sort of in math.
+
+So I'm writing the math here.
+
+I'm gonna use X1 to refer to the first element of X.
+
+This admittedly can be kind of confusing because when we actually program in Python
+
+We're going to use zero indexing, which means that we're going to start our first element at position zero.
+
+But the reality is you will have to get used to this sort of ambiguity here.
+
+And people do use those notations most commonly, kind of when we're talking about mathematical notation versus notation in code
+
+And so it is important to get familiar with both of these things.
+
+Okay, now let's talk about some set of operations on vectors
+
+So I'm going to talk about a few operations we can do to vectors.
+
+Of course, in
+
+Subsequent lectures, we will use a lot more sort of compositions of these operations to create more complex operations we apply to vectors.
+
+And we will, of course, represent things like
+
+images or words in a sentence, all as vectors ultimately.
+
+But now I want to talk about just sort of the basic operations that we can apply to vectors in order to manipulate them.
+
+The first of these is going to be addition.
+
+So if we have two vectors that are the same size, have the same number of elements
+
+Let's say we have x and y, they're both in Rn.
+
+Then basically the sum of these two vectors is just going to be
+
+the sum of each individual it will be a new vector where each element is the sum of the individual elements of those two vectors.
+
+So let me just that that sounds confusing, but it's incredibly simple, of course.
+
+Let me just write it out here.
+
+Let's say that we have a vector x1, x2, all the way to xn.
+
+And we add it to a vector Y one, y two, all the way to Y N.
+
+This is just going to be a new vector where each element is just the sum of the individual elements of each vector.
+
+x1 plus x2, uh y one, so x1 plus y1, x2 plus y2, etc.
+
+, all the way down to xn plus yn
+
+Alright, and that is vector addition.
+
+Now, there's many other operations you can do on vectors.
+
+Um, the ones that are sort of most important to us, the next one that I'll talk about.
+
+So operations continued.
+
+The next one that we'll use frequently is scalar multiplication.
+
+This is how you multiply a vector by a scalar.
+
+So in particular, if I have x
+
+in R N as a vector and C C in R.
+
+That just means of course
+
+If you have sort of a a vector with with with only one entry in it, that's the same thing as just having a scalar number.
+
+So this notation here just means that C is a real valued number.
+
+Then, well, if we'd write down our x, x1, x2, all the way down to xn, and multiply this by c.
+
+This is just equal to C multiplying each individual element.
+
+And this is fairly straightforward, I know, but it's good to define these things because I'll be using them later, and I want to make sure there's no ambiguity.
+
+Okay, finally, the last operation we're going to consider for vectors is vector-vector products.
+
+In this case, we're talking about specifically the vector vector inner product.
+
+So this is vector vector multiplication
+
+But really, this is a specific kind of multiplication called an inner product.
+
+Now you might think that the natural analog of multiplying two vectors, just like we added two vectors, would be to multiply the corresponding entries together.
+
+But this is actually not the most common form of vector-vector multiplication.
+
+You can do that too, but it's not the most common form.
+
+What instead is common is something that's called an inner product here.
+
+And in particular, if we have two vectors, x and y, which are again both in R, both in r to the n, so they're both n vectors with n elements.
+
+Then we're gonna write a particular kind of multiplication called an inner product in the following way.
+
+And we sometimes use these angle brackets to denote this.
+
+Alright, so x, comma, y in little angled brackets denotes an inner product.
+
+But also for reasons we'll see in a second.
+
+We also frequently denote this as x subscript superscript t y
+
+This operator here stands for a transpose, and we'll define that actually in a few in a few more a little bit later in the lecture
+
+But I'm just sort of forward defining it here because we will in fact use this notation most frequently for inner products.
+
+And this thing here is just equal to
+
+It actually is a scalar quantity, so I want to make sure people people realize I guess I should sort of indicate here that this quantity of course is another vector.
+
+Maybe I'll go back to the previous example too.
+
+This quantity here is also a vector.
+
+But an inner product is actually a scalar quantity, and it's equal to just the sum of the product of all corresponding entries.
+
+So you do multiply all corresponding entries together, x1 times y1.
+
+than x2 times y2.
+
+But instead of having a new vector with all those components, you add them all together.
+
+Plus dot dot dot all the way to xn yn.
+
+And in fact, since these things are very common, it's very common to sort of write sums like this, and it gets quite cumbersome if we wanted to, every time we had a sum of all elements, we had to sort of write
+
+The first one plus the second one plus dot dot dot the last one.
+
+What's a bit rather common instead is just to write this whole thing using some notation.
+
+using some notation.
+
+So we're going to write this as this symbol here, which is a symbol for the sum of i equals 1 to n x i yi.
+
+This thing here is just shorthand notation for this sum here.
+
+But we're going to use this sum notation a whole lot throughout this course, so you should be familiar with this summation notation.
+
+And I just want to like to make the point again that this is not itself a vector, but this is actually just a real valued quantity.
+
+Right?
+
+Because we're adding these all together, it's just a single real-valued scalar.
+
+That's what the inner product actually is.
+
+Okay, so those are the basics of vectors.
+
+What I'm going to do now though is I'm going to switch over and actually show how these things
+
+look like in code using in particular the PyTorch library that we'll use throughout this class.
+
+So I'm going to switch over to my Colab notebook here.
+
+I'm going to import the torch library and I'm going to start creating uh vectors.
+
+Now, PyTorch uses a
+
+a variable type called tensors to represent both vectors and matrices and higher order higher dimensional arrays
+
+Tensors in fact typically do refer to sort of higher order arrays than just vectors and matrices, but those are types of tensors as well.
+
+And PyTorch uses the word tensor to describe all these things
+
+So I could set X to be a tensor, and I can specify the elements here.
+
+So I can specify the elements, say one, two, three, and that would make it a tensor.
+
+I could print what x is then.
+
+And x is now a tensor with the elements 1, 2, 3.
+
+But when we have a tensor with only one dimension like this.
+
+You should think of this as a representation of a vector.
+
+Okay, so x here is effectively a vector, and we can do a number of things with this vector.
+
+We can of course access individual elements.
+
+So if I want the first element, again with zero indexing now, I would use x0.
+
+If I want the last, the third element, I would use x2.
+
+And this is sort of the notation for accessing individual elements from a vector.
+
+I can also do things like add two vectors together.
+
+So if I take this and
+
+Create another vector here, let's say four, five, and six, then I can do things like add x and y together
+
+Right?
+
+And that gives me a new vector with all the elements of x added to each corresponding element of y.
+
+I can also of course do things like multiply by scalars.
+
+So if I want to multiply x times 2, I could just multiply
+
+using the the multi the multiplication operator 2 times x and that would give me this scalar multiplication operator.
+
+Then finally I can also compute uh inner products between two vectors
+
+So in this case here, the way I do that is I do it with the matrix multiplication operator denoted by the at symbol.
+
+This operator, the matrix multiplication operator, is going to be one of the most widely used operators.
+
+It will actually be used not just for vector products, but also for
+
+matrix matrix vector products for matrix matrix products and even for things like batch matrix products and stuff like this when you have higher dimensional tensors.
+
+So it's going to be a very, very overloaded in the in the strict in both the the informal sense but also the actual formal sense of the word.
+
+It's going to be a very overloaded operator.
+
+But you can use it for things like inner products here.
+
+So if I want to find the inner product of x and y, I would use this notation here, and that's 32.
+
+And if you see if you add 1 times 4 plus 2 times 5 plus 3 times 6, that will equal 32.
+
+And that's exactly what we're doing with these different operations here.
+
+All right, let's switch.
+
+We're gonna of course see a lot more manipulation of
+
+of vectors and and matrices in PyTorch.
+
+But let's switch back now and talk about going beyond vectors to matrices.
+
+Okay, let's talk next about matrices.
+
+Now, just like a vector, we sort of said, was a one-dimensional array of numbers, a matrix.
+
+Is a two-dimensional array of numbers.
+
+So this has both a set of matrices or set of numbers arranged with both rows and columns now.
+
+Whereas a vector sort of sort of had one dimension, you varied along, matrices have two dimensions, they have both a row dimension and a column dimension.
+
+And in particular, we'll use the notation A in R to the M times N.
+
+To denote a matrix, it has m rows.
+
+So the first number in this notation here denotes the number of rows, and n columns.
+
+And that's going to be our notation for how we denote matrices.
+
+As a simple example
+
+We could have the matrix A say in two by three.
+
+Maybe this would equal something like
+
+Seven three two two four eight.
+
+And that would be a two by three dimensional matrix
+
+or really with that many elements.
+
+Again, remember we're overloading the term dimension here.
+
+Sometimes it means this sort of 2D.
+
+And that it there's two different aspects of it, but sometimes it actually means sort of the the actual size of the matrix.
+
+So you have to just get kind of used to these different notations here.
+
+But this would be a matrix here with two rows and three columns
+
+Now, in general, we're going to refer to the
+
+Entry in the I throw
+
+So the eighth row and j th column
+
+as A I J.
+
+So here of course again sort of pointing to this maybe
+
+Maybe I'll use a different color here.
+
+That entry is the entry in the first row and the second column, so we would denote it as a one two.
+
+That would equal three.
+
+And that's generally kind of how we denote the individual entries of a matrix.
+
+Now, before I I will mention a second there are actually other ways that we want to use
+
+um to denote different elements of this matrix.
+
+Maybe we want to define it in terms of its rows, in terms of its columns.
+
+But before getting there, I actually want to talk about the operations on matrices, just like we talked about the operations on vectors.
+
+And the first two of these are going to be very similar to what we had when we talked about vectors.
+
+So let's talk about some of the operations.
+
+Very similar to before, we had matrix addition
+
+So if we had two matrices of the same size, say they're both m by n.
+
+then their sum A plus b would just be equal to the s uh a new matrix
+
+Whose entries were the sum of the corresponding entries of A and B.
+
+And again, that's saying it rather complicated.
+
+All I mean by this is if we have our matrix A, say A11, A12.
+
+etc all the way up to a one n then a two one a two two
+
+A two N and then down to A M one A M two
+
+etc.
+
+This is sort of a breakdown of all the elements of our matrix.
+
+I won't write the same for B, I'll just sort of write it as B has the same entries.
+
+This, of course, the whole thing is A
+
+This would equal a matrix where each individual element now was the sum of the corresponding elements.
+
+So the first item would be A11 plus B one one, then A12 plus B one two, A21 plus B two one.
+
+2 plus b, 2, 2, and I won't bother writing them all this time, but you kind of get the idea.
+
+Right, so that's just matrix addition.
+
+Each element of the s of the of the sum is equal to the cor the two corresponding elements of each matrix added up together
+
+Similarly, you could write matrix scalar multiplication
+
+And this is just the exact form you would expect.
+
+If I have a matrix, so if I have a
+
+Matrix A, which is M by N, and the scalar value C, then multiplying this matrix A11, A
+
+A one two two A two one two two, etcetera
+
+times the s the scalar C would just be equal to the scalar C multiplying each individual element there.
+
+And so on.
+
+Okay, so those are two very sort of simple operations.
+
+Now, before we get to multiplication of matrices, which is actually going to make up the vast majority of what we're going to talk about in this lecture, both multiplying
+
+Matrices and vectors, and also matrices and matrices, there's one more operation that is actually quite important to define for matrices, and this is the transpose operator.
+
+So if we have a matrix A, which is M by N
+
+Then the A transpose, which is denoted with this superscript T
+
+Sometimes in especially in some papers, there's a different symbol for this T than the actual letter T, but I typically use the letter T, and certainly when writing
+
+you won't be able to tell the difference between this t and the different operations, the operators for t.
+
+So a s uh superscript t
+
+Is essentially a new matrix where the rows and the columns are swapped from the original A.
+
+And here's what I mean by that.
+
+So a transpose would be a new matrix, which is actually if the original matrix was m by n, then t, a transpose would be n by m.
+
+The dimensions essentially are swapped here, or the sizes of the rows and columns are swapped here.
+
+Um, and basically, where in this new matrix you would have
+
+A transpose I J is equal to the original matrix J I entry.
+
+And what that means, just sort of looking at it visually, is if I have a matrix like this, and so I'm going to write this all again in sum, I'm going to write out all the entries here.
+
+If I have a matrix,
+
+A11, A12, A21, A22, and I actually will write them all the way here just to make the point.
+
+A1N
+
+A two N A M N A
+
+Two uh A N one M one A M two etcetera
+
+Sort of in the wrong spot there.
+
+Let me move that one.
+
+Okay.
+
+In this case, this matrix transposed
+
+would essentially result in a matrix where this first row here became the first column in the transposed matrix.
+
+So in other words, the first column of this matrix now, so this first column, would be equal to the entries in this first row.
+
+In other words, these entries would be A11.
+
+I'm going to have a hard time writing this because this is the opposite of what I usually write for the entries of A, but I'll see if I can do it.
+
+A12 all the way down to A1N.
+
+To be clear, this is sort of saying what these entries are.
+
+Typically we would we would not refer to the entries of the matrix like this, but
+
+you you get the point here.
+
+And then A21, A22, all the way down to A2N.
+
+etcetera, uh to A M one, A M two, and A M
+
+Again, this is writing it in terms of the entries of the original matrix.
+
+So what hopefully is obvious here is that this row is equal to this first column, and similarly, this column is equal to this row.
+
+So you're just swapping the rows and columns.
+
+This is a very complicated way of saying that.
+
+You're just swapping the rows and columns.
+
+Maybe a more simple example here would just be to give an example of an actual sort of concrete matrix.
+
+If I took my matrix before that I had, which was I think seven uh seven three two
+
+two, four, eight, then a transpose would just be equal to, well, the first column
+
+would be seven, three, two, and then the next column would be two, four, eight.
+
+So that's what a transpose is.
+
+Now, and this would be if since this thing here was a matrix which was
+
+Two by three, this would be a matrix, which was three by two.
+
+Okay, now that we've introduced the transpose, I can actually talk a little bit more about that somewhat odd notation I used before when it came to um
+
+When it came to vectors and inner products and such.
+
+And the reason why we sort of use those, the transpose also when it comes to vectors, is that vectors
+
+And I'm going to use the notation from before.
+
+So vectors X, say in Rn.
+
+are always considered column vectors, are considered column vectors
+
+I.
+
+e.
+
+matrices with
+
+N rows and one column.
+
+So X here, well I'll write it in the
+
+My math blue would be equal to, you know, in this case I'll just make it 732 again.
+
+So if that is a vector
+
+In R3, we would really consider it to be a vector or a matrix equivalently with three rows
+
+And one column.
+
+Now, if you do want
+
+A vector that denotes a matrix with one row and n columns.
+
+So to denote
+
+A row vector
+
+In other words, a vec a matrix with
+
+One row and N columns, we would use a notation
+
+X transpose.
+
+And this is actually exactly a
+
+uh the transpose operator applied to this matrix, right?
+
+Because we think of this as a matrix
+
+then x transpose will be the transpose of that, and so that since that matrix, the vector thought of as a matrix, has
+
+Three rows and one column, x-transpose would have one row and three columns.
+
+In other words, here we would have x transpose.
+
+would be equal to this matrix, 732, which again has really one row and three columns.
+
+And that would be it's it's a vector, but we always kind of write this as a matrix, a one by three matrix.
+
+Okay, and so that is the notation.
+
+We'll always use this notation here to denote oops, uh this notation here to denote x transpose if we want to denote a
+
+row vector explicitly.
+
+Okay.
+
+Before I move on to sort of demonstrating how to
+
+manipulate matrices in PyTorch or at least index into matrices in PyTorch.
+
+I'm going to talk about the last thing I'm going to mention here is another way of talking about the writing matrices in terms of its elements.
+
+So previously, a few slides ago, we talked about denoting the op the elements of a matrix.
+
+via this notation AIJ.
+
+So AIJ always refers to the element in the ith row in the jth column.
+
+However, it's also very common to want to express a matrix in terms of sort of directly, in terms of its rows or in terms of its columns
+
+This is going to be very useful for when we talk about sort of what operations of matrix multiplication are doing and things like this.
+
+So in particular, we will sometimes write a matrix
+
+In terms of its columns
+
+And when we do this, we'll write our big matrix A, and then we'll kind of indicate that each column of A
+
+is denoted by a lowercase a1 for the first column, a lowercase a2 for the next column, etc.
+
+, all the way up to an
+
+Okay, and this would be a matrix, which is just again m by n.
+
+But each ai would be essentially a vector which was m-dimensional.
+
+Now it's important to note that this is just sort of notation here.
+
+This is not
+
+We wouldn't always refer to the ith entry or the ith column of A as AI.
+
+In general though, we only do this when we kind of define a
+
+to be expressed in terms of these entries here.
+
+And then as you might expect, just like there's a way to write a matrix in terms of its columns.
+
+We also might want to write a matrix in terms of its rows.
+
+A matrix.
+
+In terms of its rows.
+
+And so here we would use the notation.
+
+I'll try to give a little more space for myself here
+
+When we use a notation like this, we would say that a1, but importantly, a1 transpose, because this is going to be a row vector, denotes the first row of a
+
+A2 transpose would denote the second row of A, etc.
+
+, all the way down to AM transpose, which would denote the mth row of A
+
+And this is going to be a matrix, which is again M by N.
+
+And here, AI transpose would be a row vector.
+
+So it would be a really a matrix with one row
+
+and n vectors.
+
+Now it's important to understand here that this element here, AI, is not the same.
+
+It's not just the transpose of the column.
+
+What I'm doing here is I'm writing the matrices in terms of these elements.
+
+And really these terms only make sense if I actually go ahead and define the matrix as consisting of those things.
+
+But it's such a common way of writing the entries of a matrix, either referring to it by its rows or by its columns.
+
+that I want to explicitly kind of mention this is a common this is a common way of writing the different elements of of A.
+
+Okay, so now that we've expressed kind of some of the basic notations of matrices, I want to show, just like I did for vectors, how we would manipulate these things
+
+using PyTorch.
+
+So I'm going to switch back to my PyTorch window here.
+
+And I'm going to define a matrix A.
+
+as or in this case again as a torch tensor.
+
+But here I'm going to pass instead of a one-dimensional array, I'm going to pass a two-dimensional array to specify the entries.
+
+And in particular, in the first list, I'm going to specify the first row of the matrix.
+
+And the next element of the list is going to be the next row of the matrix
+
+Okay, so this specifies a matrix, if I look at A now, this will specify a two-dimensional tensor, i.
+
+e.
+
+a matrix, with the first row being 732, and the next row being 248.
+
+It's important to note that by convention, this is sort of PyTorch's convention, is that the inner the inner lists here denote the rows
+
+of the matrix, and then the outer list here sort of denotes the the sequence of those rows.
+
+So this element is the first row as a list, this element is the second row as a list.
+
+Once I have a matrix like this, I can do all sorts of things.
+
+I can look for different entries.
+
+So if I want the
+
+This entry here in the first row and second column, I would use A01 again because we're using zero indexing here.
+
+That would be the number three.
+
+Um but I can also do things like refer to the entire first row or the entire first column.
+
+So the way I would do that is you use the
+
+And the colon operator kind of means all the entries along that dimension.
+
+So again, the first element here describes which row you want to be in
+
+So say this first row.
+
+The second element describes which column you want to be in.
+
+So if I want all the elements in the first row, I can use something like this.
+
+I can specify the first row, but all the columns.
+
+And that would be a 1D array just corresponding to the first row.
+
+Or in this case, the second row.
+
+I can also though do it the other way around.
+
+So I can also use this colon operator in the first dimension and specify the first column of the matrix again as a vector.
+
+And this essentially, if we go back to what A is, right, the first column of this matrix would be the would be 7, 2, which is exactly what I'm gonna just print A up here, and then A
+
+0 would be the first column, which is exactly 7, 2 here.
+
+Similarly, I could look at the second column, etc.
+
+That's 3, 4, and so on.
+
+Now, there's one very important point here, which is that PyTorch does not differentiate between row vectors and column vectors.
+
+They are just all 1D arrays that represent a vector.
+
+And even though some operators that we will use kind of imply in a certain way, at least if you squint at it and think of linear algebra terms.
+
+But these are kind of like column vectors.
+
+The reality is there's no actual distinction between row vectors and column vectors.
+
+So which one of these two things you're sort of using
+
+Implicitly depends on your actual use of the of the matrices and vectors and less on some sort of definition.
+
+There's no notion of a vector transpose or something like that.
+
+It's still just the vector.
+
+Now you could actually get a
+
+represent a matrix that had explicitly that had one row and n call and m columns, uh or
+
+M rows, one row and n columns, or m rows and one column.
+
+Um so I could do something like this, right?
+
+I could of course define uh a vector.
+
+as torch dot tensor something like well if I want one r uh one column then I would do something like three
+
+is my first row and four is my next row, and that actually is a sort of explicitly a two by one matrix
+
+Similarly, I could do something like this, which would represent a matrix with explicitly one row and two columns.
+
+But that's not very common.
+
+It's much more common to just use single dimensions to represent tensors and just leave it at that.
+
+Or sick 1D arrays to represent uh sorry, 1D arrays to represent vectors and and leave it at that.
+
+Okay, the other thing I'll mention here is that as we sort of um as we defined also, you can represent the transpose operator with the a.
+
+t function
+
+So again, if A is this uh this matrix here, then A dot T would be the 2D array, i.
+
+e.
+
+matrix.
+
+with the first column here equal to the first row of A and the second column equal to the second row of A.
+
+So that's the convention for uh for transposing a matrix.
+
+But importantly, because again, there's no distinction between
+
+row vectors and column vectors.
+
+If I have a vector, so I have my vectors up here, let's look at the vector again.
+
+If I have my vector here, then x transpose actually doesn't do anything.
+
+So it even throws a warning here.
+
+They don't actually do anything.
+
+It just keeps the same size tensor as before.
+
+And in fact, even warns you that this is undefined or sort of not quite the right thing to be doing here.
+
+Okay, so that is the majority of a lot of the operations you'll use in PyTorch to manipulate matrices.
+
+Well, with one big exception of the matrix multiplication operator.
+
+Oh, I should also mention we can of course add them too.
+
+So let me actually show some addition and scalar multiplication.
+
+Let's take uh another tensor here.
+
+Um so three, two, three and one, eight.
+
+We can do things like add these together.
+
+We can also do things like multiply a by two and give us a new vector and things or a new matrix and things like that.
+
+Okay, so that is actually the extent of what we're going to need to talk about when it comes to sort of the basic notation of matrices.
+
+And the rest of this lecture is going to focus on matrix multiplication.
+
+In fact, we've already covered a simple case of matrix multiplication.
+
+It turns out that the inner product that we talked about with vectors was a special case
+
+of matrix multiplication with a row vector and a column vector.
+
+But in general I want to now walk through different interpretations.
+
+of what matrix vector multiplication is doing, and then eventually what matrix matrix multiplication is doing as well.
+
+And I'll briefly talk about uh sort of both how you implement these things and then also things like um how you deal with higher order tensors in PyTorch.
+
+So let's go back now to our to our notepad.
+
+Okay, let's talk now about matrix vector products.
+
+Or matrix matrix multiplication.
+
+Okay.
+
+So, actually sorry, matrix vector multiplication, I should say.
+
+Okay, so I'm going to start out with the basic definition of matrix vector products.
+
+And I'm going to define it first, kind of just in terms of its functional definition.
+
+But then I'm going to talk about different kind of interpretations about what matrix vector products are in some sense really doing.
+
+Okay, so here's what I mean by that
+
+First of all, let's define matrix vector products.
+
+If we have a matrix A, which is going to be M by N, and the sizes of these things are very important.
+
+So there's M rows and N columns.
+
+And a vector x, which is r, which is n dimensional in r to the n, then the product
+
+A times X is a matrix, a vector, A times is a vector.
+
+With M elements where the ith element
+
+Of this element, the ith element of this vector is equal to
+
+The sum from J equals one to N of A I J times X J
+
+So this is the kind of formal definition here of a matrix vector product.
+
+Now that's sort of fine as a definition.
+
+It defines how what each entry of this thing actually is using this summation notation, the same notation that we used for.
+
+uh inner products.
+
+So basically you take this variable j, you start with j equals one, so I guess I'll write it out one more time.
+
+I'll stop writing out sums pretty soon.
+
+But uh just as a as an example, this would equal A I one times X1.
+
+plus A I two times X two plus all the way to A I N times X N
+
+Alright, so that's what this sort of sum is is saying.
+
+Now again, that's the definition
+
+But I want to describe kind of visually what this product actually means.
+
+And I'm going to do it in a few different ways.
+
+So the first way I'm going to write it is sort of in maybe the interpretation that is most kind of that most directly corresponds to this definition.
+
+And as I do these things, I'm gonna write a lot more sort of of these linear algebra matrix, vector, vector, matrix, etc.
+
+products in terms of
+
+different ways of writing the matrices.
+
+But the important point to re to remember is that of course all these things that I am mentioning here are all are all equivalent.
+
+In fact, in the homework, you'll actually implement matrix vector products and matrix matrix products in all these different styles, and they're gonna all give the same answer.
+
+But there are a lot of reasons why I actually think it's very important to understand the different ways of doing this and to gain some familiarity with what each of these operations is actually doing.
+
+Okay, so let's talk about the first interpretation of matrix vector products.
+
+And that is a major vector product as a collection
+
+Of inner products.
+
+And to explain this, I'm going to write down the matrix A.
+
+Kind of as I did before in terms of its rows.
+
+Alright, so I'm gonna write a in terms of, well, the first row is a one transpose
+
+The second row is A2 transpose, etc.
+
+, all the way to A
+
+M transpose.
+
+I'm gonna I'm gonna multiply this by the vector x.
+
+So I'm writing x here just as a
+
+as a vector to denote that it's, you know, in fact kind of a a single um a single uh a a matrix effectively with
+
+A single column where that column has M elements to it and
+
+This, of course, is the matrix A.
+
+This is the vector X.
+
+And I'm going to now look at each element of this matrix vector product in terms of
+
+the inner product of this row and this column.
+
+And so with our notation, this would just in fact be
+
+This entry, the first entry, would be A1 transpose times X, and that in fact is exactly
+
+our inner product, right?
+
+That is that is the inner product of the first row of A and X.
+
+And if you think about actually the definition of the inner product, this is exactly
+
+what this kind of definition of matrix multiplication is or matrix vector product is actually capturing, right?
+
+This is the exact same expression we had when we defined
+
+um the inner product of a vector.
+
+So of course this inner product itself would be exactly equal to these terms of the of in in terms of the original matrix, right?
+
+And that's essentially how you get each element there.
+
+So the next element of the matrix is the inner product of the second row of A and X, all the way down to
+
+the lat the inner product of the last row and x.
+
+Alright, and I think this is actually kind of the definition most people are are familiar with, or the interpretation at least most people are familiar with.
+
+It is in fact just
+
+the inner product of the vector x with every single row of the matrix A
+
+Each of those inner products is itself a scalar quantity, and those scalar quantities make up the different elements of the resulting vector.
+
+Just to remind you, um this matrix of course was m by n.
+
+This vector was n-dimensional, and of course, just by the nature of sort of how we're writing this, it's
+
+apparent to see that this vector is m-dimensional.
+
+Okay, so the output, these, these, these sizes are really important here.
+
+M by n, n-dimensional matrix x results in an n-dimensional vector x results in an m-dimensional product a times x.
+
+Now, as I was saying, this is probably the most, this is the definition most people are familiar with for matrix vector products.
+
+But there's another equally important interpretation that I think is actually in many sense in many cases gives you a better intuition about what this product is doing.
+
+So this is interpretation number two.
+
+And this is an interpretation as a linear combination.
+
+Of the columns of A
+
+Where the coefficients of that linear combination are given
+
+By the entries of X of X
+
+What do I mean by that?
+
+Well, instead of writing A by its rows, what if we instead wrote A in terms of its columns?
+
+Again, this is not something transposing the A matrix or something like this.
+
+This is a different set of so it corresponds to different entries.
+
+uh a1, a two, et cetera, all the way up to a n, this would be the matrix A, times the matrix or the vector x1, x2,
+
+All the way to Xn.
+
+This thing is equal to the first column of A
+
+times x1.
+
+Next one's of course a scalar, so it's this whole vector times a scalar, plus the next column of a
+
+X two plus all the way up to the last column of A times X N
+
+You could also, of course, write this as equal to the sum from i equals 1 to n of, I'll even write it here, sort of denoting, making sure this is
+
+seem to be a vector times x i.
+
+So this should be i.
+
+But whether you want to write it like that or not is is
+
+It doesn't make a huge difference.
+
+The big point here is that you should think of this product interpreted this way
+
+as a linear combination, sort of an addition of all the different columns of A, where you first weight each column or multiply each column by the scalar
+
+of the corresponding entry in X.
+
+Now, again, a simple inspection of these operations should convince you this is in fact the exact same thing.
+
+Of course they're the same thing.
+
+But it's a very different way of viewing this operation.
+
+And in the end, it ends up being very important to realize that these two things can be done in these two different ways
+
+As we'll see in a second, in many cases in machine learning, kind of the different we'll use this as the an example in uh matrix matrix products, but
+
+There is a real sense in which these different sort of understandings give you different interpret or the different interpretations give you different understandings of what these operations are really doing.
+
+Okay, let's keep going and let's talk next about um
+
+One thing which I'm gonna go a little quicker more quickly over, uh but this will be uh we covered here matrix vector products.
+
+It's also possible in the same way to cover vector matrix products.
+
+Where you put a transpose vector, a row vector, on the right side.
+
+So here's what I mean by that.
+
+So for
+
+X in R M and A in M by M M by N
+
+then the vector matrix product x transpose times a is, I should really say this is sorry, this is
+
+More specifically, oh yeah, yes, it it is, that's true, but this thing would be a matrix which is 1 by n, where
+
+The ith entry, or really more specifically the one ith entry here, is equal to the sum from j equals one to m.
+
+of X J times A J I
+
+And so this is just another product between vectors and matrices, but one that results in a row vector instead of a column vector.
+
+Again, this is a definition.
+
+It's not very helpful, frankly, to think about it this way in my opinion.
+
+Instead, we can have similar analogies of the interpretations as we had before.
+
+So interpretation number one
+
+Interpretation number one.
+
+This is as inner products.
+
+And this says that if we have our matrix, our vector x as a row vector, actually let me move make these blue.
+
+To be consistent.
+
+Um style blue.
+
+There we go.
+
+Um if we multiply this by a matrix where we represent
+
+The different row columns of this matrix.
+
+What we get is a row vector where each element is this
+
+the the vector, the row vector x times this column vector.
+
+So this would be x times
+
+A1.
+
+The next element would be X transpose A2, all these inner products all the way up to X transpose A N.
+
+That is one way of viewing this element this inner product.
+
+But not surprisingly, there's the other interpretation as well.
+
+There's the interpretation where you think of this.
+
+Number two, where you think of this as a linear combination
+
+Of the rose
+
+of A with the coefficients given by x.
+
+I won't I will just write this now, I won't elaborate on it too much.
+
+But if you have the different elements, X1, X2, all the way to XM, oh I think I might have
+
+Okay, I did it correctly before, all the way to XM times the rows of a.
+
+So this would be a one transpose.
+
+A2 transpose all the way to M AM transpose.
+
+This whole thing is equal to
+
+Well, it will be equal to the sum of or the the sum of all these different rows
+
+all added up together, where each one is weighted by x1 or x2 or xm.
+
+Okay?
+
+So this is equal to, in other words, x1 times
+
+A one transpose plus X two times A two transpose plus
+
+et cetera, XM times A M transpose.
+
+Right, so it's a linear combination of the rows of A
+
+Where the coefficients of that linear combination are the elements of x.
+
+Alright, we're gonna see this briefly in PyTorch right now.
+
+I don't want to spend too much time on it because again
+
+We're going to do this for homework, so you're going to do exactly this kind of stuff for homework.
+
+And you'll get very familiar with it there.
+
+But just briefly, let's switch back over and show some matrix vector products.
+
+So if we have our matrix like this, and we want to multiply it by our vector x, we would again use this terminology, a matrix multiplication symbol x.
+
+And that gives us these are actually meant these to be floats.
+
+Sometimes it will
+
+If you specify an array that has nothing but integer values, you'll actually create an integer array.
+
+And so if you make at least one of them a floating point value, it'll be floats then.
+
+If you use a times x, this is now going to be equal to basically the first column would be the inner product of 7 times 1.
+
+Remember here, uh print.
+
+A and print x.
+
+So this would be 7 times 1 plus 3 times 2 plus 3 times 2, that is 19.
+
+And then 2 times 1 plus 2 times 2 plus 8 times 3, that'
+
+34
+
+And so that's how you sort of form a matrix vector product.
+
+Now, of course, you can do it however you can compute the individual terms however you want.
+
+So you can also do things like say, well, if I want to compute compute what that number is, well that would just be in fact the inner product of the first row of a times x.
+
+And that will give you a vector which is 19.
+
+Right?
+
+And that was in fact the first element a times x.
+
+So that's the first element there.
+
+And similarly, the second element would of course be that row.
+
+You can also, though, just to see here, I can add this column times x0 plus this column.
+
+times x1 plus this column times x two and I get the same number.
+
+So these two are things are equivalent
+
+Now the thing I'll mention here is that in general, this operation written like this would in fact be a matrix vector product.
+
+If you want to compute a matrix, rather a vector matrix product, again there's no transposes, but you just still swap the directions.
+
+So of course this won't be a valid matrix vector vector matrix product because um there are only two rows in this matrix and x has three elements.
+
+So if I define a different vector though, torch
+
+dot tensor um let's just do one two now I could multiply this by a and I get this let me
+
+Uh get this and this matrix here, or this vector here, would be equivalently the inner product of
+
+Every row uh or every column of A times this matrix, or
+
+a linear combination of the rows of this matrix with these coefficients.
+
+Okay.
+
+Let's finally now get to the last element of this lecture, which is matrix-matrix multiplication
+
+And here what we're gonna do is we're gonna define matrix-matrix multiplication first kind of with the formal definition.
+
+But then interpret it in all these different ways.
+
+In fact, there are going to be three ways we interpret it.
+
+There's even a fourth way, but we're not going to worry about that here.
+
+We're going to interpret it in three different ways.
+
+So let's talk now finally about matrix.
+
+Matrix Multiplication
+
+Okay.
+
+So let's again, I'm going to first give the definition of matrix-matrix multiplication as follows.
+
+So if I have a matrix A, which is going to be M by N, and a matrix B.
+
+which is going to be n by p.
+
+And these sizes are very important here.
+
+In order for a matrix, matrix product to be valid,
+
+the number of columns in A has to equal the number of rows in B.
+
+If you don't have that, the definition I'm about to write won't make any sense, and obviously you can't actually have that uh that element anymore.
+
+Or they can't have that matrix.
+
+So in this case, the matrix product AB
+
+will be a matrix which is M by P, so has the same number of rows as A and columns as B.
+
+So these N's the same actually drop out and they're invisible entirely.
+
+Where A B the I J entry of this matrix
+
+is equal to the sum from k equals one to n of a i k times b k j
+
+And that again, just like for v for matrix vector products, that is just the definition of what a matrix matrix product is.
+
+Now again, that definition doesn't say very much.
+
+So the last thing I'm going to cover here is just
+
+Describe a number of similar ways to interpret this product, which hopefully convey both a bit of intuition about what's really happening here.
+
+And maybe a little bit of understanding about why sort of we picked this definition.
+
+You know, again, why does this definition kind of kind of make sense as an operation?
+
+Or what is this operation fundamentally doing?
+
+Okay, and these are going to be very analogous, by the way, to the interpretations of matrix vector products.
+
+It's essentially a generalization of this because of course a matrix vector product is just a special case of a matrix matrix product where one of the two matrices only has one row or one column.
+
+So let's go interpretation number one.
+
+And this is again as inner products.
+
+So in this interpretation, I'm going to write A by its rows and B by its columns.
+
+So I'm going to write the matrix A in terms of its rows.
+
+So the first row is A1 transpose.
+
+Of course, each A1 transpose here is has N elements.
+
+Uh it's a row vector.
+
+A two transpose all the way down to a m transpose
+
+And I'm going to multiply it by a matrix a matrix that I write by its columns.
+
+So B1 is the first column.
+
+B2 is the second column, etc.
+
+, all the way up to BN
+
+And now each individual entry of this product is going to be equal to
+
+The inner product of this row and this column.
+
+Or this row and this column.
+
+All possible combinations of every row and every column.
+
+So the first element of this would just be equal to A1 transpose times B1.
+
+The next element would be A1 transpose
+
+times b2, then all the way to a1 transpose times b n.
+
+Remember these
+
+are always n-dimensional and these are n-dimensional, so every one of these inner products is a valid inner product.
+
+And in fact you can kind of squint this definition and understand that this in fact is just the definition of an inner product.
+
+exactly of the ith row and the jth column.
+
+So this is then a two transpose b one.
+
+A two transpose B two all the way to A two transpose B N
+
+A, and then finally AM transpose B1, AM transpose b two, all the way to AM transpose B N.
+
+So that is, I would say, the most kind of frequent definition
+
+of a matrix matrix product.
+
+Because it kind of is the one that most accurately tracks this formal definition, which is how it's usually defined.
+
+However, I would actually say it's oftentimes not the most useful definition of a matrix vector product, or matrix matrix product.
+
+So instead, I am going to write two other ways to interpret matrix-matrix products.
+
+So the first way, which really is going to be interpretation number two.
+
+Is as a collection of matrix vector products
+
+What do I mean by that?
+
+Well, we can think of this product here as running the matrix A.
+
+times b written by columns.
+
+So I'm going to write B by columns again.
+
+Uh and I'm gonna write A just as a matrix.
+
+I'm not gonna worry about the individual elements of that.
+
+All the way to Bn.
+
+These of course are all the same sizes.
+
+In all cases, A is M by N.
+
+And oops, I think I got this wrong actually.
+
+This should be by P, I realized.
+
+Uh, let me correct that.
+
+B, P, and I realize I got it wrong, all of these two.
+
+The inner products are themselves, of course, uh
+
+N dimensional, and there are P columns in B.
+
+Apologies for that.
+
+I realized that when I was writing it here, it didn't sound right to have it be n-dimensional.
+
+So DP.
+
+Okay, the way to view this now is as a set of columns of the resulting matrix, not by every entry, by the different columns of this matrix
+
+where the first column is given by the matrix vector product A times B1
+
+The next I remember that's a m-dimensional vector.
+
+This matrix vector pro this matrix vector product is an m-dimensional vector.
+
+The next column is A times B two, all the way to A times B P.
+
+So essentially, you can also think of matrix vector matrix matrix products
+
+as kind of a collection of matrix vector products of every of the matrix A
+
+and every different column of B.
+
+So it's a collection of matrix vector products.
+
+And then finally, as a last interpretation
+
+Number three.
+
+Expectedly, you can think of it as a collection
+
+Of vector matrix products
+
+So what I mean by this is, if I write A in terms of its rows,
+
+M Rows and I write just B as a matrix
+
+Then I can think of each row of this product as being a
+
+Matri a vector matrix product of the ith row of A and the matrix B
+
+And again, of course, we can kind of go one step further and say, well, this matrix here, or this vector here, is then a linear combination of the rows of b with the coefficients of a
+
+But again, hopefully those interpretations are getting somewhat familiar, so you kind of are familiar with how to interpret each element there.
+
+Next element is A2B, etc.
+
+M transpose B.
+
+And again, all of these definitions are of course
+
+equivalent.
+
+They give you the exact same numerical answer.
+
+But they're very when it comes to sort of what the interpretation is
+
+Viewing a matrix matrix product in these different ways is actually quite valuable in interpreting what these things are really doing.
+
+So
+
+This is the last I'm going to sort of talk about.
+
+I'll give an example in a second.
+
+But this is the last I'm going to talk about sort of in in excruciating detail, maybe all these different kinds of products.
+
+But I do want to give sort of an illustration of the implications of the these sort of these interpretations.
+
+So for example, one very common thing we're gonna do in machine learning is we're actually going to form uh we're gonna put together a vector
+
+or a matrix that contains many different elements of some input sequence.
+
+And I won't get into what this means exactly.
+
+But you can think of essentially a vector a matrix X as containing different rows, or each row here
+
+uh sort of contains information about one specific example.
+
+Say one word in a sentence or things like this.
+
+XT.
+
+Oops, I meant to make this blue again.
+
+Okay.
+
+So that is gonna be our sort of matrix that describes kind of
+
+uh some elements of this of this uh of this different examples in say our training set.
+
+And so what I want to do is I want to differentiate between two different operations.
+
+And I'm not going to worry about sizes here.
+
+The sizes you'll sort of have to know in order to make sense of these things.
+
+But
+
+The details of that the actual numbers are are are are sort of irrelevant, but let's just say that this here is an M by N matrix.
+
+Okay.
+
+Um
+
+Let's think about two different operations you could apply to it.
+
+Let's think about the operation a times x, where a here
+
+just to keep things simple, is say an M by M matrix.
+
+Let's think of this versus the operation x times b
+
+Where B is an N by N matrix.
+
+And I'm going to write these two products kind of in two different ways.
+
+I'm gonna write this one first as a matrix matrix product.
+
+Where I write A by its rows, and then I just write the matrix X as a single matrix.
+
+And when I do that, what I get as this product, so this product here
+
+Is equal to, well, the first row would be A1 transpose times X, this big X matrix.
+
+The next row would be A2 times X
+
+etcetera all the way to A M times X.
+
+Okay?
+
+And this one here
+
+I'm gonna write it differently.
+
+I'm going to write this one here where I have x by its rows and b just as a matrix.
+
+And this is going to be equal to then the first row is x1 transpose b, the next row is x2 transpose b.
+
+etc.
+
+down to XM uh yeah, XM transpose.
+
+Oops, I left out the M there.
+
+XM transpose B
+
+And I'm going to write it like that.
+
+Now there's a really sort of important aspect here.
+
+In this matrix, every row of this matrix
+
+contains a mixture of all the rows of A, right?
+
+So every row here is some mixture of every row in this matrix.
+
+So this operation, in other words, is mixing together the rows of A.
+
+You could also, by the way, interpret this one as mixing together the columns of B, but I'm actually not interpreting it that way
+
+What I'm interpreting it as is this row here is some matrix B times just the first row of A.
+
+In other words, this matrix here does not mix together the different rows of X.
+
+It applies an operation to the first row of x, it applies the s the same operation to the next row of x.
+
+And if I were to do things like scramble the rows of x with this operation,
+
+I would actually just return essentially the B matrix applied to those scrambled entries.
+
+Whereas if I
+
+Apply this, then I'm mixing up all the entries together in a way that sort of jumbles them all together.
+
+So these may seem like sort of trivial things, or they may seem a little bit confusing the first time you see it.
+
+But the reality, these differences are very important when it comes to the nature of matrix-matrix multiplication.
+
+The last thing I'll say here is just a few properties I'll mention.
+
+And these properties are things that we will not prove.
+
+Matrix multiplication.
+
+We will not prove these, but they are useful to know
+
+The first property is what we call the distributive property.
+
+Matrix multiplication is distributive.
+
+That means that if I have A times B plus C, this is equal to AB.
+
+Plus A C.
+
+And I won't write the sizes here.
+
+These have to be size in a way where these things all make sense, but it should be obvious that these if if you have this product here.
+
+Then, in fact, for this product to make sense, this product and sum has to also make sense.
+
+Next, it is associative
+
+Meaning it doesn't matter what order you do match multiplication in.
+
+If I multiply a times b, then multiply c, this is equal to a times b c.
+
+Doesn't matter what order you do them in.
+
+Now I should say that it doesn't matter in terms of the numerical result.
+
+It could matter in terms of the efficiency of the matrix multiplication, what order you do them in, but that something will
+
+Maybe mention later when we actually get to needing that.
+
+But importantly, it is not commutative
+
+So it is not the case that A B equals B A.
+
+In fact, this product here
+
+If the number of rows in A does not equal the number of columns in B, this product doesn't even make sense.
+
+You can't even form a matrix product with those sizes.
+
+But more than that, even if you can form it, it still doesn't, they're still not equal, except in very special circumstances, like diagonal matrices that are sort of largely uninteresting.
+
+So, definitely not commutative, and do not try to make substitutions like this to simplify or manipulate matrix expressions.
+
+And then finally, um the transpose.
+
+of the product.
+
+If I have a matrix A times B transpose, that equals B transpose times A transpose.
+
+Now, all of these things you can just prove by resorting to the definition of matrix multiplication.
+
+We won't go through that, but it's essentially just an uh an exercise in applying the definition.
+
+Okay, so with that, we're actually done describing matrix matrix multiplication.
+
+You will implement all these different interpretations in your homework.
+
+And I'm just gonna go one last time back to the sheet and talk about some examples of multiplying things together.
+
+And again, we are just going to use here the um the at symbol again to multiply matrices.
+
+Um and that's and that's essentially all we're gonna all we're gonna do here
+
+So let's define B to be torch.
+
+tensor.
+
+Of course, there are three rows of the matrix
+
+Sorry, yeah, the three uh three columns of the matrix A.
+
+So to multiply by uh A by a matrix B, B has to have three rows.
+
+Let's make it have three rows and three columns
+
+just to result in a two by three matrix.
+
+So four, two, one.
+
+I won't bother.
+
+I'm only gonna make one of them a floating point value so that they're all real valued.
+
+And then
+
+three, two, five.
+
+And then with this notation, I could close that.
+
+I could multiply A times B, and that will be a two by three dimensional matrix
+
+If you want to sort of look at this in some detail, you can print the shape of these things.
+
+The shape property tells you the dimensions of each number of elements in each dimension
+
+And so there's two rows, three columns in A, three rows, three columns in B.
+
+And of course you could also add, say, a fifth column
+
+So this, in this case, um a times b would be two by four, and that's this size here.
+
+The last thing I'll say about uh, and this is sort of the last element that I had in the in the outline, uh, is about tensors more broadly.
+
+So it is possible to have
+
+arrays, i.
+
+e.
+
+tensors, with more than just two dimensions.
+
+So these are just kind of if if you think of as a a matrix as sort of a
+
+Having rows and columns, I guess you know a rank three or a three-dimensional tensor would have rows, columns, and I don't know, stacks to it or something like that.
+
+Um but I can create three-dimensional
+
+tensors as well in higher dimensions by just adding more elements in the list.
+
+So if I wanted to have um another tensor here
+
+Let me just copy say this one.
+
+I could have this element be sort of the next matrix of that.
+
+I think I'm getting my sizes right here.
+
+Um I could make A be a 2x2 by 3 tensor here by just taking two.
+
+arrays or two matrices and stacking them together in one more dimension.
+
+And in this case, you know, the zeroth item or equivalently the zeroth
+
+Item with all of these left would just be this matrix here.
+
+The next item would be the second matrix here.
+
+And in general, even though PyTorch supports these higher order tensors, there's not going to be any analog of, I would say, um
+
+matrix multiplication where there's not going to be sort of a a three rank three tensor times uh matrix kind of tensor matrix product.
+
+There are those things certainly in in the mathematical formulation, and even more so there are things like decompositions of tensors and
+
+And sometimes you can invert tensors, sometimes you can't.
+
+So tensors themselves are sort of a very complex uh mathematical object.
+
+But for the sake of
+
+PyTorch, the way to think of tensors really is just as multi-dimensional arrays, and that will be the extent of it.
+
+Okay, so I know this is a long lecture.
+
+Thanks for bearing with me if you got this far.
+
+And I know it seems maybe rather far away from AI.
+
+But the truth is, these operations, the one I just showed you, basically matrix-matrix multiplications, wind up being the core operation that underlies all modern AI models.
+
+And in fact, a huge amount of effort in making faster, better AI models boils down to just speeding up matrix-matrix multiplications.
+
+In fact, the reason why things like GPUs are so good, so graphics processing units, but have been essentially become the de facto standard for developing AI models, is precisely because
+
+GPUs are really good at matrix multiplication.
+
+And these sort of basic building blocks
+
+are ultimately what will comprise really something like 99% of all comp computation when it comes to these to these these these large uh and modern AI systems.
+
+So that is the basics.
+
+That is all you need to know.
+
+Maybe in excruciating detail.
+
+You will also go through it in some detail in the homework.
+
+But with this background, you'll have a basis really for almost all the math that you're going to cover
+
+In the entirety of this course.
+
+There's gonna be a little bit of calculus as well, I guess, for optimization, but really linear algebra will be the foundation, and so I wanted to take some time to cover all of it.
+
+So thanks very much, and I'll see you at the next lecture where we actually talk about how to apply this kind of stuff to define the different elements, and especially that first element.
+
+First ingredient of machine learning, specifically machine learning models.
+
+So I'll see you soon
+

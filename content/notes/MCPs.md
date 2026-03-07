@@ -1,0 +1,1 @@
+- [obra/private-journal-mcp: A lightweight MCP server that provides Claude with a private journaling capability to process feelings and thoughts](https://github.com/obra/private-journal-mcp)

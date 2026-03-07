@@ -1,0 +1,3 @@
+- [obra/superpowers: An agentic skills framework & software development methodology that works](https://github.com/obra/superpowers)
+- [hamelsmu/evals-skills: Skills for AI Evals to compliment the course: AI Evals For Engineers & PMs](https://github.com/hamelsmu/evals-skills)
+- [EveryInc/compound-engineering-plugin: Official Claude Code compound engineering plugin](https://github.com/EveryInc/compound-engineering-plugin)

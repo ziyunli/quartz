@@ -1,0 +1,77 @@
+---
+draft: false
+tags:
+  - Courses
+source: https://modernaicourse.org
+---
+
+Videos:
+
+- [Lecture 1a: Intro to the course - YouTube](https://youtu.be/37mSOtgYIjM)
+- [Lecture 1b: A (brief, opinionated) history of AI - YouTube](https://youtu.be/dPvIArnLMU4)
+
+Goal: Build an AI chatbot from scratch
+
+> [!quote] Kolter on the significance of current AI
+> I believe this to be a very significant event in the history of humanity. Just like the Industrial Revolution, in some sense, automated physical labor of humans. I think current AI could automate a lot of what we associate with intellectual labor.
+
+Three parts:
+
+1. Supervised machine learning
+2. Large Language Models
+3. Post-training
+   1. Instruction tuning
+   2. Alignment
+   3. Reinforcement learning
+
+Prerequisites:
+
+- Programming (Python Preferred)
+- Math
+  - Calculus -> derivatives
+  - Linear algebra -> matrix multiplication
+- Beauty of AI is that **it is so simple**
+  - =="The entire complexity of AI models is in some sense not in the code that we write to train/run them. It's in the data that's used to build them themselves."==
+
+> [!info] 150 lines of Python
+> You can build a fully functional chatbot trained from scratch in about 150 lines of Python code. They are very dense lines using PyTorch for automatic differentiation (no pre-trained models or pre-built layers), but at its core, the fact that you can develop a system with that little code proves the complexity is in the data, not the code.
+
+Four eras of AI
+
+1. Early optimism (40s-60s)
+   1. 1950 Turing Test
+      > [!note] The Turing Test turned philosophy into empirics
+      > The deeper notion of this test is that it makes what's a very philosophical question—What is intelligence?—into an empirical one. Can you fool an interrogator more than half the time? The notion of rational thought had been debated since ancient times. This turned it into a simple empirical question with a simple empirical answer.
+   2. 1943 McCulloch and Pitts Artificial Neuron
+   3. 1956 Dartmouth workshop
+      > [!quote] From the Dartmouth Workshop abstract
+      > "An attempt will be made to find how to make machines use language, form abstractions and concepts, solve kinds of problems now reserved for humans, and improve themselves. We think that a significant advance can be made in one or more of these problems if a carefully selected group of scientists work on it together for a summer."
+   4. 1960 Rosenblatt's Perceptron
+   5. 1960 Herb Simon: "machines will be capable, within twenty years, of doing any work that a man can do"
+      > [!warning] We've been optimistic before
+      > It is an important observation to realize, especially given the optimism right now that I and many others have about where the field is going, to realize that this is not the first time people have been optimistic. I think it is substantially different, but I'm sure they also thought so at the time as well.
+2. AI winter (70s)
+   1. "Perceptron" Minsky + Papert
+   2. 1973 Lighthill Report
+   3. 1970s DARPA cut AI funding
+      > [!quote] The AI winter's lasting psychological scar
+      > When I entered the field [around 2003], the answer to "when would we have human-level intelligence in an AI system" was **not in my lifetime**. And that was an answer shared by virtually everyone working in this field. These events imbued academia in particular with a deep-seated skepticism about AI and a hesitancy to accept any new advance as somehow the one that was going to bring a profound change to the field.
+3. The fracturing of AI (80s-00s)
+   1. 1980s
+      1. neural networks trained via back-propagation
+      2. convolutional and recurrent networks
+   2. 1997 Deep Blue beat Gary Kasparov
+   3. 2005/2007 DARPA grand challenges (autonomous driving)
+   4. 2000s Ads / recommendations
+      > [!info] Why there won't be another AI winter
+      > Ads and recommendations were arguably the most important application of machine learning to that point. This was the first time AI really made this amount of money. If you could predict how likely someone was to click on an ad better than competitors, you would just directly start making more money. This created money to be spent on AI, and made it much less likely the field would experience another AI winter—AI just makes too much money for this to happen again.
+4. The rebirth (10s - present)
+   1. 2012 AlexNet (emergence of deep learning)
+   2. 2014 Seq2Seq (machine translation)
+      > [!note] Google Translate before deep learning
+      > "When I was in grad school, I would use Google Translate to try to translate different languages, and it was basically unusable. You could kind of get a sense of what text meant when you translated it. Very quickly, seemingly overnight, translation systems switched to using Seq2Seq, and all of a sudden the quality of translation just improved drastically."
+   3. 2016 AlphaGo
+   4. 2017 Transformer paper
+   5. 2022 ChatGPT
+
+[^1]: Callouts were generated by Claude Code Opus 4.6 from lecture transcripts and Q&A with me.

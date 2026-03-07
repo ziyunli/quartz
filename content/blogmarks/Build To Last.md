@@ -3,6 +3,9 @@ tags:
   - Blogmarks
 ---
 
+> [!info] AI-assisted annotations
+> Cross-references added with Claude Opus 4.6 via Claude Code.
+
 Youtube: [Build to Last — Chris Lattner talks with Jeremy Howard - YouTube](https://www.youtube.com/watch?v=WJS2YDZO-vc)
 
 From [Build to Last – fast.ai](https://www.fast.ai/posts/2025-10-30-build-to-last.html):

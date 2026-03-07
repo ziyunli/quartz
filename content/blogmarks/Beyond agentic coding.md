@@ -18,6 +18,7 @@ Gonzalez argues that chat-based agentic coding tools break developer flow state 
 
 > [!question] What would make async agents actually calm?
 > Three properties must hold **simultaneously**:
+>
 > - **Full autonomy** — the agent doesn't stop to ask clarifying questions mid-task, eliminating the "stay interruptible" burden
 > - **Sandboxed evolution** — the agent works in isolation (worktrees, containers) so you don't monitor it for safety, only for results
 > - **Legible progress signals** — structured peripheral indicators (tests passing, scope narrowing) rather than chat logs requiring focused reading
@@ -31,6 +32,7 @@ Gonzalez argues that chat-based agentic coding tools break developer flow state 
 
 > [!info] The two paradigms of AI-assisted coding
 > The article implicitly contrasts two paradigms:
+>
 > - **Inline/synchronous**: hundreds of tiny, calm assists woven into your editing flow (next-edit suggestions, semantic facets, file lenses). The AI never becomes the center of attention.
 > - **Async/delegated**: fire off large tasks to background agents and review results later. Currently breaks flow, but could become calm if agents achieve full autonomy + sandboxing + legible progress.
 >
@@ -38,7 +40,8 @@ Gonzalez argues that chat-based agentic coding tools break developer flow state 
 > ^two-paradigms
 
 > [!info] Related reading
+>
 > - [[Build To Last]] — Chris Lattner and Jeremy Howard's interview on software craftsmanship vs. AI-generated code. Lattner's "tight iteration loops" principle is the systems-programming equivalent of calm technology: ==fast feedback keeps the human engaged and in flow==.
 > - [[Agentic Engineering Patterns - Linear walkthroughs]] — Simon Willison's "Linear Walkthroughs" takes the opposite approach: vibe code first, then have the agent teach you what it built. The walkthrough itself is calm (passive, unobtrusive learning), but the vibe coding session that preceded it is exactly what Gonzalez critiques here.
 > - [[Solve It - 2025]] — Jeremy Howard's "Solve It" method arrives at the same conclusion from the practitioner side: the human must stay in direct contact with the code. His "inspect every output" workflow is a calm technology pattern in practice — the AI augments rather than mediates.
-> ^related-reading
+>   ^related-reading

@@ -11,3 +11,4 @@ private/
 replit.nix
 
 .smart-env
+.worktrees

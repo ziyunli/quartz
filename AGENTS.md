@@ -5,11 +5,13 @@ Obsidian vault published via Quartz to https://ziyunli.github.io/quartz/
 ## Project Structure
 
 - Content lives under `content/`
+- Top-level content dirs: `blogmarks/`, `courses/`, `notes/`, `reading/`, `asset/`, `private/`
 - `content/private/` — NOT published to the public site
 - Everything else under `content/` — published
 
 ## Cross-referencing Rules
 
+- Transclusions use `![[note]]` (wikilink syntax), NOT `![alt](file.md)` (Markdown image syntax)
 - Private-to-private links: use Obsidian wikilinks `[[filename|display text]]`
 - **Public-to-private links: use original source URLs (external links), NOT wikilinks** — private content won't resolve on the published site
 - Public-to-public links: use wikilinks

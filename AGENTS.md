@@ -2,6 +2,8 @@
 
 Obsidian vault published via Quartz to https://ziyunli.github.io/quartz/
 
+- Default branch is `v4` — `master` holds the rendered GitHub Pages output (deploy commits only)
+
 ## Project Structure
 
 - Content lives under `content/`

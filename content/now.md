@@ -1,11 +1,10 @@
 ---
 title: Now
+updated_at: 2026-03-08
 ---
 
 > [!info] AI-assisted annotations
 > Structure, wording, and course progress summary drafted with GPT-5 Codex via Codex.
-
-This is a `/now` page: a snapshot of what I'm focused on as of March 8, 2026.
 
 ## Courses
 
@@ -18,5 +17,3 @@ This is a `/now` page: a snapshot of what I'm focused on as of March 8, 2026.
 - [Solve It - 2025](https://solve.it.com/)
   - To get better at tight iteration loops and using AI without losing contact with the code
   - Currently through lesson 2
-
-This page is a snapshot, not a permanent profile.

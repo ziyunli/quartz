@@ -43,5 +43,5 @@ Gonzalez argues that chat-based agentic coding tools break developer flow state 
 >
 > - [[Build To Last]] — Chris Lattner and Jeremy Howard's interview on software craftsmanship vs. AI-generated code. Lattner's "tight iteration loops" principle is the systems-programming equivalent of calm technology: ==fast feedback keeps the human engaged and in flow==.
 > - [[Agentic Engineering Patterns - Linear walkthroughs]] — Simon Willison's "Linear Walkthroughs" takes the opposite approach: vibe code first, then have the agent teach you what it built. The walkthrough itself is calm (passive, unobtrusive learning), but the vibe coding session that preceded it is exactly what Gonzalez critiques here.
-> - [[../private/courses/solveit-2025/Solve It - 2025]] — Jeremy Howard's "Solve It" method arrives at the same conclusion from the practitioner side: the human must stay in direct contact with the code. His "inspect every output" workflow is a calm technology pattern in practice — the AI augments rather than mediates.
+> - [[../private/projects/solveit-2025/Solve It - 2025]] — Jeremy Howard's "Solve It" method arrives at the same conclusion from the practitioner side: the human must stay in direct contact with the code. His "inspect every output" workflow is a calm technology pattern in practice — the AI augments rather than mediates.
 >   ^related-reading

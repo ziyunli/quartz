@@ -17,17 +17,22 @@ Obsidian vault published via Quartz to https://ziyunli.github.io/quartz/
 - `resources/` — catchall for anything not tied to a project or area
 - `archive/` — inactive or outdated notes
 
-### Legacy folders (pre-PARA, coexist alongside)
+### Notes hierarchy
 
-- `blogmarks/` — public distilled annotations of external content
-- `notes/` — general notes (predates `areas/`)
-- `reading/` — reading notes
+- `notes/` — public general notes, plus nested subfolders:
+  - `notes/blogmarks/` — distilled annotations of external content
+  - `notes/reading/` — book notes
+- `private/notes/` — private general notes, plus nested subfolders:
+  - `private/notes/clippers/` — raw web clippings
+  - `private/notes/books/` — book notes
+  - `private/notes/prompts/` — prompt templates
+  - `private/notes/soccer/` — soccer research and cleats
+- `private/writings/` — drafts and reflections
+
+### Other folders
+
 - `asset/` — public media assets
-- `private/clippers/` — raw web clippings
-- `private/books/` — book notes
-- `private/notes/` — private general notes
-- `private/prompts/` — prompt templates
-- `private/thoughts/`, `private/writings/` — drafts and reflections
+- `private/assets/` — private media assets
 
 ## Obsidian CLI
 
@@ -43,7 +48,7 @@ Obsidian vault published via Quartz to https://ziyunli.github.io/quartz/
 - Private-to-private links: use Obsidian wikilinks `[[filename|display text]]`
 - **Public-to-private links: use original source URLs (external links), NOT wikilinks** — private content won't resolve on the published site
 - Public-to-public links: use wikilinks
-- When private clippings and public blogmarks share the same filename, use folder path in transclusions to disambiguate: `![[blogmarks/filename#^block-id]]`
+- When private clippings and public blogmarks share the same filename, use folder path in transclusions to disambiguate: `![[notes/blogmarks/filename#^block-id]]`
 
 ## Note Conventions
 

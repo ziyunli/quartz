@@ -7,9 +7,35 @@ Obsidian vault published via Quartz to https://ziyunli.github.io/quartz/
 ## Project Structure
 
 - Content lives under `content/`
-- Top-level content dirs: `blogmarks/`, `courses/`, `notes/`, `reading/`, `asset/`, `private/`
 - `content/private/` — NOT published to the public site
 - Everything else under `content/` — published
+
+### PARA folders (both public and private)
+
+- `projects/` — short-term efforts with clear outcomes and due dates
+- `areas/` — ongoing responsibilities requiring constant attention
+- `resources/` — catchall for anything not tied to a project or area
+- `archive/` — inactive or outdated notes
+
+### Legacy folders (pre-PARA, coexist alongside)
+
+- `blogmarks/` — public distilled annotations of external content
+- `notes/` — general notes (predates `areas/`)
+- `reading/` — reading notes
+- `asset/` — public media assets
+- `private/clippers/` — raw web clippings
+- `private/books/` — book notes
+- `private/notes/` — private general notes
+- `private/prompts/` — prompt templates
+- `private/thoughts/`, `private/writings/` — drafts and reflections
+
+## Obsidian CLI
+
+- Use `obsidian help` to see available actions when you operate this Obsidian Vault
+- Vault name for CLI is `content`
+- Use `obsidian move vault=content path="<from>" to="<dest-folder>/"` to move files — updates wikilinks automatically
+- Destination folders must exist before moving (mkdir -p first)
+- Can't handle filenames with colons (`:`) — fall back to `mv` for non-linkable files (.txt, .pdf)
 
 ## Cross-referencing Rules
 

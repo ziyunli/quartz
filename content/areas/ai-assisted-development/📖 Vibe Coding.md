@@ -12,9 +12,9 @@ By the end of 2025, it seemed clear that we humans had created something like in
 
 What next?
 
-In the book's framing, _[[blogmarks/Vibe Coding]]_ means delegating most implementation to LLMs while steering by intent and review.
+In the book's framing, _[[Vibe Coding]]_ means delegating most implementation to LLMs while steering by intent and review.
 
-And this question can be asked both on a personal level (more on this topic in [[blogmarks/Build To Last]])
+And this question can be asked both on a personal level (more on this topic in [[Build To Last]])
 
 > To what degree can you turn your brain off when you use AI to help you create software?
 

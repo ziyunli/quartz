@@ -60,4 +60,4 @@ From [Prompting best practices - Claude Docs](https://platform.claude.com/docs/e
 ## Links
 
 - [[Claude Code Best Practices]]
-- [[blogmarks/Claude Agent Skills]]
+- [[Claude Agent Skills]]

@@ -12,8 +12,13 @@ Obsidian vault published via Quartz to https://ziyunli.github.io/quartz/
 
 ### PARA folders (both public and private)
 
+New notes go into PARA folders; existing notes stay in the notes hierarchy and migrate organically when touched.
+
 - `projects/` — short-term efforts with clear outcomes and due dates
 - `areas/` — ongoing responsibilities requiring constant attention
+  - `areas/ai-assisted-development/` — LLM tooling, agentic patterns, vibe coding
+  - `areas/economics/` — economic concepts and analysis
+  - `areas/self-improvement/` — productivity, learning, personal growth
 - `resources/` — catchall for anything not tied to a project or area
 - `archive/` — inactive or outdated notes
 
@@ -23,7 +28,7 @@ Obsidian vault published via Quartz to https://ziyunli.github.io/quartz/
   - `notes/blogmarks/` — distilled annotations of external content
   - `notes/reading/` — book notes
 - `private/notes/` — private general notes, plus nested subfolders:
-  - `private/notes/clippers/` — raw web clippings
+  - `private/notes/clippers/` — raw web clippings (flat intake, stays here)
   - `private/notes/books/` — book notes
   - `private/notes/prompts/` — prompt templates
   - `private/notes/soccer/` — soccer research and cleats
@@ -48,7 +53,7 @@ Obsidian vault published via Quartz to https://ziyunli.github.io/quartz/
 - Private-to-private links: use Obsidian wikilinks `[[filename|display text]]`
 - **Public-to-private links: use original source URLs (external links), NOT wikilinks** — private content won't resolve on the published site
 - Public-to-public links: use wikilinks
-- When private clippings and public blogmarks share the same filename, use folder path in transclusions to disambiguate: `![[notes/blogmarks/filename#^block-id]]`
+- When private clippings and public blogmarks share the same filename, use folder path in transclusions to disambiguate: `![[notes/blogmarks/filename#^block-id]]` or `![[areas/ai-assisted-development/filename#^block-id]]`
 
 ## Note Conventions
 

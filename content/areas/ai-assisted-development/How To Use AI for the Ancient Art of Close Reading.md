@@ -17,4 +17,4 @@ From [fast.ai - How To Use AI for the Ancient Art of Close Reading](https://www.
 > 6. Optional: have the LLM ask questions to check the reader’s understanding
 > 7. Optional: create Anki cards within reading dialogs using [fastanki](https://answerdotai.github.io/fastanki/)
 
-Very similar flow to [The Best Way to Use AI for Learning](The%20Best%20Way%20to%20Use%20AI%20for%20Learning.md)
+Very similar flow to [The Best Way to Use AI for Learning](../../areas/ai-assisted-development/The%20Best%20Way%20to%20Use%20AI%20for%20Learning.md)

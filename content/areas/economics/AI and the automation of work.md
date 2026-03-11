@@ -7,8 +7,8 @@ tags:
 
 [AI and the automation of work](https://www.ben-evans.com/benedictevans/2023/7/2/working-with-ai) by Benedict Evans is a great read about the potential future with Generative AI. Overall, the sentiment is optimistic: while a new wave of automation would eliminate whole classes of jobs, it also creates new classes of jobs. Two theories to back this up:
 
-- [[Lump of labour fallacy]]: the amount of work is not fixed.
-- [[Jevons Paradox]]: if a work becomes cheaper, it creates more demands for it.
+- [[../../areas/economics/Lump of labour fallacy]]: the amount of work is not fixed.
+- [[../../areas/economics/Jevons Paradox]]: if a work becomes cheaper, it creates more demands for it.
 
 At the same time, the current generation of Generative AI (diffusion models, LLMs, etc.) _cannot_ fully replace humans in the loop.
 

@@ -3,6 +3,9 @@ tags:
   - Blogmarks
 ---
 
+> [!info] AI-assisted annotations
+> Upward feedback callout and reorganization with Claude Opus 4.6 via Claude Code.
+
 Source: [a16z Podcast: From Teaching Leadership to Being a Leader | Andreessen Horowitz](https://a16z.com/podcast/a16z-podcast-from-teaching-leadership-to-being-a-leader/)
 
 ## 关于向上反馈（Upward Feedback）

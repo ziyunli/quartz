@@ -3,6 +3,9 @@ tags:
   - Blogmarks
 ---
 
+> [!info] AI-assisted annotations
+> Reorganized from combined note, added commentary on cognitive dissonance with Claude Opus 4.6 via Claude Code.
+
 Source: [a16z Podcast: From Teaching Leadership to Being a Leader | Andreessen Horowitz](https://a16z.com/podcast/a16z-podcast-from-teaching-leadership-to-being-a-leader/)
 
 ## 关于产品市场契合（Product-Market Fit）

@@ -79,6 +79,7 @@ When the user requests breaking into separate notes:
    - `archive/` — inactive or outdated
 4. **Each new file gets:**
    - Frontmatter with tags inherited from original note
+   - AI disclosure callout: `> [!info] AI-assisted annotations` with brief description of what was helped and model info
    - Source link to the original article/podcast
    - Only the content relevant to its topic
 5. **Handle the original note** per user preference:
@@ -97,3 +98,4 @@ When the user requests breaking into separate notes:
 | Creating files without showing the plan | Always propose file mapping and wait for confirmation |
 | Forcing content into PARA when user didn't ask | Reorganizing into sections and PARA split are separate steps |
 | Mixing languages inconsistently | Match the user's language in commentary and headers |
+| Forgetting AI disclosure callout | Every new or substantially edited note needs `[!info] AI-assisted annotations` after frontmatter |

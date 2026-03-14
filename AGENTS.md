@@ -10,35 +10,39 @@ Obsidian vault published via Quartz to https://ziyunli.github.io/quartz/
 - `content/private/` — NOT published to the public site
 - Everything else under `content/` — published
 
-### PARA folders (both public and private)
+### Public (`content/notes/`)
 
-New notes go into PARA folders; existing notes stay in the notes hierarchy and migrate organically when touched.
+PARA folders and collections, all published:
 
-- `projects/` — short-term efforts with clear outcomes and due dates
-- `areas/` — ongoing responsibilities requiring constant attention
-  - `areas/ai-assisted-development/` — LLM tooling, agentic patterns, vibe coding
-  - `areas/ai-assisted-learning/` — using LLMs for reading, studying, and knowledge acquisition
-  - `areas/economics/` — economic concepts and analysis
-  - `areas/llm-tooling/` — local model inference, hardware for AI, performance estimation
-  - `areas/self-improvement/` — productivity, learning, personal growth
-- `resources/` — catchall for anything not tied to a project or area
-- `archive/` — inactive or outdated notes
+- `notes/projects/` — short-term efforts with clear outcomes and due dates
+- `notes/areas/` — ongoing responsibilities requiring constant attention
+  - `notes/areas/ai-assisted-development/` — LLM tooling, agentic patterns, vibe coding
+  - `notes/areas/ai-assisted-learning/` — using LLMs for reading, studying, and knowledge acquisition
+  - `notes/areas/economics/` — economic concepts and analysis
+  - `notes/areas/llm-tooling/` — local model inference, hardware for AI, performance estimation
+  - `notes/areas/self-improvement/` — productivity, learning, personal growth
+- `notes/resources/` — catchall for anything not tied to a project or area
+- `notes/archive/` — inactive or outdated notes
+- `notes/blogmarks/` — distilled annotations of external content
+- `assets/` — public media assets (at `content/assets/`)
+- Top-level notes in `notes/` are being gradually categorized into PARA folders
 
-### Notes hierarchy
+### Private (`content/private/`)
 
-- `notes/` — public general notes, plus nested subfolders:
-  - `notes/blogmarks/` — distilled annotations of external content
-  - `notes/reading/` — book notes
-- `private/notes/` — private general notes, plus nested subfolders:
-  - `private/notes/clippers/` — raw web clippings (flat intake, stays here)
-  - `private/notes/books/` — book notes
-  - `private/notes/prompts/` — prompt templates
-  - `private/notes/soccer/` — soccer research and cleats
+PARA folders and internal collections, never published:
+
+- `private/projects/` — short-term efforts with clear outcomes and due dates
+- `private/areas/` — ongoing responsibilities requiring constant attention
+  - `private/areas/ai-assisted-development/` — private LLM tooling notes and prompts
+  - `private/areas/economics/` — private economic notes
+  - `private/areas/self-improvement/` — private productivity and growth notes
+  - `private/areas/soccer/` — soccer research and cleats
+- `private/resources/` — private catchall resources
+- `private/archive/` — inactive or outdated private notes
+- `private/books/` — book notes
+- `private/clippers/` — raw web clippings (flat intake, stays here)
+- `private/papers/` — academic papers and annotations
 - `private/writings/` — drafts and reflections
-
-### Other folders
-
-- `asset/` — public media assets
 - `private/assets/` — private media assets
 
 ## Obsidian CLI
@@ -55,7 +59,7 @@ New notes go into PARA folders; existing notes stay in the notes hierarchy and m
 - Private-to-private links: use Obsidian wikilinks `[[filename|display text]]`
 - **Public-to-private links: use original source URLs (external links), NOT wikilinks** — private content won't resolve on the published site
 - Public-to-public links: use wikilinks
-- When private clippings and public blogmarks share the same filename, use folder path in transclusions to disambiguate: `![[notes/blogmarks/filename#^block-id]]` or `![[areas/ai-assisted-development/filename#^block-id]]`
+- When private clippings and public blogmarks share the same filename, use folder path in transclusions to disambiguate: `![[notes/blogmarks/filename#^block-id]]` or `![[notes/areas/ai-assisted-development/filename#^block-id]]`
 
 ## Note Conventions
 

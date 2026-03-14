@@ -77,7 +77,7 @@ This is inspired by Jeremy Howard's active recall approach. The goal is to solid
 
 When user says to publish/extract:
 
-1. **Create public blogmark** at `content/blogmarks/<same filename as private clipping>.md`
+1. **Create public blogmark** at `content/notes/blogmarks/<same filename as private clipping>.md`
    - Frontmatter: `tags: [Blogmarks]`
    - AI disclosure callout (see below)
    - Brief summary sentence of the source article
@@ -85,7 +85,7 @@ When user says to publish/extract:
    - Each callout gets a block ID on last line: `> ^block-id`
 
 2. **Replace callouts in private clipping** with section transclusions:
-   - `![[blogmarks/<filename>#^block-id]]` (folder path required for disambiguation)
+   - `![[notes/blogmarks/<filename>#^block-id]]` (folder path required for disambiguation)
    - Place each transclusion at the exact location where the callout was
 
 3. **Cross-references** in the public blogmark:
@@ -117,7 +117,7 @@ When the source material covers **multiple distinct topics** (e.g., a podcast to
 2. **If splitting**, follow the reviewing-notes skill's Phase 3 (reorganize into sections) and Phase 4 (PARA split) conventions:
    - Propose topic groupings and file mapping before acting
    - Each file gets: frontmatter with tags, AI disclosure callout, source link
-   - PARA placement: `projects/` for deadlines, `areas/` for ongoing responsibilities, `resources/` for reference material
+   - PARA placement: `notes/projects/` (public) or `private/projects/` for deadlines, `notes/areas/` or `private/areas/` for ongoing responsibilities, `notes/resources/` or `private/resources/` for reference material
 3. **Handle the original** per user preference (delete, slim to index, or keep)
 
 **When to split vs. single blogmark:**
@@ -130,7 +130,7 @@ When the source material covers **multiple distinct topics** (e.g., a podcast to
 | Mistake | Fix |
 |---------|-----|
 | Block ID on own line after callout | Put `> ^id` on last line inside blockquote |
-| Same filename in private + public without folder path | Always use `![[blogmarks/filename#^id]]` |
+| Same filename in private + public without folder path | Always use `![[notes/blogmarks/filename#^id]]` |
 | Wikilinks from public to private content | Use original source URLs for private content |
 | Grouping all callouts at end of note | Place contextually after relevant content |
 | Over-editing user's informal tone | Synthesize but preserve voice |

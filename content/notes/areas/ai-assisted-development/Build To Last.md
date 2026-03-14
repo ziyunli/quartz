@@ -37,9 +37,9 @@ On sharing context with AI:
 > [!info] Related reading
 > This interview is the source material for several connected pieces:
 >
-> - [[../../private/projects/Solve-It-2025/Solve It - 2025|Jeremy Howard's "Solve It" course]] directly teaches the method Lattner and Howard advocate here: ==tight iteration loops, human-driven exploration, AI as learning amplifier==. The Solve It workflow is the practical implementation of "build to last."
-> - [[../../areas/ai-assisted-development/Beyond agentic coding|Gabriella Gonzalez's "Beyond Agentic Coding"]] provides the design theory (calm technology) for why tight iteration loops preserve flow state, and why chat-based agents break it — echoing Lattner's insistence on sub-30-second feedback cycles.
-> - [[../../areas/ai-assisted-development/Agentic Engineering Patterns - Linear walkthroughs|Simon Willison's "Linear Walkthroughs"]] is the counterpoint: vibe code first, then learn via walkthrough. Lattner would likely flag the risk — "delegating knowledge to an AI" — but Willison's pattern at least closes the understanding gap after the fact.
+> - [[../../../private/projects/Solve-It-2025/Solve It - 2025|Jeremy Howard's "Solve It" course]] directly teaches the method Lattner and Howard advocate here: ==tight iteration loops, human-driven exploration, AI as learning amplifier==. The Solve It workflow is the practical implementation of "build to last."
+> - [[Beyond agentic coding|Gabriella Gonzalez's "Beyond Agentic Coding"]] provides the design theory (calm technology) for why tight iteration loops preserve flow state, and why chat-based agents break it — echoing Lattner's insistence on sub-30-second feedback cycles.
+> - [[Agentic Engineering Patterns - Linear walkthroughs|Simon Willison's "Linear Walkthroughs"]] is the counterpoint: vibe code first, then learn via walkthrough. Lattner would likely flag the risk — "delegating knowledge to an AI" — but Willison's pattern at least closes the understanding gap after the fact.
 
 ---
 

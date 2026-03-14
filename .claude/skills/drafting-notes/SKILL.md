@@ -31,8 +31,8 @@ Do NOT ask about tags, formatting, or other metadata — match what existing not
 
 ### Folder Decision
 
-1. **PARA first** — CLAUDE.md says "New notes go into PARA folders." Check if the topic fits an existing area under `content/areas/` or `content/private/areas/`. If yes, place there.
-2. **notes/ fallback** — Only use `content/notes/` or `content/private/notes/` if no PARA area fits.
+1. **PARA first** — Check if the topic fits an existing area under `content/notes/areas/` (public) or `content/private/areas/` (private). If yes, place there.
+2. **Fallback** — Only use top-level `content/notes/` (public) or a private collection folder like `content/private/books/`, `content/private/writings/` if no PARA area fits.
 3. **Never assume blogmark** — Blogmarks annotate external content with `tags: [Blogmarks]`. If the user is writing original content (even referencing external docs), it's NOT a blogmark.
 
 ## Step 2: Read Before Writing

@@ -19,9 +19,11 @@ PARA folders and collections, all published:
   - `notes/areas/ai-assisted-development/` — LLM tooling, agentic patterns, vibe coding
   - `notes/areas/ai-assisted-learning/` — using LLMs for reading, studying, and knowledge acquisition
   - `notes/areas/economics/` — economic concepts and analysis
+  - `notes/areas/llm/` — LLM architecture, training techniques, reasoning models
   - `notes/areas/llm-tooling/` — local model inference, hardware for AI, performance estimation
   - `notes/areas/self-improvement/` — productivity, learning, personal growth
 - `notes/resources/` — catchall for anything not tied to a project or area
+  - `notes/resources/business/` — company profiles, business strategy, industry analysis
 - `notes/archive/` — inactive or outdated notes
 - `notes/blogmarks/` — distilled annotations of external content
 - `assets/` — public media assets (at `content/assets/`)

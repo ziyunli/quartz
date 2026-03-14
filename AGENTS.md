@@ -18,6 +18,7 @@ New notes go into PARA folders; existing notes stay in the notes hierarchy and m
 - `areas/` — ongoing responsibilities requiring constant attention
   - `areas/ai-assisted-development/` — LLM tooling, agentic patterns, vibe coding
   - `areas/economics/` — economic concepts and analysis
+  - `areas/llm-tooling/` — local model inference, hardware for AI, performance estimation
   - `areas/self-improvement/` — productivity, learning, personal growth
 - `resources/` — catchall for anything not tied to a project or area
 - `archive/` — inactive or outdated notes

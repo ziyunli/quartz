@@ -36,9 +36,16 @@ See [[DeepSeek as a Company]] for quotes from Chinese-language profiles on their
 
 ## Open-Source Strategy
 
-<!-- TODO: flesh out from podcast notes and other sources -->
+DeepSeek open-sources all models under permissive licenses (MIT for R1, custom for V3). This has become a hallmark of the Chinese AI sector more broadly.
 
-DeepSeek open-sources all models under permissive licenses (MIT for R1, custom for V3). This has become a hallmark of the Chinese AI sector — see The Economist's Drumtower podcast "China's DeepSeek Year" for broader context on how open-source drives diffusion and startup innovation in China.
+Key dynamics (from The Economist's Drumtower podcast "China's DeepSeek Year"):
+
+- **Talent play:** Chinese labs let researchers publish papers and share models openly, attracting talent. American labs are more secretive about breakthroughs, which is less appealing for researchers who want to show their work.
+- **Diffusion over dominance:** China's government priority is AI diffusion — getting AI embedded across the economy. The US focuses on model-level dominance. Open-source accelerates diffusion.
+- **Startup economics:** Open-source eliminates API cost risk. If your app goes viral, you don't rack up millions in inference fees. This lowers the cost of trial and error, encouraging experimentation.
+- **Enterprise adoption:** Banks and regulated industries can't send customer data to external APIs. Open-source models you can run on-premises are the only option, regardless of geopolitics.
+- **Platform incumbents benefit most:** Tech giants like Tencent (WeChat) benefit from integrating open-source models into existing user bases, while the startups that built the models struggle to monetize — similar to how Apple saved on CapEx by loading others' AI into iPhones.
+- **Z.ai's model (01.ai):** Open-source the model, monetize through hosted API access, national-level collaborations (countries fine-tuning on their data), and coding agent subscriptions.
 
 ## Geopolitical Context
 

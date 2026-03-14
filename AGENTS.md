@@ -54,6 +54,11 @@ PARA folders and internal collections, never published:
 - Use `obsidian move vault=content path="<from>" to="<dest-folder>/"` to move files — updates wikilinks automatically
 - Destination folders must exist before moving (mkdir -p first)
 - Can't handle filenames with colons (`:`) — fall back to `mv` for non-linkable files (.txt, .pdf)
+- After editing, moving, or creating a note, check its link health:
+  - `obsidian links` — verify outward links resolve
+  - `obsidian backlinks` — verify inward links still work
+  - `obsidian unresolved` — check for broken wikilinks
+  - Fix any broken links caused by renames or moves
 
 ## Cross-referencing Rules
 

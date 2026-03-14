@@ -1,7 +1,8 @@
 ---
 created: 2026-03-14
 ---
-With coding agents, now it's common for me to work on multiple features or even projects at the same time. The frontier models now are good enough to work on a big idea that includes ~10 PRs by following a design and implementation plan without too many human guidance. But on the other hand, because of the reasoning and agentic tool uses, now it really take them awhile to churn out the outputs. You likely don't want to sit still waiting, but instead find something else to do. 
+
+With coding agents, now it's common for me to work on multiple features or even projects at the same time. The frontier models now are good enough to work on a big idea that includes ~10 PRs by following a design and implementation plan without too much human guidance. But on the other hand, because of the reasoning and agentic tool uses, it really takes them a while to churn out the outputs. You likely don't want to sit still waiting, but instead find something else to do.
 
 Git worktrees let you check out multiple branches of the same repo into separate directories simultaneously. Each worktree is its own working tree with its own checked-out branch, but they all share the same `.git` object store. This makes them much cheaper than full clones, while giving you complete isolation between tasks. I can work on different projects or features in isolation, opening multiple agent sessions without worrying they step on each other.
 
@@ -12,7 +13,7 @@ I group worktrees by project. At any given time I have:
 
 I intentionally limit myself to this small number. It's tempting to spin up more, but I find that too many parallel contexts means nothing really sinks in — everything just passes through my brain. Limiting concurrency gives me a chance to actually internalize what I'm working on. I think this is critical in the age of AI-assisted development: you need to grow at least as fast as LLMs, if not faster, and that requires depth over breadth.
 
-Below shows my usual workflow.  See [[Git Shortcuts]] for the full alias table (`gwt`, `gwtls`, `gwtmv`, `gwtrm`).
+Below is my usual workflow. See [[Git Shortcuts]] for the full alias table (`gwt`, `gwtls`, `gwtmv`, `gwtrm`).
 
 ```bash
 # Create a reference worktree on main
@@ -31,7 +32,7 @@ gwtrm ../myrepo-auth
 
 ## Pain points
 
-There are still a couple issues in my naive worktree setup. 
+There are still a couple of issues in my naive worktree setup.
 
 ### Disk space with large monorepos
 

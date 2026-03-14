@@ -5,7 +5,7 @@ tags:
 ---
 
 > [!info] AI-assisted annotations
-> Research compiled and structured with Claude Opus 4.6 via Claude Code. Sources: DeepSeek-R1 paper (arXiv:2501.12948), HuggingFace model card.
+> Research compiled and structured with Claude Opus 4.6 via Claude Code. Sources: DeepSeek-R1 paper ([arXiv:2501.12948](https://arxiv.org/abs/2501.12948)), [HuggingFace model card](https://huggingface.co/deepseek-ai/DeepSeek-R1).
 
 DeepSeek-R1 is a 671B MoE reasoning model (37B active) released January 20, 2025, under the MIT License. It achieves performance comparable to OpenAI o1-1217 on math, coding, and reasoning benchmarks.
 

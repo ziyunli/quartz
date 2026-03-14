@@ -71,6 +71,7 @@ PARA folders and internal collections, never published:
 - No tables inside blockquote callouts (breaks Obsidian rendering) — use bullet lists
 - Place callouts contextually after the relevant content, not grouped at the end
 - One concept per callout; keep them self-contained
+- When research is used to write or enrich a note, always include citations with URLs or references (footnotes, inline links, or source list) — never present researched claims without attribution
 
 ## AI Disclosure
 

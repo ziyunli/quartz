@@ -5,7 +5,7 @@ tags:
 ---
 
 > [!info] AI-assisted annotations
-> Research compiled and structured with Claude Opus 4.6 via Claude Code. Sources: DeepSeek-V2 paper (arXiv:2405.04434), DeepSeek-V3 paper (arXiv:2412.19437).
+> Research compiled and structured with Claude Opus 4.6 via Claude Code. Sources: DeepSeek-V2 paper ([arXiv:2405.04434](https://arxiv.org/abs/2405.04434)), DeepSeek-V3 paper ([arXiv:2412.19437](https://arxiv.org/abs/2412.19437)).
 
 ## Why MoE Matters
 

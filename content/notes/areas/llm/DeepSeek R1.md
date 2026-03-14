@@ -2,7 +2,7 @@
 tags:
   - LLM
   - Reasoning
-draft: true
+draft: false
 ---
 
 > [!info] AI-assisted annotations
@@ -59,7 +59,7 @@ Broadly a draw — R1 wins on math and most coding, o1 edges ahead on competitiv
 
 ## Distilled Models
 
-DeepSeek used rejection sampling on R1 to generate ~800K reasoning traces, then fine-tuned smaller dense models. This proved **more effective than running RL directly on small models** — smaller models lack the exploration capacity for RL.
+DeepSeek used rejection sampling on R1 to generate ~800K reasoning traces, then fine-tuned smaller dense models. This proved **more effective than running RL directly on small models** — smaller models lack the exploration capacity for RL. (Anthropic alleged DeepSeek also used Claude's outputs to augment this pipeline — see [[Detecting and preventing distillation attacks|distillation attack analysis]].)
 
 | Model                | Base              | AIME 2024 pass@1                  |
 | -------------------- | ----------------- | --------------------------------- |

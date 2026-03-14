@@ -17,6 +17,7 @@ New notes go into PARA folders; existing notes stay in the notes hierarchy and m
 - `projects/` — short-term efforts with clear outcomes and due dates
 - `areas/` — ongoing responsibilities requiring constant attention
   - `areas/ai-assisted-development/` — LLM tooling, agentic patterns, vibe coding
+  - `areas/ai-assisted-learning/` — using LLMs for reading, studying, and knowledge acquisition
   - `areas/economics/` — economic concepts and analysis
   - `areas/llm-tooling/` — local model inference, hardware for AI, performance estimation
   - `areas/self-improvement/` — productivity, learning, personal growth

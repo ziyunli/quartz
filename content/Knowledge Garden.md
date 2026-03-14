@@ -11,9 +11,6 @@ Most of the work happens inside coding agents — summarizing, Q&A when drilling
   - `areas/` — ongoing responsibilities and domains
   - `resources/` — catchall for anything not tied to a project or area
   - `archive/` — inactive or outdated notes
-  - `notes/` — quotes, transcripts, and longer notes
-    - `blogmarks/` — short commentary on articles and links
-    - `reading/` — book notes
 - Write to future me.
 
 > [!info] AI-assisted annotations

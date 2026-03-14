@@ -79,4 +79,4 @@ DeepSeek used rejection sampling on R1 to generate ~800K reasoning traces, then 
 2. **RL alone can produce reasoning** — R1-Zero was a scientific finding, not just engineering
 3. **Distillation democratizes reasoning** — strong reasoning on consumer hardware
 4. **MIT license** — full weights available for commercial use and further distillation
-5. **Cost** — API pricing at launch ~$0.55/M input tokens, roughly 20-30x cheaper than o1
+5. **Cost** — API pricing at launch ~\$0.55/M input tokens, roughly 20-30x cheaper than o1

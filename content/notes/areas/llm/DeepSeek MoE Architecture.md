@@ -108,10 +108,10 @@ Key innovation: **fine-grained quantization** — activations quantized at 1x128
 ### Training Cost
 
 - 2,048 NVIDIA H800 GPUs, 14.8T tokens
-- Pre-training: $5.328M (2,664K GPU hours)
-- Context extension: $0.238M (119K GPU hours)
-- Post-training: $0.01M (5K GPU hours)
-- **Total: ~$5.6M, no loss spikes, no training rollbacks**
+- Pre-training: \$5.328M (2,664K GPU hours)
+- Context extension: \$0.238M (119K GPU hours)
+- Post-training: \$0.01M (5K GPU hours)
+- **Total: ~\$5.6M, no loss spikes, no training rollbacks**
 
 For comparison: Llama 3.1 405B required ~30.8M GPU hours — roughly 11x more compute for a less capable model.[^1]
 

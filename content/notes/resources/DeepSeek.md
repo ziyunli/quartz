@@ -13,14 +13,14 @@ tags:
 
 ### V3 (December 2024)
 
-671B MoE model with 37B active parameters per token. Trained for ~$5.6M on 2,048 H800 GPUs — roughly 11x less compute than Llama 3.1 405B for a stronger model.[^karpathy]
+671B MoE model with 37B active parameters per token. Trained for ~\$5.6M on 2,048 H800 GPUs — roughly 11x less compute than Llama 3.1 405B for a stronger model.[^karpathy]
 
 API pricing (at launch):
 
-- Input: $0.27/million tokens ($0.07/million with cache hits)
-- Output: $1.10/million tokens
+- Input: \$0.27/million tokens (\$0.07/million with cache hits)
+- Output: \$1.10/million tokens
 
-Compared to Claude 3.5 Sonnet (as of 20241228): $3/million input, $15/million output.
+Compared to Claude 3.5 Sonnet (as of 20241228): \$3/million input, \$15/million output.
 
 See [[DeepSeek MoE Architecture]] for the technical innovations (MLA, DeepSeekMoE, auxiliary-loss-free balancing, FP8 training).
 

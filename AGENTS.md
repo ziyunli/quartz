@@ -81,6 +81,7 @@ PARA folders and internal collections, never published:
 - Place callouts contextually after the relevant content, not grouped at the end
 - One concept per callout; keep them self-contained
 - When research is used to write or enrich a note, always include citations with URLs or references (footnotes, inline links, or source list) — never present researched claims without attribution
+- Escape literal `$` as `\$` in published content — Quartz interprets `$...$` as LaTeX math. Code blocks and inline code are safe.
 
 ## AI Disclosure
 

@@ -4,7 +4,7 @@ tags:
 created: 2022-12-18
 ---
 
-[No, Google Did Not Hike the Price of a .dev Domain from $12 to $850](https://www.agwa.name/blog/post/domain_pricing_is_very_confusing) explains how domain pricing works. It's important to understand the difference between registers and registrars.
+[No, Google Did Not Hike the Price of a .dev Domain from \$12 to \$850](https://www.agwa.name/blog/post/domain_pricing_is_very_confusing) explains how domain pricing works. It's important to understand the difference between registers and registrars.
 
 - Every top-level domain (TLD) is controlled by a register. Registers do not sell domain directly to the public.
 - Registrars broker the transaction between a domain registrant and the registry.

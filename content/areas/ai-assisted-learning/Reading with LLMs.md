@@ -51,4 +51,10 @@ The key insight is **context management across chapters** — summaries and conv
 
 ## In Practice
 
-The `studying-articles` skill in this vault is an implementation of this pattern for articles and clippings: read the source, discuss via Q&A, annotate with callouts, then publish as blogmarks. The main difference is that our workflow emphasizes **annotation and knowledge management** (callouts, transclusions, PARA organization) rather than just the reading itself.
+The `studying-articles` skill in this vault is an implementation of this pattern for articles and clippings. It incorporates:
+
+- **Summarize pass** (from Karpathy's 3-pass method) — overview of key ideas before diving into Q&A
+- **Interactive Q&A** — annotate with callouts, then publish as blogmarks or split into PARA topic files
+- **Optional quiz** (from Jeremy Howard's active recall) — application-focused questions to solidify understanding
+
+The main difference from the approaches above is that our workflow emphasizes **annotation and knowledge management** (callouts, transclusions, PARA organization) rather than just the reading itself. Context management across chapters is deferred to a future book-reading skill.

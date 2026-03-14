@@ -13,11 +13,15 @@ Interactive study flow: read a private clipping, discuss it via Q&A, annotate th
 
 ```dot
 digraph study_flow {
-  "Read private clipping" -> "Q&A with user";
+  "Read private clipping" -> "Summarize pass";
+  "Summarize pass" -> "Q&A with user" [label="user picks topics\nor skips"];
   "Q&A with user" -> "Add callouts to clipping";
   "Add callouts to clipping" -> "More questions?" [label="contextual placement"];
   "More questions?" -> "Q&A with user" [label="yes"];
-  "More questions?" -> "Single topic or multiple?" [label="done"];
+  "More questions?" -> "Offer quiz?" [label="done"];
+  "Offer quiz?" -> "Quiz the user" [label="yes"];
+  "Quiz the user" -> "Single topic or multiple?";
+  "Offer quiz?" -> "Single topic or multiple?" [label="skip"];
   "Single topic or multiple?" -> "Publish as blogmark" [label="single"];
   "Single topic or multiple?" -> "PARA topic split" [label="multiple"];
   "Publish as blogmark" -> "Replace callouts with transclusions";
@@ -25,6 +29,16 @@ digraph study_flow {
   "PARA topic split" -> "Delete or slim original";
 }
 ```
+
+## Phase 0: Summarize Pass
+
+Before diving into Q&A, provide a brief overview of the source material:
+
+1. **Key ideas** — what are the main concepts or arguments?
+2. **Structure** — how is the content organized?
+3. **Ask the user** what they want to dig into
+
+**Skip option:** For short or lightweight articles, the user may say "skip summary" or jump straight to questions — that's fine. This pass is most valuable for dense, long, or multi-topic sources.
 
 ## Phase 1: Q&A and Annotation
 
@@ -47,6 +61,17 @@ digraph study_flow {
 - One concept per callout, self-contained
 - Use `==highlights==` for key takeaways
 - No tables inside callouts (breaks Obsidian rendering) — use bullet lists
+
+## Phase 1b: Quiz (Optional)
+
+When the Q&A phase wraps up, offer to quiz the user on the material:
+
+- **Ask 3-5 questions** that test understanding of the key concepts discussed
+- Focus on **application and connection**, not recall — e.g., "How would you apply X in situation Y?" rather than "What did the author say about X?"
+- After each answer, give brief feedback and connect back to the source material
+- **Skip if** the user declines or the article was lightweight
+
+This is inspired by Jeremy Howard's active recall approach. The goal is to solidify understanding before moving to the publish/organize phase.
 
 ## Phase 2: Publish as Blogmark
 

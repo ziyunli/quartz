@@ -2,6 +2,7 @@
 tags:
   - LLM
   - Architecture
+draft: true
 ---
 
 > [!info] AI-assisted annotations

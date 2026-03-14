@@ -17,10 +17,12 @@ digraph study_flow {
   "Q&A with user" -> "Add callouts to clipping";
   "Add callouts to clipping" -> "More questions?" [label="contextual placement"];
   "More questions?" -> "Q&A with user" [label="yes"];
-  "More questions?" -> "User requests publish" [label="done"];
-  "User requests publish" -> "Create public blogmark";
-  "Create public blogmark" -> "Replace callouts with transclusions";
+  "More questions?" -> "Single topic or multiple?" [label="done"];
+  "Single topic or multiple?" -> "Publish as blogmark" [label="single"];
+  "Single topic or multiple?" -> "PARA topic split" [label="multiple"];
+  "Publish as blogmark" -> "Replace callouts with transclusions";
   "Replace callouts with transclusions" -> "Update cross-references";
+  "PARA topic split" -> "Delete or slim original";
 }
 ```
 
@@ -82,6 +84,22 @@ Block IDs MUST be inside the blockquote on the last line:
 
 NOT on a separate line after the callout (creates a standalone block, breaks transclusion).
 
+## Phase 2b: PARA Topic Split
+
+When the source material covers **multiple distinct topics** (e.g., a podcast touching product thinking, negotiation, and leadership), splitting into topic files is better than one monolithic blogmark.
+
+1. **Ask the user** whether to publish as a single blogmark or split by topic
+2. **If splitting**, follow the reviewing-notes skill's Phase 3 (reorganize into sections) and Phase 4 (PARA split) conventions:
+   - Propose topic groupings and file mapping before acting
+   - Each file gets: frontmatter with tags, AI disclosure callout, source link
+   - PARA placement: `projects/` for deadlines, `areas/` for ongoing responsibilities, `resources/` for reference material
+3. **Handle the original** per user preference (delete, slim to index, or keep)
+
+**When to split vs. single blogmark:**
+- Single topic with your annotations → blogmark
+- Multiple distinct topics worth filing separately → PARA split
+- When in doubt, ask the user
+
 ## Common Mistakes
 
 | Mistake | Fix |
@@ -91,3 +109,5 @@ NOT on a separate line after the callout (creates a standalone block, breaks tra
 | Wikilinks from public to private content | Use original source URLs for private content |
 | Grouping all callouts at end of note | Place contextually after relevant content |
 | Over-editing user's informal tone | Synthesize but preserve voice |
+| Forgetting AI disclosure callout | Every new or substantially edited note needs `[!info] AI-assisted annotations` after frontmatter |
+| Dumping multi-topic source into one blogmark | Ask whether to split by topic into PARA locations |

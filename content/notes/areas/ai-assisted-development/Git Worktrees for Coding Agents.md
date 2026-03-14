@@ -2,6 +2,9 @@
 created: 2026-03-14
 ---
 
+> [!info] AI-assisted drafting
+> Claude Opus 4.6 via Claude Code
+
 With coding agents, now it's common for me to work on multiple features or even projects at the same time. The frontier models now are good enough to work on a big idea that includes ~10 PRs by following a design and implementation plan without too much human guidance. But on the other hand, because of the reasoning and agentic tool uses, it really takes them a while to churn out the outputs. You likely don't want to sit still waiting, but instead find something else to do.
 
 Git worktrees let you check out multiple branches of the same repo into separate directories simultaneously. Each worktree is its own working tree with its own checked-out branch, but they all share the same `.git` object store. This makes them much cheaper than full clones, while giving you complete isolation between tasks. I can work on different projects or features in isolation, opening multiple agent sessions without worrying they step on each other.

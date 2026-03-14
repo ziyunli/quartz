@@ -13,7 +13,10 @@ Interactive study flow: read a private clipping, discuss it via Q&A, annotate th
 
 ```dot
 digraph study_flow {
-  "Read private clipping" -> "Summarize pass";
+  "Read private clipping" -> "Reading check";
+  "Reading check" -> "Suggest reading first" [label="not read yet"];
+  "Suggest reading first" -> "Reading check" [label="user returns"];
+  "Reading check" -> "Summarize pass" [label="user has read"];
   "Summarize pass" -> "Q&A with user" [label="user picks topics\nor skips"];
   "Q&A with user" -> "Add callouts to clipping";
   "Add callouts to clipping" -> "More questions?" [label="contextual placement"];
@@ -30,13 +33,19 @@ digraph study_flow {
 }
 ```
 
-## Phase 0: Summarize Pass
+## Phase 0: Reading Check & Summary
 
-Before diving into Q&A, provide a brief overview of the source material:
+**First, confirm the user has engaged with the source material.** The study flow deepens understanding — it shouldn't replace reading.
+
+1. **Ask if they've read the article** — a simple check, not a quiz gate
+2. **If not yet**: suggest they read it first and come back when ready. Don't summarize or spoil the content.
+3. **If yes**: ask what stood out or what they're curious about — this focuses the Q&A and doubles as a lightweight comprehension check
+
+Then provide a brief overview of the source material:
 
 1. **Key ideas** — what are the main concepts or arguments?
 2. **Structure** — how is the content organized?
-3. **Ask the user** what they want to dig into
+3. **Connect to user's interests** — tie the summary to what they mentioned stood out
 
 **Skip option:** For short or lightweight articles, the user may say "skip summary" or jump straight to questions — that's fine. This pass is most valuable for dense, long, or multi-topic sources.
 
@@ -136,3 +145,4 @@ When the source material covers **multiple distinct topics** (e.g., a podcast to
 | Over-editing user's informal tone | Synthesize but preserve voice |
 | Forgetting AI disclosure callout | Every new or substantially edited note needs `[!info] AI-assisted annotations` after frontmatter |
 | Dumping multi-topic source into one blogmark | Ask whether to split by topic into PARA locations |
+| Summarizing before confirming user has read | Always check reading status first — study deepens understanding, doesn't replace reading |

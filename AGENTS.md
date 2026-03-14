@@ -49,11 +49,15 @@ PARA folders and internal collections, never published:
 
 ## Obsidian CLI
 
+- **Always use the Obsidian CLI for file operations** (create, move, rename, delete) — it maintains the link graph automatically. Never use raw `mv`, `rm`, or shell file operations on `.md` files unless the CLI can't handle them.
 - Use `obsidian help` to see available actions when you operate this Obsidian Vault
 - Vault name for CLI is `content`
 - Use `obsidian move vault=content path="<from>" to="<dest-folder>/"` to move files — updates wikilinks automatically
+- Use `obsidian create vault=content path="<path>" content="<text>"` to create files
+- Use `obsidian rename vault=content path="<path>" name="<new-name>"` to rename files
+- Use `obsidian delete vault=content path="<path>"` to delete files
 - Destination folders must exist before moving (mkdir -p first)
-- Can't handle filenames with colons (`:`) — fall back to `mv` for non-linkable files (.txt, .pdf)
+- Fall back to shell commands only for files the CLI can't handle: filenames with colons (`:`), non-linkable files (.txt, .pdf)
 - After editing, moving, or creating a note, check its link health:
   - `obsidian links` — verify outward links resolve
   - `obsidian backlinks` — verify inward links still work

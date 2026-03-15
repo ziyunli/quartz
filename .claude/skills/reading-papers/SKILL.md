@@ -72,7 +72,7 @@ After the user passes the gate:
    - **Correctness** — do the assumptions appear valid?
    - **Contributions** — what are the main contributions?
    - **Clarity** — is it well written?
-3. **Surface key references** the user should know about
+3. **Surface key references as described by the paper** — note which works the authors position themselves against or build upon, based on how the paper cites them
 4. **Explicit gate:** "Based on this, is this paper worth a second pass? If it's outside your area or the contributions aren't relevant, it's fine to stop here."
 
 ### Callouts for Pass 1
@@ -90,8 +90,8 @@ After the user passes the gate:
 1. **No spoilers** — do not preemptively summarize sections the user hasn't asked about. Follow Jeremy Howard's approach: answer what's asked, don't reveal what's ahead.
 2. **Clarify flagged terms and sections** — the user identified unclear parts at the gate. Explain these with references and citations to related work, not just definitions. This is the key acceleration point.
 3. **Walk through figures and diagrams** — trust Marker's conversion. Describe what the LLM can see in the converted output first. Only ask the user for clarification if something appears garbled or missing.
-4. **Surface connections** — when explaining a concept, cite the original references from the paper and note related work the user should be aware of. Always include citations.
-5. **Mark references for future reading** — flag papers from the bibliography that are relevant to the user's areas of interest or essential for deeper understanding.
+4. **Surface connections as the paper describes them** — when explaining a concept, cite how the paper itself frames its references ("the authors cite X as..."). Add context from training knowledge only when confident, and flag uncertainty explicitly ("I believe this paper is about... but I haven't verified"). Never present inferred knowledge about a reference as fact.
+5. **Mark references for future reading** — flag papers from the bibliography that the paper describes as foundational or that appear frequently in the argument. The user should read key references themselves rather than rely on the LLM's knowledge of them.
 6. **Check comprehension** — after addressing the user's questions, ask them to summarize the main thrust of the paper with supporting evidence (Keshav's bar for pass 2).
 
 ### Callouts for Pass 2
@@ -113,7 +113,7 @@ After the user passes the gate:
    - "How would you design this experiment differently?"
    - "What's the weakest link in the argument chain?"
 2. **Reconstruct the argument** — ask the user to walk through the paper's logic, LLM probes for gaps
-3. **Compare with related work** — how does this differ from the references surfaced in Pass 1?
+3. **Compare with related work** — based on how the paper positions itself against cited work, probe whether the claimed differences hold up. Flag when the LLM lacks knowledge of a referenced paper.
 4. **Identify what's novel vs. incremental** — what's the actual contribution beyond prior work?
 
 ### Callouts for Pass 3

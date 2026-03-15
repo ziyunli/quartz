@@ -1,5 +1,7 @@
 ---
 created: 2026-03-14
+tags:
+  - local-llms
 ---
 
 > [!info] AI-assisted annotations
@@ -61,7 +63,7 @@ Recommended resources for quants:
 | Mac Studio M4 Max 128GB               | GPT-OSS-120b             | Ollama          | —          | [Greenpants](https://news.ycombinator.com/item?id=45779881)      |
 | Framework Desktop 128GB               | GPT-OSS-120b             | lemonade-server | —          | [dennemark](https://news.ycombinator.com/item?id=45777371)       |
 
-Common pattern: **Mac unified memory for ease, NVIDIA for raw speed, AMD Strix Halo as budget middle ground.** Memory bandwidth matters more than raw RAM — Max/Ultra chips outperform Pro chips at the same RAM capacity.
+Common pattern: **Mac unified memory for ease, NVIDIA for raw speed, AMD Strix Halo as budget middle ground.** Memory bandwidth matters more than raw RAM — Max/Ultra chips outperform Pro chips at the same RAM capacity. See [[How to estimate local model performance]] for the math behind this and [[My AI Home Lab]] for a concrete M4 Pro 64GB setup.
 
 ## HN: Qwen3.5 and the state of local models (Feb 2026)
 
@@ -94,6 +96,8 @@ The 35B-A3B MoE has only 3B active params — roughly equivalent to an 11B dense
 - 32GB machines: 35B-A3B is the ceiling
 
 ### Quantization sweet spot: 4-bit
+
+See also [[How to estimate local model performance#Step 4 Quantization tradeoffs|perplexity benchmarks by quant level]].
 
 `jackcosgrove` ([thread](https://news.ycombinator.com/item?id=47202822)) ran an analysis: 4-bit quantization is 99% similar to float32 at half the size of 8-bit — the clear sweet spot. `deepsquirrelnet` ([thread](https://news.ycombinator.com/item?id=47202953)) confirms GPT-OSS models were trained natively in MXFP4 (4-bit floating point, e2m1 format with per-block 8-bit scaling exponents).
 

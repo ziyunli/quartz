@@ -59,6 +59,8 @@ uv tool run llm -f hn:43984860 'summary with illustrative direct quotes'
 
 ### Local LLM
 
+For guidance on which models fit this hardware (M4 Pro, 273 GB/s bandwidth, 64GB), see [[How to estimate local model performance]]. For community benchmarks and model recommendations, see [[Running Local LLM]].
+
 #### Ollama
 
 ```sh

@@ -212,7 +212,7 @@ Step 3 — Quality:
   Competitive with best 30-40B dense models.
 ```
 
-Result: excellent fit. Fast generation, good quality, plenty of memory headroom.
+Result: excellent fit. Fast generation, good quality, plenty of memory headroom. See [[Running Local LLM]] for real-world benchmarks that corroborate these estimates, and [[My AI Home Lab]] for a practical M4 Pro 64GB setup.
 
 ## References
 

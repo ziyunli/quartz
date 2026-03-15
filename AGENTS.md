@@ -66,6 +66,9 @@ PARA folders and internal collections, never published:
 
 ## Cross-referencing Rules
 
+- For same-file heading links, use wikilinks `[[#Exact Heading Text]]` or `[[#Heading\|display]]` — standard Markdown anchors `[text](#slugified-heading)` don't resolve in Obsidian
+- In table cells, escape the pipe in wikilink aliases: `[[#Heading\|display]]`
+- Bold wraps the wikilink, not inside the alias: `**[[#Heading\|display]]**` not `[[#Heading\|**display**]]`
 - Transclusions use `![[note]]` (wikilink syntax), NOT `![alt](file.md)` (Markdown image syntax)
 - Private-to-private links: use Obsidian wikilinks `[[filename|display text]]`
 - **Public-to-private links: use original source URLs (external links), NOT wikilinks** — private content won't resolve on the published site

@@ -19,9 +19,13 @@ digraph setup {
   start [label="Skill invoked" shape=ellipse];
   ask_path [label="AskUserQuestion:\nQuestion doc path?\n(default: private/system-design-questions/)" shape=box];
   check_path [label="Is it a directory\nor a file?" shape=diamond];
-  list_dir [label="Glob *.md in directory\nand list available questions\n(skip index files)" shape=box];
+  list_dir [label="Glob *.md in directory\n(skip index files)" shape=box];
+  dir_empty [label="Any questions\nfound?" shape=diamond];
   ask_pick [label="AskUserQuestion:\nWhich question?" shape=box];
   load [label="Read the question file" shape=box];
+  file_exists [label="File exists?" shape=diamond];
+  check_format [label="Has question file\nformat sections?" shape=diamond];
+  gen_structure [label="Generate missing sections\nas internal reference\n(Requirements, Design, etc.)" shape=box];
   ask_mode [label="AskUserQuestion:\nCoaching or Simulation?" shape=box];
   ask_time [label="AskUserQuestion:\nTime target? (default 45 min)" shape=box];
   begin [label="Begin interview" shape=ellipse];
@@ -30,9 +34,16 @@ digraph setup {
   ask_path -> check_path;
   check_path -> list_dir [label="directory"];
   check_path -> load [label="file"];
-  list_dir -> ask_pick;
+  list_dir -> dir_empty;
+  dir_empty -> ask_pick [label="yes"];
+  dir_empty -> ask_path [label="no — inform user\nand re-ask"];
   ask_pick -> load;
-  load -> ask_mode;
+  load -> file_exists;
+  file_exists -> check_format [label="yes"];
+  file_exists -> ask_path [label="no — inform user\nand re-ask"];
+  check_format -> ask_mode [label="yes — structured"];
+  check_format -> gen_structure [label="no — ad-hoc"];
+  gen_structure -> ask_mode;
   ask_mode -> ask_time;
   ask_time -> begin;
 }
@@ -44,10 +55,12 @@ When invoked:
    - Press enter to use the default directory — then glob for `*.md` files, list them (excluding index files like `System Design Questions.md`), and ask which one
    - Provide a path to a specific `.md` file anywhere in the vault
    - Provide a path to a different directory to list questions from
+   - **If the directory is empty** (no `.md` files besides the index), inform the user and re-ask for a path
+   - **If the file doesn't exist**, inform the user and re-ask
 2. **Which mode?** Coaching or Simulation
 3. **Time target?** Default 45 minutes
 
-Read the selected question file, then begin.
+Read the selected question file. If the file follows the question file format (has `## Requirements`, `## High-Level Design`, etc.), proceed directly. If it's an ad-hoc source (notes, articles, clippings), **generate the missing structure first** — silently create internal reference sections (Requirements, Back-of-Envelope, High-Level Design, Deep Dive Topics, Wrap-Up Prompts, Common Mistakes) based on the file's content and your own domain knowledge. Then begin the interview using this generated structure as your reference.
 
 ## Modes
 
@@ -215,9 +228,12 @@ What candidates typically get wrong.
 After the evaluation debrief, if the question source was ad-hoc (user-provided notes, not already in the question file format), offer to generate a cleaned-up question file:
 
 1. Ask the user if they want to save a cleaned-up version
-2. Generate a question file following the format above, incorporating insights from the session (what the candidate struggled with, common mistakes observed, etc.)
-3. Save to `private/system-design-questions/` with a kebab-case filename
-4. Update the index file (`private/system-design-questions/System Design Questions.md`) with a new wikilink entry
+2. Generate a question file following the format above, incorporating:
+   - The generated structure used during the session
+   - Insights from the session (what the candidate struggled with, common mistakes observed)
+   - Any additional depth uncovered during the deep dive
+3. Save using the Obsidian CLI: `obsidian create vault=content path="private/system-design-questions/<kebab-case-name>.md" content="..."`
+4. Update the index file (`private/system-design-questions/System Design Questions.md`) with a new wikilink entry using the Edit tool
 
 This builds the question library over time from practice sessions.
 

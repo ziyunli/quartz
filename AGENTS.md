@@ -43,6 +43,7 @@ PARA folders and internal collections, never published:
 - `private/archive/` — inactive or outdated private notes
 - `private/books/` — book notes
 - `private/clippers/` — raw web clippings (flat intake, stays here)
+- `private/system-design-questions/` — system design interview questions for mock sessions
 - `private/papers/` — academic papers and annotations
 - `private/writings/` — drafts and reflections
 - `private/assets/` — private media assets

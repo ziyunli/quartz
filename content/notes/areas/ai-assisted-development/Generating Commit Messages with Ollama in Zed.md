@@ -16,6 +16,7 @@ In `settings.json`, under `agent`, you can specify `commit_message_model` ([docs
 ```
 
 And to download the model, run `ollama run qwen3.5:9b`
+
 ## Tweaking the prompt
 
 There's also a way to tweak the prompt, but it also takes a bit to find. It's under the Rules library ([docs](https://zed.dev/docs/ai/rules#opening-the-rules-library)):

@@ -6,7 +6,7 @@ It took some digging to figure out how to generate commit messages with a local 
 
 ## Configuration
 
-In `settings.json`, under `assistant`, you can specify `commit_message_model` ([docs](https://zed.dev/docs/git?highlight=generate%20commit%20message#ai-support-in-git)). I want to use a local model since commit messages aren't complicated and I don't really bother writing them most of the time while working on my knowledge base:
+In `settings.json`, under `agent`, you can specify `commit_message_model` ([docs](https://zed.dev/docs/git?highlight=generate%20commit%20message#ai-support-in-git)). I want to use a local model since commit messages aren't complicated and I don't really bother writing them most of the time while working on my knowledge base:
 
 ```json
 "commit_message_model": {
@@ -15,6 +15,7 @@ In `settings.json`, under `assistant`, you can specify `commit_message_model` ([
 },
 ```
 
+And to download the model, run `ollama run qwen3.5:9b`
 ## Tweaking the prompt
 
 There's also a way to tweak the prompt, but it also takes a bit to find. It's under the Rules library ([docs](https://zed.dev/docs/ai/rules#opening-the-rules-library)):

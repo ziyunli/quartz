@@ -4,6 +4,12 @@ Obsidian vault published via Quartz to https://ziyunli.github.io/quartz/
 
 - Default branch is `v4` — `master` holds the rendered GitHub Pages output (deploy commits only)
 
+## Git & Safety
+
+- `content/private/` is gitignored — it MUST NEVER be committed to the repo. Verify with `git status` before any commit.
+- **No branches or worktrees** — this repo is Dropbox-synced. Creating branches or git worktrees will cause sync conflicts or data loss. Always work directly on `v4`.
+- **Risky changes to `private/`**: if you need to make a destructive or large-scale edit to files under `content/private/`, copy the affected files first (e.g., `cp file.md file.md.bak`) so nothing is lost. Remove backups after verifying the result.
+
 ## Project Structure
 
 - Content lives under `content/`
@@ -91,3 +97,10 @@ PARA folders and internal collections, never published:
 
 - When AI assists in editing a note, add a `[!info] AI-assisted annotations` callout after frontmatter
 - Mention briefly what was helped (e.g., "callouts and cross-references") and include harness + model (e.g., "Claude Opus 4.6 via Claude Code")
+
+## Quartz Commands
+
+- `npx quartz build` — build the site
+- `npx quartz build --serve` — build and serve locally with live reload
+- `npx prettier ./content --check` — check content formatting
+- `npx prettier ./content --write` — auto-format content

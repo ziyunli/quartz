@@ -25,12 +25,12 @@ There's also a way to tweak the prompt, but it also takes a bit to find. It's un
 2. Click the Agent menu (`...`) in the top right corner.
 3. Select **Rules...** from the dropdown.
 
-There should be a built-in rule called **"Commit message"** you can edit.
+There should be a built-in rule called **"Commit message"** you can edit. Below is what I am currently using:
 
 ````
 You are an expert at writing Git commits. Your job is to write a short clear commit message that summarizes the changes.
 
-Use Conventional Commits 1.0.0 spec:
+Conventional Commits 1.0.0 spec:
 
 ```
 <type>[optional scope]: <description>
@@ -48,7 +48,7 @@ The commit contains the following structural elements, to communicate intent to 
 4. types other than fix: and feat: are allowed, for example @commitlint/config-conventional (based on the Angular convention) recommends build:, chore:, ci:, docs:, style:, refactor:, perf:, test:, and others.
 5. footers other than BREAKING CHANGE: <description> may be provided and follow a convention similar to git trailer format.
 
-A scope may be provided to a commit’s type, to provide additional contextual information and is contained within parenthesis, e.g., feat(parser): add ability to parse arrays.
+A scope may be provided to a commit’s type, to provide additional contextual information and is contained within parenthesis.
 
 If you can accurately express the change in just the subject line, don't include anything in the message body. Only use the body when it is providing *useful* information.
 

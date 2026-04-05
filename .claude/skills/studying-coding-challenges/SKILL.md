@@ -48,7 +48,7 @@ Before the interview starts, set up runnable code in `~/codebase/coding-challeng
 
 1. Read the coding-challenges repo's AGENTS.md for conventions (`new.sh`, naming, test structure)
 2. Run `./new.sh <snake_name> "<Problem Name>" <difficulty> <topic>` to scaffold files
-3. Copy starter code from the problem note into `solutions/<snake_name>.py`
+3. Copy starter code from the problem note into `solutions/<snake_name>.py`, preserving the original method names (e.g., keep `addFile` if the starter code uses camelCase — do not convert to snake_case). Only use Pythonic naming when creating problems from scratch.
 4. Write tests that demonstrate the bug/expected behavior:
    - Tests for correct behavior (should pass once fixed)
    - Tests that expose the specific bugs (should fail with buggy starter code)
@@ -155,3 +155,4 @@ For "talk only" sections in the problem note:
 | Rewriting user's existing code     | Only add new code (TODOs, dispatch cases, tests). Never rewrite, reformat, or strip types/annotations from working code — it destroys the user's work and wastes time |
 | Over-detailed TODO comments        | Keep TODOs minimal: command signature + brief description. Don't write step-by-step refactoring checklists — an interviewer wouldn't hand you one                     |
 | Giving away the design in Guidance | Guidance should mention trade-offs and constraints, not prescribe the exact data structure changes or implementation steps                                            |
+| Renaming methods from starter code | Preserve original naming (camelCase, etc.) from OA/LeetCode starter code — only use Pythonic naming for problems we create ourselves                                  |

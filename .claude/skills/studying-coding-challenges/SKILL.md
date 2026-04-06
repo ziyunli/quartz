@@ -84,15 +84,14 @@ Walk through solution pausing at key decisions. Ask "why this approach?" to test
 
 Run this after **each coding part** and again after discussion questions — not just at the end.
 
-### 2a: Annotate Problem Note
+### 2a: Annotate Problem Note (metadata only)
 
-Add callouts to the problem note:
+The problem note stays as a **clean problem spec** — only add metadata callouts:
 
-- `[!question]` conceptual Q&A, `[!warning]` gotchas/bugs, `[!info]` context/patterns, `[!example]` worked examples
-- Place **contextually after relevant section**, not grouped at end
-- One concept per callout, `==highlights==` for takeaways, no tables inside callouts
-- Add `## My Solution` section before reference solutions with user's code
-- AI disclosure after frontmatter: `> [!info] AI-assisted annotations` (once, on first annotation)
+- AI disclosure after frontmatter: `> [!info] AI-assisted annotations` (once, on first session)
+- `> [!info] See also` for alternate versions or related notes
+
+Do NOT add study callouts or user solutions to the problem note. Those go in the mock session doc (2b).
 
 ### 2b: Create/Update Mock Session Retro
 
@@ -107,8 +106,11 @@ Create a retro note in the **same folder** as the problem note:
   - Would I pass this in an interview? (Yes/Probably/No)
   - Discussion log (clarifying Qs, approach, key decisions)
   - Iteration history (each attempt with what failed and why)
-  - Final solution (code block)
+  - Study callouts placed **contextually after the relevant part** they relate to:
+    - `[!question]` conceptual Q&A, `[!warning]` gotchas/bugs, `[!info]` context/patterns, `[!example]` worked examples
+    - One concept per callout, `==highlights==` for takeaways, no tables inside callouts
 - **Discussion questions** get their own section with bullet summaries
+- **`## My Solution`** at the end — user's final code for all parts
 
 ### 2c: Update Coding Retro Journal
 
@@ -144,7 +146,8 @@ For "talk only" sections in the problem note:
 | Giving away the solution           | Ask leading questions, don't state answers                                                                                                                            |
 | Writing code for the user          | Use TODO(human) + Learn by Doing                                                                                                                                      |
 | Skipping clarifying questions      | Redirect: "What would you ask first?"                                                                                                                                 |
-| Callouts grouped at end            | Place after relevant sections                                                                                                                                         |
+| Callouts in problem note           | Callouts go in mock session doc, contextually after the relevant part. Problem note stays as clean spec                                                               |
+| Callouts grouped at end            | Place after relevant part in mock session doc, not lumped into one section                                                                                            |
 | Coding "discussion only" questions | Honor the note's labels                                                                                                                                               |
 | Missing AI disclosure              | Always add after frontmatter                                                                                                                                          |
 | Summarizing problem back           | They've read it — jump to engagement                                                                                                                                  |

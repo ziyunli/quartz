@@ -38,6 +38,7 @@ Do NOT ask about tags, formatting, or other metadata — match what existing not
 ## Step 2: Read Before Writing
 
 Read 2-3 existing notes in the target folder to match:
+
 - Frontmatter style (usually just `created: YYYY-MM-DD`)
 - Tone and structure
 - Heading conventions
@@ -80,11 +81,11 @@ Drafted notes do NOT need the `[!info] AI-assisted annotations` callout — the 
 
 ## Common Mistakes
 
-| Mistake | Fix |
-|---------|-----|
-| Over-formalizing user's voice | Use their words. "It took some digging" not "The documentation is scattered" |
-| Placing in notes/ without considering PARA | Check areas/ first |
-| Adding explanatory content user didn't provide | Only write what they told you |
-| Asking too many questions upfront | Just ask public or private |
-| Skipping ESL proofing | Always offer, even if writing looks fine |
-| Using blogmark tags for original content | Blogmarks annotate external articles, not original notes |
+| Mistake                                        | Fix                                                                          |
+| ---------------------------------------------- | ---------------------------------------------------------------------------- |
+| Over-formalizing user's voice                  | Use their words. "It took some digging" not "The documentation is scattered" |
+| Placing in notes/ without considering PARA     | Check areas/ first                                                           |
+| Adding explanatory content user didn't provide | Only write what they told you                                                |
+| Asking too many questions upfront              | Just ask public or private                                                   |
+| Skipping ESL proofing                          | Always offer, even if writing looks fine                                     |
+| Using blogmark tags for original content       | Blogmarks annotate external articles, not original notes                     |

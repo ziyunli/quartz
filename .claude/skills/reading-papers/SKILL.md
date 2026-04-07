@@ -49,11 +49,11 @@ digraph reading_flow {
 
 Before each pass, confirm the user has done the independent work:
 
-| Pass | Independent work required | Gate question |
-|------|--------------------------|---------------|
-| 1 | Skim title, abstract, headings, conclusions | "Have you skimmed the paper? What's your first impression?" |
-| 2 | Read with care, study figures and diagrams | "Have you read through the paper? What terms or sections were unclear?" |
-| 3 | Attempt to mentally reconstruct the argument | "Have you tried reconstructing the paper's argument? Where did you get stuck?" |
+| Pass | Independent work required                    | Gate question                                                                  |
+| ---- | -------------------------------------------- | ------------------------------------------------------------------------------ |
+| 1    | Skim title, abstract, headings, conclusions  | "Have you skimmed the paper? What's your first impression?"                    |
+| 2    | Read with care, study figures and diagrams   | "Have you read through the paper? What terms or sections were unclear?"        |
+| 3    | Attempt to mentally reconstruct the argument | "Have you tried reconstructing the paper's argument? Where did you get stuck?" |
 
 **If the user hasn't read yet:** suggest they do so and come back. Don't summarize or spoil. The gate question doubles as a lightweight comprehension check — their answer focuses the upcoming LLM-assisted pass.
 
@@ -76,6 +76,7 @@ After the user passes the gate:
 4. **Explicit gate:** "Based on this, is this paper worth a second pass? If it's outside your area or the contributions aren't relevant, it's fine to stop here."
 
 ### Callouts for Pass 1
+
 - `[!info]` for the 5 C's evaluation
 - `[!warning]` for red flags (questionable assumptions, missing context)
 
@@ -95,6 +96,7 @@ After the user passes the gate:
 6. **Check comprehension** — after addressing the user's questions, ask them to summarize the main thrust of the paper with supporting evidence (Keshav's bar for pass 2).
 
 ### Callouts for Pass 2
+
 - `[!question]` for Q&A about unclear terms and concepts
 - `[!info]` for supplementary context, related work, and reference suggestions
 - `[!example]` for concrete illustrations of abstract concepts
@@ -117,6 +119,7 @@ After the user passes the gate:
 4. **Identify what's novel vs. incremental** — what's the actual contribution beyond prior work?
 
 ### Callouts for Pass 3
+
 - `[!question]` for adversarial Q&A exchanges
 - `[!warning]` for identified weaknesses, hidden assumptions
 - `[!example]` for alternative approaches or experimental designs discussed
@@ -127,30 +130,33 @@ After the user passes the gate:
 Follow the same publish/organize conventions as `studying-articles`:
 
 ### Single-topic paper → Blogmark
+
 1. Create public blogmark at `content/notes/blogmarks/<filename>.md`
 2. Frontmatter: `tags: [Blogmarks, Papers]`
 3. AI disclosure callout
 4. Replace callouts in private paper with transclusions using folder paths
 
 ### Multi-topic paper → PARA Split
+
 1. Ask user whether to publish as single blogmark or split by topic
 2. Follow reviewing-notes Phase 4 conventions for PARA placement
 3. Each file gets frontmatter, AI disclosure, source link
 4. Handle original per user preference
 
 ### Cross-references
+
 - Public-to-public: wikilinks
 - Public-to-private: external URLs (e.g., DOI links), never wikilinks
 
 ## Common Mistakes
 
-| Mistake | Fix |
-|---------|-----|
-| Summarizing paper before user has read it | Always check reading gate first — each pass requires independent work |
-| Treating all passes the same (just Q&A) | Each pass has a distinct goal: orient → comprehend → reconstruct |
-| Skipping the "worth continuing?" gate after Pass 1 | Explicitly ask — not every paper deserves three passes |
-| LLM doing the reconstruction for the user in Pass 3 | User walks through the argument; LLM probes and challenges |
-| Forgetting the 5 C's in Pass 1 | Always evaluate Category, Context, Correctness, Contributions, Clarity |
-| Not marking unread references | Surface key references in Pass 1, mark relevant ones in Pass 2 |
-| Block ID on own line after callout | Put `> ^id` on last line inside blockquote |
-| Wikilinks from public to private content | Use DOI or source URLs for private content |
+| Mistake                                             | Fix                                                                    |
+| --------------------------------------------------- | ---------------------------------------------------------------------- |
+| Summarizing paper before user has read it           | Always check reading gate first — each pass requires independent work  |
+| Treating all passes the same (just Q&A)             | Each pass has a distinct goal: orient → comprehend → reconstruct       |
+| Skipping the "worth continuing?" gate after Pass 1  | Explicitly ask — not every paper deserves three passes                 |
+| LLM doing the reconstruction for the user in Pass 3 | User walks through the argument; LLM probes and challenges             |
+| Forgetting the 5 C's in Pass 1                      | Always evaluate Category, Context, Correctness, Contributions, Clarity |
+| Not marking unread references                       | Surface key references in Pass 1, mark relevant ones in Pass 2         |
+| Block ID on own line after callout                  | Put `> ^id` on last line inside blockquote                             |
+| Wikilinks from public to private content            | Use DOI or source URLs for private content                             |

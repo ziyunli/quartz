@@ -20,23 +20,25 @@ Download external images, videos, and audio from a private clipping into `conten
 
 Scan for these patterns — handle ALL of them:
 
-| Pattern | Example |
-|---------|---------|
-| Markdown images | `![alt](https://example.com/img.png)` |
+| Pattern                | Example                                                    |
+| ---------------------- | ---------------------------------------------------------- |
+| Markdown images        | `![alt](https://example.com/img.png)`                      |
 | HTML video/source tags | `<video controls=""><source src="https://...mp4"></video>` |
-| HTML audio tags | `<audio src="https://...mp3"></audio>` |
-| YouTube/Vimeo embeds | `![](https://www.youtube.com/watch?v=...)` |
+| HTML audio tags        | `<audio src="https://...mp3"></audio>`                     |
+| YouTube/Vimeo embeds   | `![](https://www.youtube.com/watch?v=...)`                 |
 
 **Skip:** wikilinks (`![[...]]`), text hyperlinks, already-local paths (`../assets/...`), `data:` URLs.
 
 ## Download Commands
 
 **Images/direct files:**
+
 ```bash
 curl -L --fail -o "content/private/assets/{filename}" "{url}"
 ```
 
 **YouTube/Vimeo:**
+
 ```bash
 # Get the actual video title first for the filename
 yt-dlp --get-title "{url}"
@@ -44,6 +46,7 @@ yt-dlp --merge-output-format mp4 -o "content/private/assets/{filename}" "{url}"
 ```
 
 **CDN URLs** — try stripped URL first, fall back to original if it 404s:
+
 - Economist: remove `cdn-cgi/image/width=...,quality=...,format=.../` prefix
 - General: strip query params like `?w=600&quality=80`
 - If the stripped URL fails (404/403), retry with the original CDN URL
@@ -64,21 +67,25 @@ Examples from existing assets: `ane-m4-hero.jpeg`, `ane-software-stack.png`, `ro
 **CRITICAL:** Use standard markdown with relative paths. Do NOT use Obsidian wikilink embeds.
 
 **Images** — preserve any alt text:
+
 ```markdown
 ![alt text](../assets/article-slug-name.png)
 ```
 
 **HTML video tags** — replace entire tag with markdown:
+
 ```markdown
 ![](../assets/article-slug-video.mp4)
 ```
 
 **HTML audio tags** — replace entire tag with markdown:
+
 ```markdown
 ![](../assets/article-slug-audio.mp3)
 ```
 
 **YouTube embeds** — same pattern after yt-dlp download:
+
 ```markdown
 ![](../assets/article-slug-video-title.mp4)
 ```
@@ -97,12 +104,12 @@ Examples from existing assets: `ane-m4-hero.jpeg`, `ane-software-stack.png`, `ro
 
 ## Common Mistakes
 
-| Mistake | Fix |
-|---------|-----|
-| Using `![[wikilink]]` embeds | Use `![](../assets/...)` relative paths |
-| Downloading YouTube with curl | Use `yt-dlp` for YouTube/Vimeo |
-| Keeping CDN params in URL | Strip transformation params for full quality |
-| Missing `<video>` or `<audio>` tags | Scan for markdown `![]()`, HTML `<video>`, AND `<audio>` tags |
-| Guessing YouTube video filename | Run `yt-dlp --get-title` first, then derive slug from actual title |
-| CDN-stripped URL 404s | Try stripped URL first, fall back to original CDN URL |
-| Generic filenames | Prefix with article slug for namespacing |
+| Mistake                             | Fix                                                                |
+| ----------------------------------- | ------------------------------------------------------------------ |
+| Using `![[wikilink]]` embeds        | Use `![](../assets/...)` relative paths                            |
+| Downloading YouTube with curl       | Use `yt-dlp` for YouTube/Vimeo                                     |
+| Keeping CDN params in URL           | Strip transformation params for full quality                       |
+| Missing `<video>` or `<audio>` tags | Scan for markdown `![]()`, HTML `<video>`, AND `<audio>` tags      |
+| Guessing YouTube video filename     | Run `yt-dlp --get-title` first, then derive slug from actual title |
+| CDN-stripped URL 404s               | Try stripped URL first, fall back to original CDN URL              |
+| Generic filenames                   | Prefix with article slug for namespacing                           |

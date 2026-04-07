@@ -52,20 +52,22 @@ Then provide a brief overview of the source material:
 ## Phase 1: Q&A and Annotation
 
 ### Tone
+
 - User speaks informally — preserve their voice in callouts
 - Synthesize the discussion, don't paste raw conversation
 - Go beyond the source material: add context, history, connections
 
 ### Callout Types
 
-| Type | Use for |
-|------|---------|
-| `[!question]` | Q&A about concepts |
-| `[!example]` | Concrete examples, worked problems |
-| `[!info]` | Supplementary context, cross-references |
-| `[!warning]` | Misconceptions, gotchas, open problems |
+| Type          | Use for                                 |
+| ------------- | --------------------------------------- |
+| `[!question]` | Q&A about concepts                      |
+| `[!example]`  | Concrete examples, worked problems      |
+| `[!info]`     | Supplementary context, cross-references |
+| `[!warning]`  | Misconceptions, gotchas, open problems  |
 
 ### Callout Rules
+
 - Place **contextually after the relevant content**, not grouped at end
 - One concept per callout, self-contained
 - Use `==highlights==` for key takeaways
@@ -102,14 +104,18 @@ When user says to publish/extract:
    - Public-to-private: external URLs, never wikilinks
 
 ### AI Disclosure
+
 Every public blogmark starts with:
+
 ```markdown
 > [!info] AI-assisted annotations
 > <brief description of what was helped> with Claude <model> via Claude Code.
 ```
 
 ### Block ID Syntax
+
 Block IDs MUST be inside the blockquote on the last line:
+
 ```markdown
 > [!question] Title
 > Content here
@@ -130,19 +136,20 @@ When the source material covers **multiple distinct topics** (e.g., a podcast to
 3. **Handle the original** per user preference (delete, slim to index, or keep)
 
 **When to split vs. single blogmark:**
+
 - Single topic with your annotations → blogmark
 - Multiple distinct topics worth filing separately → PARA split
 - When in doubt, ask the user
 
 ## Common Mistakes
 
-| Mistake | Fix |
-|---------|-----|
-| Block ID on own line after callout | Put `> ^id` on last line inside blockquote |
-| Same filename in private + public without folder path | Always use `![[notes/blogmarks/filename#^id]]` |
-| Wikilinks from public to private content | Use original source URLs for private content |
-| Grouping all callouts at end of note | Place contextually after relevant content |
-| Over-editing user's informal tone | Synthesize but preserve voice |
-| Forgetting AI disclosure callout | Every new or substantially edited note needs `[!info] AI-assisted annotations` after frontmatter |
-| Dumping multi-topic source into one blogmark | Ask whether to split by topic into PARA locations |
-| Summarizing before confirming user has read | Always check reading status first — study deepens understanding, doesn't replace reading |
+| Mistake                                               | Fix                                                                                              |
+| ----------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| Block ID on own line after callout                    | Put `> ^id` on last line inside blockquote                                                       |
+| Same filename in private + public without folder path | Always use `![[notes/blogmarks/filename#^id]]`                                                   |
+| Wikilinks from public to private content              | Use original source URLs for private content                                                     |
+| Grouping all callouts at end of note                  | Place contextually after relevant content                                                        |
+| Over-editing user's informal tone                     | Synthesize but preserve voice                                                                    |
+| Forgetting AI disclosure callout                      | Every new or substantially edited note needs `[!info] AI-assisted annotations` after frontmatter |
+| Dumping multi-topic source into one blogmark          | Ask whether to split by topic into PARA locations                                                |
+| Summarizing before confirming user has read           | Always check reading status first — study deepens understanding, doesn't replace reading         |

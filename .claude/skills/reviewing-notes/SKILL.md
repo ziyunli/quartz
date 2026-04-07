@@ -41,14 +41,15 @@ digraph review_flow {
 
 Follow studying-articles callout conventions:
 
-| Type | Use for |
-|------|---------|
-| `[!question]` | Q&A about concepts |
-| `[!example]` | Concrete examples |
-| `[!info]` | Supplementary context |
-| `[!warning]` | Misconceptions, gotchas |
+| Type          | Use for                 |
+| ------------- | ----------------------- |
+| `[!question]` | Q&A about concepts      |
+| `[!example]`  | Concrete examples       |
+| `[!info]`     | Supplementary context   |
+| `[!warning]`  | Misconceptions, gotchas |
 
 **Rules:**
+
 - Place callouts contextually after relevant content, not grouped at end
 - One concept per callout, self-contained
 - Use `==highlights==` for key takeaways
@@ -91,11 +92,11 @@ When the user requests breaking into separate notes:
 
 ## Common Mistakes
 
-| Mistake | Fix |
-|---------|-----|
-| Adding content without user direction | Present gaps, let user choose what to explore |
-| Reorganizing before discussion is done | Complete annotation phase first |
-| Creating files without showing the plan | Always propose file mapping and wait for confirmation |
-| Forcing content into PARA when user didn't ask | Reorganizing into sections and PARA split are separate steps |
-| Mixing languages inconsistently | Match the user's language in commentary and headers |
-| Forgetting AI disclosure callout | Every new or substantially edited note needs `[!info] AI-assisted annotations` after frontmatter |
+| Mistake                                        | Fix                                                                                              |
+| ---------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| Adding content without user direction          | Present gaps, let user choose what to explore                                                    |
+| Reorganizing before discussion is done         | Complete annotation phase first                                                                  |
+| Creating files without showing the plan        | Always propose file mapping and wait for confirmation                                            |
+| Forcing content into PARA when user didn't ask | Reorganizing into sections and PARA split are separate steps                                     |
+| Mixing languages inconsistently                | Match the user's language in commentary and headers                                              |
+| Forgetting AI disclosure callout               | Every new or substantially edited note needs `[!info] AI-assisted annotations` after frontmatter |

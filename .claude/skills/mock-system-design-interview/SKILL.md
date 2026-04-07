@@ -65,6 +65,7 @@ Read the selected question file. If the file follows the question file format (h
 ## Modes
 
 ### Coaching Mode
+
 - After each candidate response, provide brief feedback on what was strong/weak
 - Give **progressive hints** (see hint levels below) when the candidate is stuck or missing key topics
 - Explain what a strong answer looks like AFTER the candidate has attempted each step
@@ -72,6 +73,7 @@ Read the selected question file. If the file follows the question file format (h
 - Full debrief at end with learning recommendations
 
 ### Simulation Mode
+
 - Behave as a realistic interviewer — no teaching during the interview
 - Use subtle nudges only: "Anything else you'd want to clarify?" or "Are there other approaches?"
 - Do NOT reveal expected answers during the interview
@@ -114,6 +116,7 @@ digraph interview {
 **Your role:** Answer the candidate's clarifying questions using the question file's `requirements` section. If the candidate doesn't ask, use the answers to guide what they should be asking about.
 
 **Gate:** Do NOT move to Step 2 until the candidate has:
+
 - Identified core use cases (at least functional requirements)
 - Established scale (traffic, storage, or user count)
 - Discussed at least one non-functional requirement
@@ -121,6 +124,7 @@ digraph interview {
 **If candidate jumps ahead:** "I appreciate the enthusiasm, but let's make sure we're aligned on requirements first. What questions do you have about the problem?"
 
 **Red flags to catch:**
+
 - Jumping to solution without requirements
 - Not asking about scale
 - Making assumptions without stating them
@@ -130,6 +134,7 @@ digraph interview {
 **Your role:** React to the candidate's design. Ask about missing components from the question file's `high_level_design` section.
 
 **Gate:** Do NOT move to Step 3 until:
+
 - API endpoints are defined (or at least discussed)
 - Major components are identified
 - Data flow for core use cases is walkable
@@ -149,6 +154,7 @@ digraph interview {
 ### Step 4 — Wrap Up (3-5 min)
 
 Ask the candidate:
+
 - "What are the bottlenecks in your design?"
 - "If you had more time, what would you improve?"
 - "How would you handle [failure scenario from question file]?"
@@ -157,12 +163,12 @@ Ask the candidate:
 
 When the candidate is stuck or missing a key concept, escalate through these levels:
 
-| Level | Approach | Example |
-|-------|----------|---------|
-| 1 | Open question | "How would you generate the short URL?" |
-| 2 | Narrow the space | "There are two main approaches to key generation — can you think of what they might be?" |
-| 3 | Name the concept | "Have you considered base 62 conversion as an alternative to hashing?" |
-| 4 | Explain briefly | "Base 62 uses a unique ID generator + conversion to get a 7-char string. The tradeoff vs hashing is..." |
+| Level | Approach         | Example                                                                                                 |
+| ----- | ---------------- | ------------------------------------------------------------------------------------------------------- |
+| 1     | Open question    | "How would you generate the short URL?"                                                                 |
+| 2     | Narrow the space | "There are two main approaches to key generation — can you think of what they might be?"                |
+| 3     | Name the concept | "Have you considered base 62 conversion as an alternative to hashing?"                                  |
+| 4     | Explain briefly  | "Base 62 uses a unique ID generator + conversion to get a 7-char string. The tradeoff vs hashing is..." |
 
 Never jump to Level 4. Always start at Level 1 and escalate only if the candidate is stuck after attempting.
 
@@ -170,14 +176,15 @@ Never jump to Level 4. Always start at Level 1 and escalate only if the candidat
 
 Score each dimension 1-4:
 
-| Score | Meaning |
-|-------|---------|
-| 1 | Not attempted or fundamentally wrong |
-| 2 | Attempted but shallow or missing key aspects |
-| 3 | Solid — covers main points with reasonable depth |
-| 4 | Excellent — deep understanding, strong tradeoff analysis |
+| Score | Meaning                                                  |
+| ----- | -------------------------------------------------------- |
+| 1     | Not attempted or fundamentally wrong                     |
+| 2     | Attempted but shallow or missing key aspects             |
+| 3     | Solid — covers main points with reasonable depth         |
+| 4     | Excellent — deep understanding, strong tradeoff analysis |
 
 **Dimensions:**
+
 1. **Requirements gathering** — Did they clarify scope before designing?
 2. **Estimation** — Did they do back-of-envelope math?
 3. **High-level design** — Is the architecture reasonable and complete?
@@ -202,40 +209,94 @@ Question files can live anywhere in the vault. The default collection is at `pri
 # Question Name
 
 ## Prompt
+
 The question as presented to the candidate.
 
 ## Requirements
+
 Clarifying Q&A pairs the interviewer should use.
 
 ## Back-of-Envelope
+
 Key calculations and expected numbers.
 
 ## High-Level Design
+
 Expected components, APIs, data flow.
 
 ## Deep Dive Topics
+
 2-4 topics with expected depth, tradeoffs, and common mistakes.
 
 ## Wrap-Up Prompts
+
 Follow-up questions and failure scenarios.
 
 ## Common Mistakes
+
 What candidates typically get wrong.
 ```
 
-## Post-Session: Saving Question Files
+## Post-Session: Wrap Up
 
-After the evaluation debrief, if the question source was ad-hoc (user-provided notes, not already in the question file format), offer to generate a cleaned-up question file:
+Run this immediately after the evaluation debrief. All four steps are mandatory.
+
+### 2a: Annotate Question File (metadata only)
+
+The question file stays as a **clean problem spec** — only add metadata callouts:
+
+- AI disclosure after frontmatter: `> [!info] AI-assisted annotations` (once, on first session)
+- `> [!info] See also` for alternate versions or related notes
+
+Do NOT add retro content, study callouts, or evaluation scores to the question file. Those go in the mock session doc (2b).
+
+### 2b: Create/Update Mock Session Retro
+
+Create a retro note in the **same folder** as the question file:
+
+- **Filename:** `<Question Name> - Mock Session <YYYY-MM-DD>.md`
+- **Structure:**
+  - Setup block (question wikilink, mode, time target, date)
+  - Per-step sections with:
+    - What the candidate said/did
+    - Study callouts placed **contextually after the relevant step** they relate to:
+      - `[!question]` conceptual Q&A and key insights, `[!warning]` gotchas/mistakes, `[!info]` context/patterns, `[!example]` strong points
+      - One concept per callout, `==highlights==` for takeaways, no tables inside callouts
+  - Evaluation summary table (dimension, score, notes)
+  - Priority areas for next session
+  - Comparison to previous sessions (if any exist — check for prior mock session files)
+
+If prior mock session retros exist in the same folder, use them as format reference.
+
+### 2c: Update System Design Retro Journal
+
+Find the System Design Retro Journal in the Interview Preparation folder. If it doesn't exist, create it (modeled on Coding Retro Journal). Add an entry following its template format, with a wikilink to the full mock session retro note.
+
+Also update the **Weak Pattern Summary** table at the bottom — patterns that recur across sessions get flagged here.
+
+### 2d: Create Anki Cards
+
+Invoke the `accelerated-learning:creating-anki-cards` skill to create flashcards from the session. Cards go in the project's `anki/` directory. Deck naming convention: `"Interview Prep::System Design::<Topic>"`. Focus on:
+
+- Gotchas and mistakes made during the session
+- Key formulas and estimation patterns
+- Tradeoffs and design decisions
+- Interview technique insights
+- Patterns that generalize beyond this specific question
+
+Check existing YAML files to avoid duplicates; add to existing file if the topic already has one.
+
+### 2e: Save Question File (ad-hoc sources only)
+
+If the question source was ad-hoc (user-provided notes, not already in question file format), offer to generate a cleaned-up question file:
 
 1. Ask the user if they want to save a cleaned-up version
-2. Generate a question file following the format above, incorporating:
+2. Generate a question file following the Question File Format above, incorporating:
    - The generated structure used during the session
    - Insights from the session (what the candidate struggled with, common mistakes observed)
    - Any additional depth uncovered during the deep dive
 3. Save using the Obsidian CLI: `obsidian create vault=content path="private/system-design-questions/<kebab-case-name>.md" content="..."`
 4. Update the index file (`private/system-design-questions/System Design Questions.md`) with a new wikilink entry using the Edit tool
-
-This builds the question library over time from practice sessions.
 
 ## Red Flags (Across All Steps)
 

@@ -17,7 +17,7 @@ digraph setup {
   node [shape=box];
 
   start [label="Skill invoked" shape=ellipse];
-  ask_path [label="AskUserQuestion:\nQuestion doc path?\n(default: private/system-design-questions/)" shape=box];
+  ask_path [label="AskUserQuestion:\nQuestion doc path?" shape=box];
   check_path [label="Is it a directory\nor a file?" shape=diamond];
   list_dir [label="Glob *.md in directory\n(skip index files)" shape=box];
   dir_empty [label="Any questions\nfound?" shape=diamond];
@@ -51,11 +51,10 @@ digraph setup {
 
 When invoked:
 
-1. **Which question?** Use AskUserQuestion to ask for the path to a question document. Present the default location `private/system-design-questions/` (relative to the vault root). The user can:
-   - Press enter to use the default directory — then glob for `*.md` files, list them (excluding index files like `System Design Questions.md`), and ask which one
+1. **Which question?** Use AskUserQuestion to ask for the path to a question document. The user can:
    - Provide a path to a specific `.md` file anywhere in the vault
-   - Provide a path to a different directory to list questions from
-   - **If the directory is empty** (no `.md` files besides the index), inform the user and re-ask for a path
+   - Provide a path to a directory to list questions from — glob for `*.md` files, exclude index files, mock session retros (`- Mock Session`), and companion docs (`- Question`, `- Reference`), then ask which one
+   - **If the directory is empty** (no `.md` question files), inform the user and re-ask
    - **If the file doesn't exist**, inform the user and re-ask
 2. **Which mode?** Coaching or Simulation
 3. **Time target?** Default 45 minutes
@@ -194,6 +193,8 @@ Score each dimension 1-4:
 
 **Overall recommendation:** Hire / Lean Hire / Lean No Hire / No Hire
 
+**Priority area examples:** After presenting the evaluation and priority areas, provide **concrete examples** the candidate can study. For each priority area, show what a strong answer looks like for this specific question — not generic advice, but the actual words/numbers the candidate should have said. This bridges the gap between "you should do X" and "here's what X looks like in practice."
+
 ## Interaction Rules
 
 - **One step at a time.** Present the question, then STOP and wait for the candidate's response. Do not anticipate or script multiple exchanges.
@@ -203,7 +204,7 @@ Score each dimension 1-4:
 
 ## Question File Format
 
-Question files can live anywhere in the vault. The default collection is at `private/system-design-questions/`. Each question file follows this structure:
+Question files can live anywhere in the vault. Each question file follows this structure:
 
 ```markdown
 # Question Name
@@ -295,8 +296,13 @@ If the question source was ad-hoc (user-provided notes, not already in question 
    - The generated structure used during the session
    - Insights from the session (what the candidate struggled with, common mistakes observed)
    - Any additional depth uncovered during the deep dive
-3. Save using the Obsidian CLI: `obsidian create vault=content path="private/system-design-questions/<kebab-case-name>.md" content="..."`
-4. Update the index file (`private/system-design-questions/System Design Questions.md`) with a new wikilink entry using the Edit tool
+3. Generate a **companion reference document** (`<Name> - Reference.md`) with:
+   - Detailed reference answers for each deep dive topic
+   - **Mermaid diagrams** for visual study: architecture overview, sequence diagrams for key flows, data model (ER diagram), and any component-specific diagrams (e.g., version control strategy, cost control layers, streaming flow)
+   - Tables comparing approaches and tradeoffs
+   - Wikilink back to the question file: `Companion to [[<question-file>]]`
+4. Save both files in the **same folder as the source question** using the Obsidian CLI. Name them to match the source file's naming style (e.g., if source is `Prompt Playground System Design.md`, use `Prompt Playground - Question.md` and `Prompt Playground - Reference.md`)
+5. If a System Design Questions index file exists in or near the source folder, update it with wikilinks to both the question file and reference doc
 
 ## Red Flags (Across All Steps)
 

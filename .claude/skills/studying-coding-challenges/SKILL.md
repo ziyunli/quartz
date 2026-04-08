@@ -63,7 +63,7 @@ If the coding-challenges repo has a scaffolding skill that handles the problem f
 
 **Step 2 — Approach Discussion:** Ask for data structures, algorithm choice, complexity. Give feedback without giving away the answer.
 
-**Step 3 — User Codes:** Add `TODO(human)` in the solution file's code. Frame with Learn by Doing format (Context / Your Task / Guidance). **Wait for their code.** The TODO comment should be minimal — just the new command signature or a brief note. Do NOT write step-by-step refactoring instructions; an interviewer wouldn't hand you a checklist.
+**Step 3 — User Codes:** Add `TODO(human)` in the solution file's code. Frame with Learn by Doing format (Context / Your Task / Guidance). **Wait for their code.** The TODO comment should be minimal — just the new command signature or a brief note. Do NOT write step-by-step refactoring instructions; an interviewer wouldn't hand you a checklist. **Preserve all method stubs and signatures** — place `TODO(human)` inside the existing structure, never collapse or replace stubs.
 
 **Step 4 — Feedback:** Run tests. Review like an interviewer — correctness, edge cases, complexity. Ask them to fix issues; give hints, not answers. Iterate until tests pass.
 
@@ -141,21 +141,22 @@ For "talk only" sections in the problem note:
 
 ## Common Mistakes
 
-| Mistake                            | Fix                                                                                                                                                                   |
-| ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Giving away the solution           | Ask leading questions, don't state answers                                                                                                                            |
-| Writing code for the user          | Use TODO(human) + Learn by Doing                                                                                                                                      |
-| Skipping clarifying questions      | Redirect: "What would you ask first?"                                                                                                                                 |
-| Callouts in problem note           | Callouts go in mock session doc, contextually after the relevant part. Problem note stays as clean spec                                                               |
-| Callouts grouped at end            | Place after relevant part in mock session doc, not lumped into one section                                                                                            |
-| Coding "discussion only" questions | Honor the note's labels                                                                                                                                               |
-| Missing AI disclosure              | Always add after frontmatter                                                                                                                                          |
-| Summarizing problem back           | They've read it — jump to engagement                                                                                                                                  |
-| No runnable tests                  | Always scaffold in coding repo with failing tests                                                                                                                     |
-| Wrapping up only at the end        | Wrap up after each coding part and after discussion                                                                                                                   |
-| Skipping retro/Anki                | Always create retro note, update journal, and create Anki cards                                                                                                       |
-| Prescribing design decisions       | Let user choose format/approach; test behavior not implementation                                                                                                     |
-| Rewriting user's existing code     | Only add new code (TODOs, dispatch cases, tests). Never rewrite, reformat, or strip types/annotations from working code — it destroys the user's work and wastes time |
-| Over-detailed TODO comments        | Keep TODOs minimal: command signature + brief description. Don't write step-by-step refactoring checklists — an interviewer wouldn't hand you one                     |
-| Giving away the design in Guidance | Guidance should mention trade-offs and constraints, not prescribe the exact data structure changes or implementation steps                                            |
-| Renaming methods from starter code | Preserve original naming (camelCase, etc.) from OA/LeetCode starter code — only use Pythonic naming for problems we create ourselves                                  |
+| Mistake                                  | Fix                                                                                                                                                                   |
+| ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Giving away the solution                 | Ask leading questions, don't state answers                                                                                                                            |
+| Writing code for the user                | Use TODO(human) + Learn by Doing                                                                                                                                      |
+| Skipping clarifying questions            | Redirect: "What would you ask first?"                                                                                                                                 |
+| Callouts in problem note                 | Callouts go in mock session doc, contextually after the relevant part. Problem note stays as clean spec                                                               |
+| Callouts grouped at end                  | Place after relevant part in mock session doc, not lumped into one section                                                                                            |
+| Coding "discussion only" questions       | Honor the note's labels                                                                                                                                               |
+| Missing AI disclosure                    | Always add after frontmatter                                                                                                                                          |
+| Summarizing problem back                 | They've read it — jump to engagement                                                                                                                                  |
+| No runnable tests                        | Always scaffold in coding repo with failing tests                                                                                                                     |
+| Wrapping up only at the end              | Wrap up after each coding part and after discussion                                                                                                                   |
+| Skipping retro/Anki                      | Always create retro note, update journal, and create Anki cards                                                                                                       |
+| Prescribing design decisions             | Let user choose format/approach; test behavior not implementation                                                                                                     |
+| Rewriting user's existing code           | Only add new code (TODOs, dispatch cases, tests). Never rewrite, reformat, or strip types/annotations from working code — it destroys the user's work and wastes time |
+| Over-detailed TODO comments              | Keep TODOs minimal: command signature + brief description. Don't write step-by-step refactoring checklists — an interviewer wouldn't hand you one                     |
+| Giving away the design in Guidance       | Guidance should mention trade-offs and constraints, not prescribe the exact data structure changes or implementation steps                                            |
+| Renaming methods from starter code       | Preserve original naming (camelCase, etc.) from OA/LeetCode starter code — only use Pythonic naming for problems we create ourselves                                  |
+| Collapsing method stubs into single TODO | Place `TODO(human)` inside existing stubs — never delete or merge method signatures into one comment. The stubs ARE the scaffolding                                   |

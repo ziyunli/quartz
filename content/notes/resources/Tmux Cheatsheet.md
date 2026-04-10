@@ -64,14 +64,16 @@ Based on [~/.dotfiles/shared/.tmux.conf](https://github.com/ziyunli/dotfiles)
 
 ### Windows
 
-| Keys              | Action                             |
-| :---------------- | :--------------------------------- |
-| `C-a c`           | Create new window                  |
-| `C-a &`           | Kill current window (with confirm) |
-| `C-a ,`           | Rename current window              |
-| `C-a w`           | List/switch windows (interactive)  |
-| `C-a 1-9`         | Jump to window by number           |
-| `C-a p` / `C-a n` | Previous / next window             |
+| Keys                     | Action                             |
+| :----------------------- | :--------------------------------- |
+| `C-a c`                  | Create new window                  |
+| `C-a &`                  | Kill current window (with confirm) |
+| `C-a ,`                  | Rename current window              |
+| `C-a w`                  | List/switch windows (interactive)  |
+| `C-a 1-9`                | Jump to window by number           |
+| `C-a p` / `C-a n`        | Previous / next window             |
+| `C-a .`                  | Move window to a different number  |
+| `:swap-window -s 2 -t 5` | Swap windows 2 and 5               |
 
 ### Pane Management
 

@@ -356,7 +356,19 @@ What candidates typically get wrong.
 
 ## Post-Session: Wrap Up
 
-Run this immediately after the evaluation debrief. All four steps are mandatory.
+Run this immediately after the evaluation debrief (mock mode) or the section walk (study mode). All steps below are mandatory. The wrap-up has six phases: working doc handling (new), then the existing 2a–2e.
+
+### 2-doc: Working Doc Handling
+
+If a Working Doc was used during the session, ask the candidate:
+
+> "Working doc — keep / discard / rename?"
+
+- `keep` — leave it in the question's folder. The mock session retro (2b) wikilinks to it.
+- `discard` — delete via the Obsidian CLI (`obsidian delete vault=content path="..."`). The retro records the choice ("Working doc discarded") but does not wikilink.
+- `rename` — ask for the new name, move via `obsidian move` (or `obsidian rename` for in-place rename). The retro wikilinks to the renamed file.
+
+If no working doc was used, skip this step.
 
 ### 2a: Annotate Question File (metadata only)
 
@@ -367,13 +379,15 @@ The question file stays as a **clean problem spec** — only add metadata callou
 
 Do NOT add retro content, study callouts, or evaluation scores to the question file. Those go in the mock session doc (2b).
 
-### 2b: Create/Update Mock Session Retro
+### 2b: Create/Update Session Retro
 
-Create a retro note in the **same folder** as the question file:
+Create a retro note in the **same folder** as the question file. The retro structure differs by mode:
+
+#### Mock Mode Retro
 
 - **Filename:** `<Question Name> - Mock Session <YYYY-MM-DD>.md`
 - **Structure:**
-  - Setup block (question wikilink, mode, time target, date)
+  - Setup block (question wikilink, mode = `mock`, sub-mode = `coaching` | `simulation`, time target, date, working-doc wikilink if kept/renamed)
   - Per-step sections with:
     - What the candidate said/did
     - Study callouts placed **contextually after the relevant step** they relate to:
@@ -383,22 +397,45 @@ Create a retro note in the **same folder** as the question file:
   - Priority areas for next session
   - Comparison to previous sessions (if any exist — check for prior mock session files)
 
-If prior mock session retros exist in the same folder, use them as format reference.
+#### Study Mode Retro
+
+- **Filename:** `<Question Name> - Study Session <YYYY-MM-DD>.md`
+- **Structure:**
+  - Setup block (question wikilink, mode = `study`, time target, date, working-doc wikilink if kept/renamed, reference-doc wikilink)
+  - Per-section notes (Requirements / HLD / Deep Dive Topics / Wrap-Up Prompts):
+    - What the candidate attempted
+    - What the reference added
+    - Alternatives discussed
+  - Study callouts placed **contextually after the relevant section** (same callout types as mock mode)
+  - Key insights to remember
+  - Comparison to prior sessions for this question (if any exist)
+  - **No** evaluation rubric, **no** hire decision
+
+If prior session retros exist in the same folder, use them as format reference.
 
 ### 2c: Update System Design Retro Journal
 
-Find the System Design Retro Journal in the Interview Preparation folder. If it doesn't exist, create it (modeled on Coding Retro Journal). Add an entry following its template format, with a wikilink to the full mock session retro note.
+Find the System Design Retro Journal in the Interview Preparation folder. If it doesn't exist, create it (modeled on Coding Retro Journal). Add an entry following its template format, including a `mode: mock | study` field, with a wikilink to the full session retro note.
 
-Also update the **Weak Pattern Summary** table at the bottom — patterns that recur across sessions get flagged here.
+Also update the **Weak Pattern Summary** table at the bottom — patterns that recur across sessions get flagged here. Mock-mode and study-mode patterns can share rows when they touch the same weakness.
 
 ### 2d: Create Anki Cards
 
-Invoke the `accelerated-learning:creating-anki-cards` skill to create flashcards from the session. Cards go in the project's `anki/` directory. Deck naming convention: `"Interview Prep::System Design::<Topic>"`. Focus on:
+Invoke the `accelerated-learning:creating-anki-cards` skill to create flashcards from the session. Cards go in the project's `anki/` directory. Deck naming convention: `"Interview Prep::System Design::<Topic>"`.
+
+**Mock mode focus:**
 
 - Gotchas and mistakes made during the session
 - Key formulas and estimation patterns
 - Tradeoffs and design decisions
 - Interview technique insights
+- Patterns that generalize beyond this specific question
+
+**Study mode focus:**
+
+- The **why** of each design choice (tradeoffs, alternatives the reference rejected)
+- Failure-mode reasoning (how the design degrades, what breaks first)
+- Numbers from estimation and what they imply for component choice
 - Patterns that generalize beyond this specific question
 
 Check existing YAML files to avoid duplicates; add to existing file if the topic already has one.

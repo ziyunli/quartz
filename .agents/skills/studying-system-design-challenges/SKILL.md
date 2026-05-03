@@ -26,8 +26,15 @@ digraph setup {
   file_exists [label="File exists?" shape=diamond];
   check_format [label="Has question file\nformat sections?" shape=diamond];
   gen_structure [label="Generate missing sections\nas internal reference\n(Requirements, Design, etc.)" shape=box];
-  ask_mode [label="AskUserQuestion:\nCoaching or Simulation?" shape=box];
-  ask_time [label="AskUserQuestion:\nTime target? (default 45 min)" shape=box];
+  ask_mode [label="AskUserQuestion:\nMock or Study?" shape=box];
+  mock_branch [label="Mock branch" shape=ellipse];
+  study_branch [label="Study branch" shape=ellipse];
+  ask_submode [label="AskUserQuestion:\nCoaching or Simulation?" shape=box];
+  ask_time_mock [label="AskUserQuestion:\nTime target? (default 45 min)" shape=box];
+  ask_time_study [label="AskUserQuestion:\nTime target? (default 30 min)" shape=box];
+  ask_doc_mock [label="AskUserQuestion:\nWorking doc?\npaste path / scaffold md|canvas|excalidraw\n(default markdown)" shape=box];
+  ask_doc_study [label="AskUserQuestion:\nOptional working doc?\nyes/no, then same path/scaffold prompt" shape=box];
+  scaffold [label="If scaffold:\ncreate <Question Name> - Working <YYYY-MM-DD>.<ext>\nin question's folder" shape=box];
   begin [label="Begin interview" shape=ellipse];
 
   start -> ask_path;
@@ -44,8 +51,16 @@ digraph setup {
   check_format -> ask_mode [label="yes — structured"];
   check_format -> gen_structure [label="no — ad-hoc"];
   gen_structure -> ask_mode;
-  ask_mode -> ask_time;
-  ask_time -> begin;
+  ask_mode -> mock_branch [label="mock"];
+  ask_mode -> study_branch [label="study"];
+  mock_branch -> ask_submode;
+  ask_submode -> ask_time_mock;
+  ask_time_mock -> ask_doc_mock;
+  ask_doc_mock -> scaffold;
+  study_branch -> ask_time_study;
+  ask_time_study -> ask_doc_study;
+  ask_doc_study -> scaffold;
+  scaffold -> begin;
 }
 ```
 
@@ -56,10 +71,15 @@ When invoked:
    - Provide a path to a directory to list questions from — glob for `*.md` files, exclude index files, mock session retros (`- Mock Session`), and companion docs (`- Question`, `- Reference`), then ask which one
    - **If the directory is empty** (no `.md` question files), inform the user and re-ask
    - **If the file doesn't exist**, inform the user and re-ask
-2. **Which mode?** Coaching or Simulation
-3. **Time target?** Default 45 minutes
+2. **Which top-level mode?** `mock` or `study`
+3. **Mock-only sub-mode:** `coaching` or `simulation`
+4. **Time target?** Default 45 min for mock, 30 min for study
+5. **Working doc?** Ask the user:
+   - `paste path` — provide a path to an existing `.md`, `.canvas`, or `.excalidraw.md` file
+   - `scaffold` — choose `markdown` (default), `canvas`, or `excalidraw`. The skill creates `<Question Name> - Working <YYYY-MM-DD>.<ext>` in the same folder as the question file via the Obsidian CLI.
+   - In **study mode**, this question is prefaced with "Want a doc to sketch as we discuss? (yes/no)" — `no` skips it.
 
-Read the selected question file. If the file follows the question file format (has `## Requirements`, `## High-Level Design`, etc.), proceed directly. If it's an ad-hoc source (notes, articles, clippings), **generate the missing structure first** — silently create internal reference sections (Requirements, Back-of-Envelope, High-Level Design, Deep Dive Topics, Wrap-Up Prompts, Common Mistakes) based on the file's content and your own domain knowledge. Then begin the interview using this generated structure as your reference.
+Read the selected question file. If the file follows the question file format (has `## Requirements`, `## High-Level Design`, etc.), proceed directly. If it's an ad-hoc source (notes, articles, clippings), **generate the missing structure first** — silently create internal reference sections (Requirements, Back-of-Envelope, High-Level Design, Deep Dive Topics, Wrap-Up Prompts, Common Mistakes) based on the file's content and your own domain knowledge. Then begin the session using this generated structure as your reference.
 
 ## Modes
 

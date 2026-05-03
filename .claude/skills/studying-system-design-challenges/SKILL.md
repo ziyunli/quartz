@@ -35,7 +35,7 @@ digraph setup {
   ask_doc_mock [label="AskUserQuestion:\nWorking doc?\npaste path / scaffold md|canvas|excalidraw\n(default markdown)" shape=box];
   ask_doc_study [label="AskUserQuestion:\nOptional working doc?\nyes/no, then same path/scaffold prompt" shape=box];
   scaffold [label="If scaffold:\ncreate <Question Name> - Working <YYYY-MM-DD>.<ext>\nin question's folder" shape=box];
-  begin [label="Begin interview" shape=ellipse];
+  begin [label="Begin session" shape=ellipse];
 
   start -> ask_path;
   ask_path -> check_path;
@@ -68,7 +68,7 @@ When invoked:
 
 1. **Which question?** Use AskUserQuestion to ask for the path to a question document. The user can:
    - Provide a path to a specific `.md` file anywhere in the vault
-   - Provide a path to a directory to list questions from — glob for `*.md` files, exclude index files, mock session retros (`- Mock Session`), and companion docs (`- Question`, `- Reference`), then ask which one
+   - Provide a path to a directory to list questions from — glob for `*.md` files, exclude index files, session retros (`- Mock Session`, `- Study Session`), working docs (`- Working`), and companion docs (`- Question`, `- Reference`), then ask which one
    - **If the directory is empty** (no `.md` question files), inform the user and re-ask
    - **If the file doesn't exist**, inform the user and re-ask
 2. **Which top-level mode?** `mock` or `study`
@@ -364,7 +364,7 @@ If a Working Doc was used during the session, ask the candidate:
 
 > "Working doc — keep / discard / rename?"
 
-- `keep` — leave it in the question's folder. The mock session retro (2b) wikilinks to it.
+- `keep` — leave it in the question's folder. The session retro (2b) wikilinks to it.
 - `discard` — delete via the Obsidian CLI (`obsidian delete vault=content path="..."`). The retro records the choice ("Working doc discarded") but does not wikilink.
 - `rename` — ask for the new name, move via `obsidian move` (or `obsidian rename` for in-place rename). The retro wikilinks to the renamed file.
 
@@ -377,7 +377,7 @@ The question file stays as a **clean problem spec** — only add metadata callou
 - AI disclosure after frontmatter: `> [!info] AI-assisted annotations` (once, on first session)
 - `> [!info] See also` for alternate versions or related notes
 
-Do NOT add retro content, study callouts, or evaluation scores to the question file. Those go in the mock session doc (2b).
+Do NOT add retro content, study callouts, or evaluation scores to the question file. Those go in the session retro (2b).
 
 ### 2b: Create/Update Session Retro
 

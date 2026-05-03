@@ -464,3 +464,9 @@ If the question source was ad-hoc (user-provided notes, not already in question 
 - Only one approach considered → "Are there alternatives? What are the tradeoffs?"
 - No numbers anywhere → prompt for back-of-envelope
 - Not responding to interviewer feedback → note in evaluation, escalate nudges
+- Re-reading the working doc on every candidate turn → only at step transitions and on explicit request
+- Forgetting to prompt for PNG export at HLD → Deep Dive transition (Excalidraw) → ask the candidate to export so you can see the spatial layout
+- Treating Excalidraw labels-only as full-vision → if you only have labels, disclose explicitly: "I can see labels but not connections — walk me through them"
+- Skipping the working-doc handling step at wrap-up → always ask keep/discard/rename if a doc was used
+- Running the mock-mode evaluation rubric in study mode → study mode has no rubric and no hire decision
+- Walking the Reference doc in mock mode → mock mode is a live design session, not a reference walk; the reference is your private answer key, not the candidate's

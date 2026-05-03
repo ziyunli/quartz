@@ -81,6 +81,37 @@ When invoked:
 
 Read the selected question file. If the file follows the question file format (has `## Requirements`, `## High-Level Design`, etc.), proceed directly. If it's an ad-hoc source (notes, articles, clippings), **generate the missing structure first** — silently create internal reference sections (Requirements, Back-of-Envelope, High-Level Design, Deep Dive Topics, Wrap-Up Prompts, Common Mistakes) based on the file's content and your own domain knowledge. Then begin the session using this generated structure as your reference.
 
+## Working Doc
+
+The working doc is what the candidate draws / types into during the session. The interviewer (you) reads it at well-defined beats — not every turn — to avoid token waste while still mimicking interviewer behavior of glancing at the candidate's diagram.
+
+### Read Cadence
+
+| When                                                                         | Trigger        |
+| ---------------------------------------------------------------------------- | -------------- |
+| Session start (see if user pre-populated)                                    | Auto, one-time |
+| Step transitions: Requirements → HLD → Deep Dive → Wrap-up                   | Auto           |
+| User says "look at the doc" / "look at my diagram" / "I just added X"        | On request     |
+| User says "as you can see here" or other natural cue referencing the diagram | On request     |
+
+Do NOT re-read the doc on every candidate turn. The defaults above are sufficient.
+
+### Format-Specific Reading
+
+| Format                        | How you read it                                                                                                                                                                                                                  |
+| ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Markdown (`.md`)              | Read the file directly with the Read tool. Cheap; the full content is plain text.                                                                                                                                                |
+| Canvas (`.canvas`)            | Read the file as JSON. Extract `nodes[]` (boxes with `text` / `file` properties) and `edges[]` (`fromNode` → `toNode` connections). Reason about layout from coordinates only when needed.                                       |
+| Excalidraw (`.excalidraw.md`) | **Default:** Read the file and locate the `## Text Elements` section maintained by the Obsidian Excalidraw plugin. This gives you every text label without spatial info.                                                         |
+|                               | **At step transitions and on request:** Prompt the candidate: "Go ahead and export the diagram so I can take a look — `Cmd+P` → Export PNG, save it as `<same-basename>.png` in the same folder." Then read the PNG with vision. |
+|                               | **Fallback:** If the PNG is missing, stale, or the candidate skips export, fall back to labels-only and disclose: "I can see your labels but not the spatial layout — walk me through the connections."                          |
+
+### Doc Path Convention
+
+- Scaffolded path: `<Question Name> - Working <YYYY-MM-DD>.<ext>` in the same folder as the question file.
+- PNG export path (Excalidraw only): same folder, same basename, `.png` extension.
+- Use the Obsidian CLI for create / move / rename / delete to keep the link graph healthy.
+
 ## Modes
 
 ### Coaching Mode

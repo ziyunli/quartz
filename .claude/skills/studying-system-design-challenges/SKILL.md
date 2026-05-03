@@ -112,9 +112,11 @@ Do NOT re-read the doc on every candidate turn. The defaults above are sufficien
 - PNG export path (Excalidraw only): same folder, same basename, `.png` extension.
 - Use the Obsidian CLI for create / move / rename / delete to keep the link graph healthy.
 
-## Modes
+## Mock Mode
 
-### Coaching Mode
+The live interview experience. Two sub-modes:
+
+### Coaching Sub-Mode
 
 - After each candidate response, provide brief feedback on what was strong/weak
 - Give **progressive hints** (see hint levels below) when the candidate is stuck or missing key topics
@@ -122,14 +124,18 @@ Do NOT re-read the doc on every candidate turn. The defaults above are sufficien
 - Call out red flags gently with guidance: "An interviewer would want to see X here"
 - Full debrief at end with learning recommendations
 
-### Simulation Mode
+### Simulation Sub-Mode
 
 - Behave as a realistic interviewer — no teaching during the interview
 - Use subtle nudges only: "Anything else you'd want to clarify?" or "Are there other approaches?"
 - Do NOT reveal expected answers during the interview
 - Full evaluation at end with detailed scoring
 
-## The 4-Step Framework
+Mock mode follows the **4-Step Framework** below. The Working Doc is read at each step transition (see Working Doc section).
+
+## The 4-Step Framework (Mock Mode)
+
+This framework applies to **mock mode only**. Study mode uses the section walk in `## Study Mode` below. Both modes read the Working Doc at step / phase transitions.
 
 ```dot
 digraph interview {
@@ -208,6 +214,65 @@ Ask the candidate:
 - "What are the bottlenecks in your design?"
 - "If you had more time, what would you improve?"
 - "How would you handle [failure scenario from question file]?"
+
+## Study Mode
+
+Walks the question's **Reference doc** (the `<Name> - Reference.md` companion the post-session flow generates) section by section. The candidate attempts each section first; you then share the reference and probe alternatives.
+
+```dot
+digraph study_flow {
+  rankdir=TB;
+  node [shape=box];
+
+  start [label="Begin study session" shape=ellipse];
+  read_check [label="Phase 0:\nReading check —\nread the Reference doc?" shape=diamond];
+  walk_req [label="Phase 1a:\nRequirements walk\n(user attempts → reference → probe)"];
+  walk_hld [label="Phase 1b:\nHigh-Level Design walk"];
+  walk_dd [label="Phase 1c:\nDeep Dive Topics walk"];
+  walk_wrap [label="Phase 1d:\nWrap-Up Prompts walk"];
+  quiz_q [label="Phase 2:\nOffer quiz?" shape=diamond];
+  quiz [label="Phase 2:\n3-5 application questions"];
+  done [label="Phase 3:\nWrap up" shape=ellipse];
+
+  start -> read_check;
+  read_check -> walk_req [label="any answer —\nthe walk handles\nfirst-read vs review"];
+  walk_req -> walk_hld;
+  walk_hld -> walk_dd;
+  walk_dd -> walk_wrap;
+  walk_wrap -> quiz_q;
+  quiz_q -> quiz [label="yes"];
+  quiz_q -> done [label="skip"];
+  quiz -> done;
+}
+```
+
+### Phase 0 — Reading Check
+
+Ask: "Have you read the Reference doc, or should we walk it together cold?"
+
+- **Cold:** the session is a guided first read — share the reference content as we walk
+- **Already read:** focus on weak parts; let the candidate attempt before you share the reference
+
+### Phase 1 — Section Walk
+
+Walk the Reference doc's sections in this order, pausing at each:
+
+1. **Requirements & scale numbers** — "Why these numbers? What changes if traffic 10x?"
+2. **High-Level Design** — "Why this component? What's the alternative?"
+3. **Each Deep Dive Topic** — "Walk me through the tradeoff. What would push you the other way?"
+4. **Wrap-Up Prompts (failure scenarios)** — "How does this design degrade under [scenario]?"
+
+For each section: ==let the candidate attempt the answer first, then share what the reference says, then probe alternatives==.
+
+The Working Doc is **optional** in study mode — useful if the candidate wants to sketch comparisons mid-discussion. Same read cadence rules apply.
+
+### Phase 2 — Quiz (Optional)
+
+3-5 application questions: "What breaks if [constraint changes]?", "How would you modify the design for [new requirement]?". Same shape as `studying-coding-challenges` Phase 4.
+
+### Phase 3 — Wrap Up
+
+Lighter than mock-mode wrap-up. See the **Post-Session: Wrap Up** section below — study mode skips the evaluation rubric and hire decision.
 
 ## Progressive Hint System (Coaching Mode Only)
 

@@ -1,13 +1,13 @@
 ---
-name: mock-system-design-interview
-description: Use when user wants to practice system design interviews, do mock interview prep, or walk through a system design question interactively
+name: studying-system-design-challenges
+description: Use when studying system design interview problems in the Obsidian vault — user wants to run a mock system design interview, study a reference design, or annotate a system design question note with learning callouts.
 ---
 
-# Mock System Design Interview
+# Studying System Design Challenges
 
 ## Overview
 
-Interactive mock interviewer for system design questions. Follows the 4-step framework from "System Design Interview — An Insider's Guide." Two modes: **coaching** (educational, progressive hints) and **simulation** (realistic, minimal help).
+Interactive study flow for system design interview problems. Two top-level modes: **mock** (live interview, follows the 4-step framework from "System Design Interview — An Insider's Guide") and **study** (walks an existing reference design section by section). Mock mode has two sub-modes: **coaching** (educational, progressive hints) and **simulation** (realistic, minimal help). Both modes optionally read a working doc as you draw/type — markdown, Obsidian Canvas, or Excalidraw.
 
 ## Setup
 

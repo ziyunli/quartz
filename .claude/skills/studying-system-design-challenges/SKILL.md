@@ -246,12 +246,19 @@ digraph study_flow {
 }
 ```
 
-### Phase 0 — Reading Check
+### Phase 0 — Locate Reference, Reading Check
 
-Ask: "Have you read the Reference doc, or should we walk it together cold?"
+First, locate the Reference doc — look for `<Question Name> - Reference.md` in the same folder as the question file.
 
-- **Cold:** the session is a guided first read — share the reference content as we walk
-- **Already read:** focus on weak parts; let the candidate attempt before you share the reference
+- **If found:** ask the candidate, "Have you read the Reference doc, or should we walk it together cold?"
+- **If missing:** tell the candidate the Reference doc isn't there, then offer two options:
+  1. **Generate one first** — pause the study session, run the post-session reference generator from 2e against the question file, then resume
+  2. **Walk the question file instead** — use the question's `## Requirements`, `## High-Level Design`, `## Deep Dive Topics`, and `## Wrap-Up Prompts` sections as walking material; alternatives and tradeoffs come from your own domain knowledge
+
+Reading check responses (when a Reference doc is available):
+
+- **Cold:** the session is a guided first read — for each section, read the reference content aloud, paraphrase it conversationally, then probe alternatives
+- **Already read:** focus on weak parts; let the candidate attempt each section first before you share what the reference says
 
 ### Phase 1 — Section Walk
 
@@ -459,7 +466,7 @@ If the question source was ad-hoc (user-provided notes, not already in question 
 
 ## Red Flags (Across All Steps)
 
-- Jumping to solution without requirements → redirect to Step 1
+- Jumping to solution without requirements → redirect to Step 1 (mock) or Phase 1a (study)
 - "I think that's a solid design" without depth → probe: "What could go wrong?"
 - Only one approach considered → "Are there alternatives? What are the tradeoffs?"
 - No numbers anywhere → prompt for back-of-envelope

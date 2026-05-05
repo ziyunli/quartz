@@ -56,7 +56,8 @@ PARA folders and internal collections, never published:
 
 ## Obsidian CLI
 
-- **Always use the Obsidian CLI for file operations** (create, move, rename, delete) — it maintains the link graph automatically. Never use raw `mv`, `rm`, or shell file operations on `.md` files unless the CLI can't handle them.
+- **Always use the Obsidian CLI for file operations** (create, move, rename, delete) — it maintains the link graph automatically. Before editing, run `command -v obsidian` and confirm it resolves to `/usr/local/bin/obsidian`. Never use raw `mv`, `rm`, or shell file operations on `.md` files unless the CLI can't handle them.
+- Do **not** use `/Applications/Obsidian.app/Contents/MacOS/obsidian`; that is the desktop app binary, not the CLI.
 - Use `obsidian help` to see available actions when you operate this Obsidian Vault
 - Vault name for CLI is `content`
 - Use `obsidian move vault=content path="<from>" to="<dest-folder>/"` to move files — updates wikilinks automatically

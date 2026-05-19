@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_input.file_path' | { read -r f; case \"$f\" in *.md) cd /Volumes/HyperMac/Dropbox/Vaults/quartz && npx prettier --write --ignore-path /dev/null \"$f\" ;; esac; } 2>/dev/null || true",
+            "statusMessage": "Formatting with prettier..."
+          }
+        ]
+      }
+    ]
+  }
+}
